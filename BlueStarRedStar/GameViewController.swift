@@ -1,10 +1,4 @@
-//
-//  GameViewController.swift
-//  BlueStarRedStar
-//
-//  Created by Spencer Symington on 2019-03-15.
-//  Copyright © 2019 Spencer Symington. All rights reserved.
-//
+
 
 import UIKit
 import SpriteKit
