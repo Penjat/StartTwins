@@ -8,9 +8,13 @@ class GameScene: SKScene {
   private var spinnyNode : SKShapeNode?
   
   var player :PlayerMaster!
+  var staticNode = SKNode()
+  var movingNode = SKNode()
+  
+  
   override func didMove(to view: SKView) {
     
-    
+    movingNode.addChild(staticNode)
     player = PlayerMaster(scene: self)
     
   }
