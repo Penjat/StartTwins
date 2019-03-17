@@ -23,18 +23,22 @@ class GameScene: SKScene {
     self.addChild(staticNode)
     staticNode.addChild(movingNode)
     
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -30.0, duration: 1))
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -50.0, duration: 1))
     movingNode.run(movingNodeMove)
     
     player = PlayerMaster(scene: self)
     
-    pieceFactory.createPiece(scene: self)
+    
+    
+    
     
   }
   
   
   
   override func update(_ currentTime: TimeInterval) {
-    
+    if pieceFactory.checkShouldCreateSegment(movingNode: movingNode){
+      pieceFactory.createPiece(scene: self)
+    }
   }
 }
