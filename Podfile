@@ -6,10 +6,10 @@ target 'BlueStarRedStar' do
   use_frameworks!
 
   # Pods for BlueStarRedStar
-
+  pod 'RealmSwift'
   target 'BlueStarRedStarTests' do
     inherit! :search_paths
-	pod 'RealmSwift'
+
     # Pods for testing
   end
 
