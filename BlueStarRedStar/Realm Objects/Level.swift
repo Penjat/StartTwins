@@ -7,6 +7,8 @@ class Level: Object {
   var sections = List<Section>()
   
   func add(section:Section){
+    //auto increment the order
+    section.orderID = sections.count
     sections.append(section)
   }
 }

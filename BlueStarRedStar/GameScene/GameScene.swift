@@ -5,7 +5,7 @@ import GameplayKit
 
 class GameScene: SKScene {
   
-  let levelManager = LevelManager()
+  
   let pieceFactory = PieceFactory()
   
   private var label : SKLabelNode?
@@ -17,17 +17,16 @@ class GameScene: SKScene {
   
   
   override func didMove(to view: SKView) {
-    levelManager.setUp()
-    levelManager.getLevel()
-    
+    StaticHelper.setRatio(scene: self)
+    physicsWorld.contactDelegate = self
     self.addChild(staticNode)
     staticNode.addChild(movingNode)
     
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -50.0, duration: 1))
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -150.0, duration: 1))
     movingNode.run(movingNodeMove)
     
     player = PlayerMaster(scene: self)
-    
+    pieceFactory.startGame(scene:self)
     
     
     
@@ -37,8 +36,8 @@ class GameScene: SKScene {
   
   
   override func update(_ currentTime: TimeInterval) {
-    if pieceFactory.checkShouldCreateSegment(movingNode: movingNode){
-      pieceFactory.createPiece(scene: self)
-    }
+    
+    pieceFactory.checkShouldChange(scene: self)
+    
   }
 }
