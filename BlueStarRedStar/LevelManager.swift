@@ -22,7 +22,9 @@ class LevelManager{
     print(Realm.Configuration.defaultConfiguration.fileURL!)
   }
   
-  func getLevel(){
+  func getLevel()->Level{
+//    let segments = realm.objects(Level.self).first!.sections.first!.segments
+    
     let levels: Results<Level> = { realm.objects(Level.self) }()
     let level = levels.first
     print("level name = \(level!.name)")
@@ -33,6 +35,7 @@ class LevelManager{
         print("piece is \(piece)")
       }
     }
+    return level!
   }
 }
 
