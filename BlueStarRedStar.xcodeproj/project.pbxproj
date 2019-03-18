@@ -29,6 +29,8 @@
 		0B7AC046223EE811003E84EF /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC045223EE811003E84EF /* Wall.swift */; };
 		0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC047223EF7FC003E84EF /* StaticHelper.swift */; };
 		0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC049223F1FD5003E84EF /* Coin.swift */; };
+		0B7AC04C223F25A4003E84EF /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04B223F25A4003E84EF /* GameScene+Collisions.swift */; };
+		0B7AC04E223F266C003E84EF /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
 		303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */; };
 		F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,8 @@
 		0B7AC045223EE811003E84EF /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		0B7AC047223EF7FC003E84EF /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
 		0B7AC049223F1FD5003E84EF /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		0B7AC04B223F25A4003E84EF /* GameScene+Collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Collisions.swift"; sourceTree = "<group>"; };
+		0B7AC04D223F266C003E84EF /* CollisionCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategories.swift; sourceTree = "<group>"; };
 		2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
+				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
 				0B2F8726223C6F41001D50E6 /* GameViewController.swift */,
 				0B08D2CC223DB9B3006942A0 /* LevelManager.swift */,
@@ -153,6 +158,7 @@
 			children = (
 				0B2F8720223C6F41001D50E6 /* GameScene.sks */,
 				0B2F8724223C6F41001D50E6 /* GameScene.swift */,
+				0B7AC04B223F25A4003E84EF /* GameScene+Collisions.swift */,
 				0B2F8744223C7321001D50E6 /* GameScene+Touches.swift */,
 			);
 			path = GameScene;
@@ -387,6 +393,7 @@
 				0B08D2D3223DC352006942A0 /* Piece.swift in Sources */,
 				0B08D2CF223DC261006942A0 /* Section.swift in Sources */,
 				0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */,
+				0B7AC04C223F25A4003E84EF /* GameScene+Collisions.swift in Sources */,
 				0B08D2D1223DC2F2006942A0 /* Segment.swift in Sources */,
 				0B08D2CD223DB9B3006942A0 /* LevelManager.swift in Sources */,
 				0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */,
@@ -397,6 +404,7 @@
 				0B2F874A223D8DC9001D50E6 /* PlayerMaster.swift in Sources */,
 				0B2F8727223C6F41001D50E6 /* GameViewController.swift in Sources */,
 				0B08D2D5223DCEA7006942A0 /* LevelCreator.swift in Sources */,
+				0B7AC04E223F266C003E84EF /* CollisionCategories.swift in Sources */,
 				0B2F8748223D8AA8001D50E6 /* PlayerPiece.swift in Sources */,
 				0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */,
 				0B08D2D7223DD43C006942A0 /* PieceFactory.swift in Sources */,

@@ -18,11 +18,11 @@ class GameScene: SKScene {
   
   override func didMove(to view: SKView) {
     StaticHelper.setRatio(scene: self)
-    
+    physicsWorld.contactDelegate = self
     self.addChild(staticNode)
     staticNode.addChild(movingNode)
     
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -50.0, duration: 1))
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -150.0, duration: 1))
     movingNode.run(movingNodeMove)
     
     player = PlayerMaster(scene: self)

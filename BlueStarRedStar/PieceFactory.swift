@@ -71,22 +71,19 @@ class PieceFactory{
     distNextSegment = scene.movingNode.position.y - 200
   }
   private func createPiece(scene:GameScene,piece:Piece){
-   
-    let pieceNode = getPieceFor(type: piece.type)
-    pieceNode.create(scene: scene, piece:piece )
-  }
   
-  func getPieceFor(type:Int)->PieceNode{
-    
-    switch (type){
+    //TODO add to a piece list
+    switch (piece.type){
     case 0:
-      return Wall()
+       Wall.create(scene: scene, piece: piece)
     case 1:
-      return Coin()
+      Coin.create(scene: scene, piece: piece)
     default:
-      return Wall()
+      Wall.create(scene: scene, piece: piece)
     }
   }
+  
+  
   
   func getSection()-> Section?{
     return level!.sections.filter("orderID == %@",sectionNumber).first

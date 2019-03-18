@@ -2,8 +2,8 @@
 import Foundation
 import SpriteKit
 
-protocol PieceNode {
-  var node:SKSpriteNode! {get set}
+class PieceNode : SKSpriteNode  {
   
-  func create(scene:GameScene, piece:Piece)
+  
+  
 }

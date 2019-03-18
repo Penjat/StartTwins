@@ -28,7 +28,8 @@ class LevelCreator{
       sec1_seg1_piece1.width = 1
       sec1_seg1_piece1.x = 3
       sec1_seg1_piece1.y = 0
-      sec1_seg1_piece1.type = 1
+      sec1_seg1_piece1.type = PieceType.Coin.rawValue
+      sec1_seg1_piece1.color = 1
       
       sec1_seg1.add(piece: sec1_seg1_piece1)
       
@@ -42,18 +43,20 @@ class LevelCreator{
       let sec1_seg1_piece2 = Piece()
       sec1_seg1_piece2.height = 1
       sec1_seg1_piece2.width = 1
-      sec1_seg1_piece2.x = 2
+      sec1_seg1_piece2.x = -3
       sec1_seg1_piece2.y = 0
-      sec1_seg1_piece2.type = 0
+      sec1_seg1_piece2.type = PieceType.Coin.rawValue
+      sec1_seg1_piece2.color = 2
       
-      sec1_seg2.add(piece: sec1_seg1_piece2)
+      sec1_seg1.add(piece: sec1_seg1_piece2)
       
       let piece3 = Piece()
       piece3.height = 1
       piece3.width = 1
       piece3.x = -2
       piece3.y = 0
-      piece3.type = 1
+      piece3.type = PieceType.Wall.rawValue
+      
       
       sec1_seg2.add(piece: piece3)
       
@@ -74,8 +77,8 @@ class LevelCreator{
       piece4.width = 1
       piece4.x = 5
       piece4.y = 0
-      piece4.type = 1
-      piece4.color = 1
+      piece4.type = PieceType.Wall.rawValue
+      
       
       sec2_seg2.add(piece: piece4)
    
