@@ -3,15 +3,15 @@
 import Foundation
 import SpriteKit
 
-class Wall: PieceNode {
+class Coin : PieceNode{
   
   var node: SKSpriteNode!
-
+  
   
   func create(scene: GameScene, piece: Piece) {
     
     //TODO get size and color from piece
-    node = SKSpriteNode(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), size: CGSize(width: 40.0, height: 40.0))
+    node = SKSpriteNode(color: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), size: CGSize(width: 40.0, height: 40.0))
     
     let yPos = piece.getY() + scene.frame.height/2 - scene.movingNode.position.y
     
@@ -19,4 +19,6 @@ class Wall: PieceNode {
     scene.movingNode.addChild(node)
     
   }
+  
+  
 }

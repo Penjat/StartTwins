@@ -72,9 +72,22 @@ class PieceFactory{
   }
   private func createPiece(scene:GameScene,piece:Piece){
    
-    let pieceNode = Wall()
+    let pieceNode = getPieceFor(type: piece.type)
     pieceNode.create(scene: scene, piece:piece )
   }
+  
+  func getPieceFor(type:Int)->PieceNode{
+    
+    switch (type){
+    case 0:
+      return Wall()
+    case 1:
+      return Coin()
+    default:
+      return Wall()
+    }
+  }
+  
   func getSection()-> Section?{
     return level!.sections.filter("orderID == %@",sectionNumber).first
   }

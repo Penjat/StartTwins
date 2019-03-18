@@ -39,14 +39,14 @@ class LevelCreator{
       
       sec1.add(segment: sec1_seg2)
       
-      let piece2 = Piece()
-      piece2.height = 1
-      piece2.width = 1
-      piece2.x = 2
-      piece2.y = 0
-      piece2.type = 1
+      let sec1_seg1_piece2 = Piece()
+      sec1_seg1_piece2.height = 1
+      sec1_seg1_piece2.width = 1
+      sec1_seg1_piece2.x = 2
+      sec1_seg1_piece2.y = 0
+      sec1_seg1_piece2.type = 0
       
-      sec1_seg2.add(piece: piece2)
+      sec1_seg2.add(piece: sec1_seg1_piece2)
       
       let piece3 = Piece()
       piece3.height = 1
@@ -75,6 +75,7 @@ class LevelCreator{
       piece4.x = 5
       piece4.y = 0
       piece4.type = 1
+      piece4.color = 1
       
       sec2_seg2.add(piece: piece4)
    

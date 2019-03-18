@@ -28,6 +28,7 @@
 		0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC043223EDD88003E84EF /* PieceNode.swift */; };
 		0B7AC046223EE811003E84EF /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC045223EE811003E84EF /* Wall.swift */; };
 		0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC047223EF7FC003E84EF /* StaticHelper.swift */; };
+		0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC049223F1FD5003E84EF /* Coin.swift */; };
 		303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */; };
 		F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		0B7AC043223EDD88003E84EF /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
 		0B7AC045223EE811003E84EF /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		0B7AC047223EF7FC003E84EF /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
+		0B7AC049223F1FD5003E84EF /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				0B7AC043223EDD88003E84EF /* PieceNode.swift */,
 				0B7AC045223EE811003E84EF /* Wall.swift */,
+				0B7AC049223F1FD5003E84EF /* Coin.swift */,
 			);
 			path = Pieces;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				0B2F8748223D8AA8001D50E6 /* PlayerPiece.swift in Sources */,
 				0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */,
 				0B08D2D7223DD43C006942A0 /* PieceFactory.swift in Sources */,
+				0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
