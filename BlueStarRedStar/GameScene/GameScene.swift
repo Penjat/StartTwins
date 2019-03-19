@@ -15,6 +15,10 @@ class GameScene: SKScene {
   var staticNode = SKNode()
   var movingNode = SKNode()
   
+  var isPlaying = false
+  
+  var curMenu : UIView?
+  
   
   override func didMove(to view: SKView) {
     StaticHelper.setRatio(scene: self)
@@ -30,7 +34,7 @@ class GameScene: SKScene {
     
     
     
-    
+    isPlaying = true
   }
   
   
