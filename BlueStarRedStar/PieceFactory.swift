@@ -14,6 +14,8 @@ class PieceFactory{
   var curSection : Section?
   var segments : [Segment]?
   
+  var pieceList = [PieceNode]()
+  
   init() {
     levelManager.setUp()
     
@@ -22,8 +24,12 @@ class PieceFactory{
   func startGame(scene:GameScene){
     //get a level
     //set everything to 0
+    
+    clearPieceList()
     levelNum = 0
     sectionNumber = 0
+    distNextSegment = 0
+    distNextSection = 0
     
     level = levelManager.getLevel()
     
@@ -34,6 +40,13 @@ class PieceFactory{
     }
     
   }
+  func clearPieceList(){
+    for piece in pieceList{
+      piece.removeFromParent()
+    }
+    pieceList.removeAll()
+  }
+  
   
   func setCur(section:Section,scene:GameScene){
     
@@ -74,12 +87,15 @@ class PieceFactory{
   
     //TODO add to a piece list
     switch (piece.type){
-    case 0:
-       Wall.create(scene: scene, piece: piece)
-    case 1:
-      Coin.create(scene: scene, piece: piece)
+    case PieceType.Wall.rawValue:
+       let wall = Wall.create(scene: scene, piece: piece)
+      pieceList.append(wall)
+    case PieceType.Coin.rawValue:
+      let coin = Coin.create(scene: scene, piece: piece)
+      pieceList.append(coin)
     default:
-      Wall.create(scene: scene, piece: piece)
+      let wall = Wall.create(scene: scene, piece: piece)
+      pieceList.append(wall)
     }
   }
   
@@ -137,5 +153,9 @@ class PieceFactory{
     if checkShouldChangeSection(movingNode: scene.movingNode){
       
     }
+  }
+  
+  func restart(){
+    
   }
 }

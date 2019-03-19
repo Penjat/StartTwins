@@ -12,9 +12,7 @@ class PlayerMaster {
   
   init(scene:GameScene){
     
-    addLife(scene: scene)
-    addLife(scene: scene)
-    addLife(scene: scene)
+    
     
     
     scoreLabel = SKLabelNode(text: "0")
@@ -53,6 +51,15 @@ class PlayerMaster {
     playerRed.pieceColor = .Red
     
     scene.addChild(playerRed)
+    
+    startGame(scene: scene)
+  }
+  func startGame(scene:GameScene){
+    addLife(scene: scene)
+    addLife(scene: scene)
+    addLife(scene: scene)
+    score = 0
+    scoreLabel.text = "\(score)"
     
   }
   
@@ -105,11 +112,16 @@ class PlayerMaster {
     scoreLabel.text = "\(score)"
   }
   func takeDamage(){
-    lives.removeLast()
-    if lives.count == 0{
-      //TODO trigger game over
-      print("game over")
+    if lives.count > 0 {
+      let life = lives.removeLast()
+      life.removeFromParent()
     }
+    
+  }
+  func checkGameOver()->Bool{
+    return lives.count == 0 
+      
+  
   }
   
   func addLife(scene:GameScene){
