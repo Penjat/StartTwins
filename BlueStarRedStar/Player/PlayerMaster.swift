@@ -52,7 +52,7 @@ class PlayerMaster {
     
     scene.addChild(playerRed)
     
-    startGame(scene: scene)
+    //startGame(scene: scene)
   }
   func startGame(scene:GameScene){
     addLife(scene: scene)

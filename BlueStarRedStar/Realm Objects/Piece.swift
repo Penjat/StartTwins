@@ -17,4 +17,15 @@ class Piece : Object{
   func getY()->CGFloat{
     return CGFloat(y)*StaticHelper.widthRatio
   }
+  
+  static func create(type:Int,x:Int,y:Int,width:Int,height:Int,color:Int)->Piece{
+    let piece = Piece()
+    piece.height = height
+    piece.width = width
+    piece.x = x
+    piece.y = y
+    piece.type = type
+    piece.color = color
+    return piece
+  }
 }

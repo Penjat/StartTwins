@@ -4,6 +4,24 @@ import SpriteKit
 
 extension GameScene{
   
+  func startGame() {
+    
+    //remove any menus
+    if let curMenu = curMenu{
+      curMenu.removeFromSuperview()
+    }
+    
+    //start creating pieces
+    pieceFactory.startGame(scene:self)
+    
+    //move the moving node
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -150.0, duration: 1))
+    movingNode.run(movingNodeMove)
+    player.startGame(scene: self)
+    isPlaying = true
+  }
+  
+  
   func gameOver(){
     //TODO show menu
     movingNode.removeAllActions()

@@ -3,10 +3,43 @@
 import SpriteKit
 
 extension GameScene : MenuDelegate{
+
+  
+  func toHighScores() {
+    
+    if let curMenu = curMenu{
+      curMenu.removeFromSuperview()
+    }
+    
+    let highScoreView = MenuHighScoresView(frame: view!.frame)
+    let scores = HighScoreManager.getHighScores()
+    highScoreView.setUp(scores: scores)
+    
+    view!.addSubview(highScoreView)
+    highScoreView.delegate = self
+    curMenu = highScoreView
+  }
+  
+  func toTitle(){
+    if let curMenu = curMenu{
+      curMenu.removeFromSuperview()
+    }
+    //TODO could add bool if it is first time
+    let titleView = MenuTitleView(frame: view!.frame)
+    view!.addSubview(titleView)
+    titleView.delegate = self
+    curMenu = titleView
+  }
+  
+  func toStartGame() {
+    //startGame and toStartGame are separet in case we decide to add any animations when starting from the title screen
+    startGame()
+  }
+  
   func enterHighScore(name: String) {
     //TODO save score and go to game over menu
     HighScoreManager.saveHigh(score: player.score, playerName: name)
-    restart()
+    toTitle()
   }
   
   func restart() {

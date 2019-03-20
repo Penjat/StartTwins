@@ -1,11 +1,11 @@
 
 
-import Foundation
 import RealmSwift
 
-class LevelCreator{
+extension LevelCreator{
   
-  static func createLevels(realm:Realm){
+  static func createLevel1(realm:Realm){
+    
     try! realm.write {
       let level = Level()
       level.name = "level 1"
@@ -23,15 +23,10 @@ class LevelCreator{
       
       sec1.add(segment: sec1_seg1)
       
-      let sec1_seg1_piece1 = Piece()
-      sec1_seg1_piece1.height = 1
-      sec1_seg1_piece1.width = 1
-      sec1_seg1_piece1.x = 3
-      sec1_seg1_piece1.y = 0
-      sec1_seg1_piece1.type = PieceType.Coin.rawValue
-      sec1_seg1_piece1.color = 1
-      
-      sec1_seg1.add(piece: sec1_seg1_piece1)
+
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:0, width: 1, height: 1, color: 1))
+   
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:0, width: 1, height: 1, color: 2))
       
       
       //section 1 segment 2
@@ -40,15 +35,7 @@ class LevelCreator{
       
       sec1.add(segment: sec1_seg2)
       
-      let sec1_seg1_piece2 = Piece()
-      sec1_seg1_piece2.height = 1
-      sec1_seg1_piece2.width = 1
-      sec1_seg1_piece2.x = -3
-      sec1_seg1_piece2.y = 0
-      sec1_seg1_piece2.type = PieceType.Coin.rawValue
-      sec1_seg1_piece2.color = 2
       
-      sec1_seg1.add(piece: sec1_seg1_piece2)
       
       let piece3 = Piece()
       piece3.height = 1
@@ -81,7 +68,7 @@ class LevelCreator{
       
       
       sec2_seg2.add(piece: piece4)
-   
+      
       
       
       realm.add(level)

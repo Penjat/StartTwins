@@ -2,11 +2,13 @@
 
 import UIKit
 
-class MenuGameOverView: UIView {
+class HighScoreView: UIView {
+  
   @IBOutlet var contentView: UIView!
+  @IBOutlet weak var scoreLabel: UILabel!
+  @IBOutlet weak var nameLabel: UILabel!
   
   var delegate : MenuDelegate?
-  
   override init(frame: CGRect) {
     super.init(frame: frame)
     commonInit()
@@ -18,25 +20,13 @@ class MenuGameOverView: UIView {
   }
   
   private func commonInit(){
-    Bundle.main.loadNibNamed("MenuGameOver", owner: self, options: nil)
+    Bundle.main.loadNibNamed("HighScore", owner: self, options: nil)
     addSubview(contentView)
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
   }
-
-  @IBAction func restartPressed(_ sender: Any) {
-    if let delegate = delegate{
-      delegate.restart()
-    }else{
-      print("no delegate set")
-    }
-    
-  }
-  @IBAction func pressedTitle(_ sender: Any) {
-    if let delegate = delegate{
-      delegate.toTitle()
-    }else{
-      print("no delegate set")
-    }
+  func setUp(highScore:HighScore){
+    scoreLabel.text = "\(highScore.score)"
+    nameLabel.text = "\(highScore.playerName)"
   }
 }

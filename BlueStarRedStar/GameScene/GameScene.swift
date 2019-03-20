@@ -25,16 +25,14 @@ class GameScene: SKScene {
     physicsWorld.contactDelegate = self
     self.addChild(staticNode)
     staticNode.addChild(movingNode)
-    
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -150.0, duration: 1))
-    movingNode.run(movingNodeMove)
-    
+
     player = PlayerMaster(scene: self)
-    pieceFactory.startGame(scene:self)
     
     
     
-    isPlaying = true
+    toTitle()
+    
+    //startGame()
   }
   
   

@@ -30,4 +30,11 @@ class HighScoreManager{
   static func removeExtraScores(){
     //TODO remove the extras
   }
+  
+  static func getHighScores()->[HighScore]{
+    let realm = try! Realm()
+    let highScores = realm.objects(HighScore.self)
+    
+    return highScores.map{$0}
+  }
 }
