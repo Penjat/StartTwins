@@ -8,13 +8,31 @@ extension GameScene{
     //TODO show menu
     movingNode.removeAllActions()
     isPlaying = false
-    let gameOverView = MenuGameOverView(frame: (view?.frame)!)
-    view?.addSubview(gameOverView)
-    gameOverView.delegate = self
     
     if let curMenu = curMenu{
       curMenu.removeFromSuperview()
     }
-    curMenu = gameOverView
+    
+    if HighScoreManager.checkHigh(score: player.score){
+      
+      print("new high score")
+      let newHighScoreView = NewHighScoreView(frame: (view?.frame)!)
+      view?.addSubview(newHighScoreView)
+      newHighScoreView.delegate = self
+      
+      
+      curMenu = newHighScoreView
+      
+    }else{
+      print("you didn't get a high score")
+      let gameOverView = MenuGameOverView(frame: (view?.frame)!)
+      view?.addSubview(gameOverView)
+      gameOverView.delegate = self
+      
+      
+      curMenu = gameOverView
+      
+    }
+
   }
 }
