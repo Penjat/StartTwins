@@ -7,7 +7,12 @@ class NewHighScoreView: UIView {
   @IBOutlet var contentView: UIView!
   var delegate : MenuDelegate?
   
-  override init(frame: CGRect) {
+  @IBOutlet weak var textFieldPlayerName: UITextField!
+  
+  @IBOutlet weak var score: UILabel!
+  @IBOutlet weak var placeLabel: UILabel!
+
+    override init(frame: CGRect) {
     super.init(frame: frame)
     commonInit()
   }
@@ -23,5 +28,12 @@ class NewHighScoreView: UIView {
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
   }
-
+  @IBAction func pressedDone(_ sender: Any) {
+    if let delegate = delegate{
+      delegate.enterHighScore(name: textFieldPlayerName.text!)
+    }else{
+      print("no delegate set")
+    }
+  }
+  
 }
