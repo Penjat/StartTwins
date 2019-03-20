@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-6K-Yh6">
-                    <rect key="frame" x="131.5" y="52" width="112" height="21"/>
+                    <rect key="frame" x="132" y="52" width="111.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.84665006399999998" green="0.13121607730000001" blue="0.1154940854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -33,15 +33,40 @@
                         <action selector="pressedBack:" destination="-1" eventType="touchUpInside" id="M8D-0w-hGl"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-wj-ATz">
+                    <rect key="frame" x="32" y="136.5" width="311" height="498.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvV-fo-XIO" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="99.5"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDs-fv-OBu" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="99.5" width="311" height="100"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpJ-he-Fb7" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="199.5" width="311" height="99.5"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De3-mF-fTm" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="299" width="311" height="100"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1h-eh-6VP" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="399" width="311" height="99.5"/>
+                        </view>
+                    </subviews>
+                </stackView>
             </subviews>
             <constraints>
                 <constraint firstItem="r7L-jZ-lFL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="DxH-oH-fDT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EOm-wj-ATz" secondAttribute="trailing" constant="32" id="Nhf-kr-fQI"/>
                 <constraint firstItem="zzg-6K-Yh6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="h4c-g3-5Zw"/>
                 <constraint firstItem="zzg-6K-Yh6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="idM-wc-vfq"/>
+                <constraint firstItem="EOm-wj-ATz" firstAttribute="top" secondItem="zzg-6K-Yh6" secondAttribute="bottom" constant="64" id="sIn-wD-NCH"/>
+                <constraint firstItem="EOm-wj-ATz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="twU-i7-OcB"/>
                 <constraint firstItem="r7L-jZ-lFL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="vcI-MR-TPn"/>
+                <constraint firstAttribute="bottom" secondItem="EOm-wj-ATz" secondAttribute="bottom" constant="32" id="vfo-sU-Obd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="50.399999999999999" y="79.610194902548727"/>
         </view>
     </objects>
 </document>

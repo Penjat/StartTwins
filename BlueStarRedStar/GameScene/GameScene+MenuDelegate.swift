@@ -11,6 +11,7 @@ extension GameScene : MenuDelegate{
       curMenu.removeFromSuperview()
     }
     let highScoreView = MenuHighScoresView(frame: view!.frame)
+    
     view!.addSubview(highScoreView)
     highScoreView.delegate = self
     curMenu = highScoreView
