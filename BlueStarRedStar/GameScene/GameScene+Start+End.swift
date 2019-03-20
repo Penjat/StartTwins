@@ -16,5 +16,11 @@ extension GameScene{
       curMenu.removeFromSuperview()
     }
     curMenu = gameOverView
+    
+    if HighScoreManager.checkHigh(score: player.score){
+      print("new high score")
+    }else{
+      print("you didn't get a high score")
+    }
   }
 }
