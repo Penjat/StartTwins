@@ -2,10 +2,11 @@
 
 import UIKit
 
-class MenuTitleView: UIView {
+class MenuHighScoresView: UIView {
+
   @IBOutlet var contentView: UIView!
-  
   var delegate : MenuDelegate?
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     commonInit()
@@ -17,24 +18,15 @@ class MenuTitleView: UIView {
   }
   
   private func commonInit(){
-    Bundle.main.loadNibNamed("MenuTitle", owner: self, options: nil)
+    Bundle.main.loadNibNamed("MenuNewHighScore", owner: self, options: nil)
     addSubview(contentView)
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
   }
-  @IBAction func pressedPlay(_ sender: Any) {
+
+  @IBAction func pressedBack(_ sender: Any) {
     if let delegate = delegate{
-      delegate.toStartGame()
-    }else{
-      print("no delegate set")
+      delegate.toTitle()
     }
   }
-  @IBAction func pressedHighScores(_ sender: Any) {
-    if let delegate = delegate{
-      delegate.toHighScores()
-    }else{
-      print("no delegate set")
-    }
-  }
-  
 }
