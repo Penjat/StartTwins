@@ -33,10 +33,6 @@ extension GameScene{
       curMenu = gameOverView
       
     }
-    
-    
-    
-    
-    
+
   }
 }
