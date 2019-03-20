@@ -19,6 +19,7 @@
 		0B172A75224145620003CE03 /* MenuGameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A74224145620003CE03 /* MenuGameOverView.swift */; };
 		0B172A77224189180003CE03 /* MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A76224189180003CE03 /* MenuDelegate.swift */; };
 		0B172A79224189450003CE03 /* GameScene+MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A78224189450003CE03 /* GameScene+MenuDelegate.swift */; };
+		0B172A7B2241D8450003CE03 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A7A2241D8450003CE03 /* HighScore.swift */; };
 		0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F871E223C6F41001D50E6 /* AppDelegate.swift */; };
 		0B2F8721223C6F41001D50E6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F8720223C6F41001D50E6 /* GameScene.sks */; };
 		0B2F8725223C6F41001D50E6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F8724223C6F41001D50E6 /* GameScene.swift */; };
@@ -63,6 +64,7 @@
 		0B172A74224145620003CE03 /* MenuGameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGameOverView.swift; sourceTree = "<group>"; };
 		0B172A76224189180003CE03 /* MenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDelegate.swift; sourceTree = "<group>"; };
 		0B172A78224189450003CE03 /* GameScene+MenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+MenuDelegate.swift"; sourceTree = "<group>"; };
+		0B172A7A2241D8450003CE03 /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		0B2F871B223C6F41001D50E6 /* BlueStarRedStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueStarRedStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2F871E223C6F41001D50E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B2F8720223C6F41001D50E6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				0B08D2CE223DC261006942A0 /* Section.swift */,
 				0B08D2D0223DC2F2006942A0 /* Segment.swift */,
 				0B08D2D2223DC352006942A0 /* Piece.swift */,
+				0B172A7A2241D8450003CE03 /* HighScore.swift */,
 			);
 			path = "Realm Objects";
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */,
 				0B08D2D7223DD43C006942A0 /* PieceFactory.swift in Sources */,
 				0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */,
+				0B172A7B2241D8450003CE03 /* HighScore.swift in Sources */,
 				0B172A75224145620003CE03 /* MenuGameOverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
