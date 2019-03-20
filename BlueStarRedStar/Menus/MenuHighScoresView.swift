@@ -3,7 +3,14 @@
 import UIKit
 
 class MenuHighScoresView: UIView {
-
+  @IBOutlet weak var highScore1: HighScoreView!
+  @IBOutlet weak var highScore2: HighScoreView!
+  @IBOutlet weak var highScore3: HighScoreView!
+  @IBOutlet weak var highScore4: HighScoreView!
+  @IBOutlet weak var highScore5: HighScoreView!
+  
+  
+  
   @IBOutlet var contentView: UIView!
   var delegate : MenuDelegate?
   
@@ -30,7 +37,22 @@ class MenuHighScoresView: UIView {
     }
   }
   
-  func setUp(score:[HighScore]){
+  func setUp(scores:[HighScore]){
+    let highScoreLabels = [highScore1,highScore2,highScore3,highScore4,highScore5]
     
+    for i in 0..<5 {
+      
+      //check if there is a highscore
+      //TODO could put placeholders or msg if none
+      if i < scores.count{
+        let score = scores[i]
+        highScoreLabels[i]?.setUp(highScore: score)
+      }else{
+        //if no highscore yet hide the label
+        highScoreLabels[i]?.isHidden = true
+      }
+      
+      
+    }
   }
 }

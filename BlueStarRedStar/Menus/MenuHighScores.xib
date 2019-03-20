@@ -13,6 +13,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuHighScoresView" customModule="BlueStarRedStar" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="B9R-ng-nVL"/>
+                <outlet property="highScore1" destination="LvV-fo-XIO" id="eyk-Mg-rmd"/>
+                <outlet property="highScore2" destination="hDs-fv-OBu" id="ivY-hd-b0D"/>
+                <outlet property="highScore3" destination="vpJ-he-Fb7" id="Mkc-8A-VyM"/>
+                <outlet property="highScore4" destination="De3-mF-fTm" id="ch4-Ch-ixv"/>
+                <outlet property="highScore5" destination="M1h-eh-6VP" id="Bda-J6-XAI"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -33,7 +38,7 @@
                         <action selector="pressedBack:" destination="-1" eventType="touchUpInside" id="M8D-0w-hGl"/>
                     </connections>
                 </button>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-wj-ATz">
+                <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-wj-ATz">
                     <rect key="frame" x="32" y="136.5" width="311" height="498.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvV-fo-XIO" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">

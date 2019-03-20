@@ -32,4 +32,11 @@ class MenuGameOverView: UIView {
     }
     
   }
+  @IBAction func pressedTitle(_ sender: Any) {
+    if let delegate = delegate{
+      delegate.toTitle()
+    }else{
+      print("no delegate set")
+    }
+  }
 }

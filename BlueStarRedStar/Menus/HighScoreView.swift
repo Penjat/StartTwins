@@ -25,5 +25,8 @@ class HighScoreView: UIView {
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
   }
-
+  func setUp(highScore:HighScore){
+    scoreLabel.text = "\(highScore.score)"
+    nameLabel.text = "\(highScore.playerName)"
+  }
 }
