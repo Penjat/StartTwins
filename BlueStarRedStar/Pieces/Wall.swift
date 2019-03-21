@@ -11,7 +11,7 @@ class Wall: PieceNode {
   static func create(scene: GameScene, piece: Piece) -> PieceNode{
     
     
-    let node = Wall(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    let node = Wall(color: PieceColor.Gray.getColor(), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     
     let yPos = piece.getY() + scene.frame.height/2 - scene.movingNode.position.y
     

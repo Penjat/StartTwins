@@ -81,20 +81,27 @@ class PlayerMaster {
 
 
     case (_,PieceType.Wall.toString()):
-      print("player hit a wall should take damage")
+      //print("player hit a wall should take damage")
       takeDamage()
       break
 
     case (PieceType.Player.toString(), PieceType.Coin.toString() ):
-
-      print("check the points")
+      
+      //if it is a player and a coin
       if let coin = other.node as? Coin , let playerPiece = playerPiece.node as? PlayerPiece{
-        if coin.pieceColor == playerPiece.pieceColor{
+        
+        //if purple, get points no matter what
+        if coin.pieceColor == PieceColor.White{
           coin.pickedUp()
           add(points: coin.points)
-          print("should get points")
+          
+          //else, check if the correct player piece picked it up
+        }else if coin.pieceColor == playerPiece.pieceColor{
+          coin.pickedUp()
+          add(points: coin.points)
+          
+          
         }else{
-          print("no points")
           
           //TODO decide if wrong color points cause dmg
           //takeDamage()
