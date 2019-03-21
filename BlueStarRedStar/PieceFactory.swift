@@ -51,7 +51,7 @@ class PieceFactory{
   func setCur(section:Section,scene:GameScene){
     
     curSection = section
-    distNextSection = scene.movingNode.position.y - CGFloat(curSection!.distance)
+    distNextSection = scene.movingNode.position.y - curSection!.getDistance()
     segments = curSection?.segments.map{$0}
     
   }
