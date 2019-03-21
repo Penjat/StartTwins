@@ -15,7 +15,7 @@ extension GameScene{
     pieceFactory.startGame(scene:self)
     
     //move the moving node
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -150.0, duration: 1))
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -250.0, duration: 1))
     movingNode.run(movingNodeMove)
     player.startGame(scene: self)
     isPlaying = true
