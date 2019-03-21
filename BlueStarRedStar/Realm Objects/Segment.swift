@@ -10,4 +10,8 @@ class Segment : Object{
   func add(piece:Piece){
     pieces.append(piece)
   }
+  func getHeight()->CGFloat{
+    
+    return CGFloat(height)*StaticHelper.widthRatio
+  }
 }
