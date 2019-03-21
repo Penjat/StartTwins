@@ -19,25 +19,41 @@ extension LevelCreator{
       
       //---------------section 1 segment 1
       let sec1_seg1 = Segment()
-      sec1_seg1.height = 8
+      sec1_seg1.height = 16
       sec1.add(segment: sec1_seg1)
       
 
-      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:0, width: 1, height: 1, color: 1))
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:0, width: 2, height: 2, color: 1))
    
-      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:0, width: 1, height: 1, color: 2))
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:0, width: 2, height: 2, color: 2))
       
-      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:4, width: 1, height: 1, color: 2))
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:8, width: 2, height: 2, color: 2))
       
-      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:4, width: 1, height: 1, color: 1))
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:8, width: 2, height: 2, color: 1))
       
       
       //---------------section 1 segment 2
       let sec1_seg2 = Segment()
-      sec1_seg2.height = 4
+      sec1_seg2.height = 5
       sec1.add(segment: sec1_seg2)
       
-      sec1_seg2.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 0, y:0, width: 8, height: 2, color: 1))
+      sec1_seg2.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 0, y:0, width: 12, height: 2, color: 1))
+      
+      //---------------section 1 segment 3
+      let sec1_seg3 = Segment()
+      sec1_seg3.height = 5
+      sec1.add(segment: sec1_seg3)
+      
+      sec1_seg3.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 4, y:0, width: 3, height: 1, color: 1))
+      sec1_seg3.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: -4, y:0, width: 3, height: 1, color: 1))
+      
+      //---------------section 1 segment 4
+      let sec1_seg4 = Segment()
+      sec1_seg4.height = 5
+      sec1.add(segment: sec1_seg4)
+      
+      sec1_seg4.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 13, y:0, width: 6, height: 1, color: 1))
+      sec1_seg4.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: -13, y:0, width: 6, height: 1, color: 1))
       
 //      //section 1 segment 2
 //      let sec1_seg2 = Segment()

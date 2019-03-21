@@ -28,6 +28,7 @@ class Coin : PieceNode{
     node.physicsBody?.categoryBitMask = 1
     node.physicsBody?.isDynamic = true
     node.name = PieceType.Coin.toString()
+  
     return node
   }
   

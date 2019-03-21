@@ -32,6 +32,7 @@ class Piece : Object{
     piece.y = y
     piece.type = type
     piece.color = color
+  
     return piece
   }
 }
