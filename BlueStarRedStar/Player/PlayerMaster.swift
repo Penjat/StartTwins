@@ -4,16 +4,22 @@ import SpriteKit
 
 class PlayerMaster {
   
+  var delegate : PlayerDelegate!
+  
+  var isFlashing = false
+  
   var playerBlue : PlayerPiece!
   var playerRed : PlayerPiece!
   var scoreLabel : SKLabelNode!
   var lives = [SKLabelNode]()
   var score = 0
+  var playerRedColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+  var playerBlueColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
   
   init(scene:GameScene){
     
     
-    
+    delegate = scene
     
     scoreLabel = SKLabelNode(text: "0")
     
@@ -24,7 +30,7 @@ class PlayerMaster {
     scene.staticNode.addChild(scoreLabel)
     
     
-    playerBlue = PlayerPiece.init(texture: nil, color: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), size: CGSize(width: 20.0, height: 20.0))
+    playerBlue = PlayerPiece.init(texture: nil, color: playerBlueColor, size: CGSize(width: 20.0, height: 20.0))
 
     playerBlue.position = CGPoint(x:40.0,y:0.0)
 
@@ -38,7 +44,7 @@ class PlayerMaster {
     scene.addChild(playerBlue)
     
     
-    playerRed = PlayerPiece.init(texture: nil, color: #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), size: CGSize(width: 20.0, height: 20.0))
+    playerRed = PlayerPiece.init(texture: nil, color: playerRedColor, size: CGSize(width: 20.0, height: 20.0))
     
     playerRed.position = CGPoint(x:-40.0,y:0.0)
     
@@ -112,10 +118,37 @@ class PlayerMaster {
     scoreLabel.text = "\(score)"
   }
   func takeDamage(){
+    
+    //dont take dmg if still recovering
+    if isFlashing{
+      return
+    }
     if lives.count > 0 {
       let life = lives.removeLast()
       life.removeFromParent()
     }
+    delegate.shakeScreen()
+    startFlashing()
+    
+  }
+  func startFlashing(){
+    isFlashing = true
+    let flashActionRed1 = SKAction.run({self.playerRed.color = UIColor.white})
+    let waitRed = SKAction.wait(forDuration: 0.1)
+    let flashActionRed2 = SKAction.run({self.playerRed.color = self.playerRedColor})
+    let flashLoopRed =  SKAction.repeat(SKAction.sequence([flashActionRed1,waitRed,flashActionRed2,waitRed]), count: 10)
+    self.playerRed.run(flashLoopRed ,completion: {
+      self.isFlashing = false
+    })
+    
+    let flashActionBlue1 = SKAction.run({self.playerBlue.color = UIColor.white})
+    let waitBlue = SKAction.wait(forDuration: 0.1)
+    let flashActionBlue2 = SKAction.run({self.playerBlue.color = self.playerBlueColor})
+    let flashLoopBlue =  SKAction.repeat(SKAction.sequence([flashActionBlue1,waitBlue,flashActionBlue2,waitBlue]), count: 10)
+    self.playerBlue.run(flashLoopBlue ,completion: {
+      
+    })
+    
     
   }
   func checkGameOver()->Bool{
