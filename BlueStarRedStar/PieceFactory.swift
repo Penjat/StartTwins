@@ -160,7 +160,18 @@ class PieceFactory{
     }
   }
   
-  func restart(){
+  func checkShouldClear(scene:GameScene){
     
+    //check if there are pieces
+    if pieceList.count > 0 {
+      //only check the first piece
+      let piece = pieceList[0]
+      
+      if piece.position.y + scene.movingNode.position.y < -(scene.frame.height+100)/2 {
+        piece.removeFromParent()
+        pieceList.remove(at: 0)
+
+      }
+    }
   }
 }

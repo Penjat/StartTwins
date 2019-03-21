@@ -27,9 +27,9 @@ extension LevelCreator{
    
       sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:0, width: 2, height: 2, color: 2))
       
-      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:8, width: 2, height: 2, color: 2))
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:8, width: 2, height: 2, color: 3))
       
-      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:8, width: 2, height: 2, color: 1))
+      sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:8, width: 2, height: 2, color: 3))
       
       
       //---------------section 1 segment 2

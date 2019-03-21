@@ -2,8 +2,7 @@
 
 import SpriteKit
 
-
-extension GameScene {
+extension GameScene : PlayerDelegate{
   func shakeScreen(){
     //TODO could pass in shake level
     
@@ -24,4 +23,6 @@ extension GameScene {
     staticNode.run(actionSeq);
     
   }
+  
+  
 }
