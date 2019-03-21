@@ -40,6 +40,6 @@ class GameScene: SKScene {
   override func update(_ currentTime: TimeInterval) {
     
     pieceFactory.checkShouldChange(scene: self)
-    
+    pieceFactory.checkShouldClear(scene: self)
   }
 }
