@@ -6,12 +6,17 @@ import RealmSwift
 class LevelManager{
   
   let realm = try! Realm()
-  
+  let startClean = true//for debugging, when true deletes all data on
   
   func setUp(){
     
+    //for debugging level creator
+    if startClean {
+      deleteAllData()
+    }
     
     let levels: Results<Level> = { realm.objects(Level.self) }()
+    
     if levels.count == 0{
       print("No levels yet created")
       LevelCreator.createLevels(realm: realm)
@@ -36,6 +41,11 @@ class LevelManager{
       }
     }
     return level!
+  }
+  func deleteAllData(){
+    try! realm.write {
+      realm.deleteAll()
+    }
   }
 }
 

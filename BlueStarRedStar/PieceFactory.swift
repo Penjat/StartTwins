@@ -80,8 +80,13 @@ class PieceFactory{
     }
     
     
-    //TODO calculate properly with segment
-    distNextSegment = scene.movingNode.position.y - 200
+    if let segment = segment{
+      distNextSegment = scene.movingNode.position.y - segment.getHeight()
+    }else{
+      print("error unwrapping segment")
+      distNextSegment = scene.movingNode.position.y - 50
+    }
+    
   }
   private func createPiece(scene:GameScene,piece:Piece){
   
