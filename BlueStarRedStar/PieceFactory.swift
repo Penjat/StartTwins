@@ -170,8 +170,7 @@ class PieceFactory{
       if piece.position.y + scene.movingNode.position.y < -(scene.frame.height+100)/2 {
         piece.removeFromParent()
         pieceList.remove(at: 0)
-        print("removing piece")
-        
+
       }
     }
   }

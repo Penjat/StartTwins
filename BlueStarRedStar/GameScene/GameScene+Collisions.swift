@@ -10,7 +10,7 @@ extension GameScene : SKPhysicsContactDelegate{
       return
     }
     
-    print("contact happened ")
+    
     
     //check collision involving player
     if contact.bodyA.node?.name == PieceType.Player.toString(){
@@ -30,7 +30,7 @@ extension GameScene : SKPhysicsContactDelegate{
       }
       
     }else{
-      print("player not involved \(contact.bodyA.categoryBitMask) , \(contact.bodyB.categoryBitMask)")
+     //contact not involving player
     }
   }
   
