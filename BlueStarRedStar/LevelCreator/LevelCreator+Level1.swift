@@ -10,17 +10,16 @@ extension LevelCreator{
       let level = Level()
       level.name = "level 1"
       
-      //section 1
+      //---------------------------section 1---------------------------
       let sec1 = Section()
       sec1.distance = 700
       sec1.speed = 30
       
       level.add(section: sec1)
       
-      //section 1 segment 1
+      //---------------section 1 segment 1
       let sec1_seg1 = Segment()
       sec1_seg1.height = 8
-      
       sec1.add(segment: sec1_seg1)
       
 
@@ -31,6 +30,14 @@ extension LevelCreator{
       sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:4, width: 1, height: 1, color: 2))
       
       sec1_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:4, width: 1, height: 1, color: 1))
+      
+      
+      //---------------section 1 segment 2
+      let sec1_seg2 = Segment()
+      sec1_seg2.height = 4
+      sec1.add(segment: sec1_seg2)
+      
+      sec1_seg2.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 0, y:0, width: 8, height: 2, color: 1))
       
 //      //section 1 segment 2
 //      let sec1_seg2 = Segment()

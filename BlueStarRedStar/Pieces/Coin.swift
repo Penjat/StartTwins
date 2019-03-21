@@ -13,7 +13,7 @@ class Coin : PieceNode{
     
     let pieceColor = PieceColor.getPieceColor(num: piece.color)
     
-    let node = Coin(color: pieceColor.getColor(), size: CGSize(width: 40.0, height: 40.0))
+    let node = Coin(color: pieceColor.getColor(), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.pieceColor = pieceColor
     
     let yPos = piece.getY() + scene.frame.height/2 - scene.movingNode.position.y
@@ -21,8 +21,8 @@ class Coin : PieceNode{
     node.position = CGPoint(x: piece.getX(), y: yPos)
     scene.movingNode.addChild(node)
     
-    //TODO get size and color from piece
-    node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width:40.0,height:40.0))
+    
+    node.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width:piece.getWidth(),height:piece.getHeight()))
     node.physicsBody?.collisionBitMask = 0
     node.physicsBody?.contactTestBitMask = 1
     node.physicsBody?.categoryBitMask = 1
