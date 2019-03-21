@@ -12,7 +12,7 @@ extension LevelCreator{
       
       //---------------------------section 1---------------------------
       let sec1 = Section()
-      sec1.distance = 700
+      sec1.distance = 200
       sec1.speed = 30
       
       level.add(section: sec1)
@@ -54,6 +54,140 @@ extension LevelCreator{
       
       sec1_seg4.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 13, y:0, width: 6, height: 1, color: 1))
       sec1_seg4.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: -13, y:0, width: 6, height: 1, color: 1))
+      
+      
+      
+      //---------------------------section 2---------------------------
+      let sec2 = Section()
+      sec2.distance = 200
+      sec2.speed = 30
+      
+      level.add(section: sec2)
+      
+      
+      //---section 2 segment 1
+      let sec2_seg1 = Segment()
+      sec2_seg1.height = 24
+      sec2.add(segment: sec2_seg1)
+
+
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:0, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:0, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:2, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:2, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:4, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:4, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 4, y:6, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -4, y:6, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 5, y:8, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -5, y:8, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 6, y:10, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -6, y:10, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 5, y:12, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -5, y:12, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 4, y:14, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -4, y:14, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:16, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:16, width: 2, height: 2, color: 2))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:18, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:18, width: 2, height: 2, color: 2))
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:20, width: 2, height: 2, color: 1))
+
+      sec2_seg1.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:20, width: 2, height: 2, color: 2))
+      
+      //---section 2 segment 2
+      let sec2_seg2 = Segment()
+      sec2_seg2.height = 24
+      sec2.add(segment: sec2_seg2)
+      
+      
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:0, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:0, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:2, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:2, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:4, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:4, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 4, y:6, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -4, y:6, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 5, y:8, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -5, y:8, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 6, y:10, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -6, y:10, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 5, y:12, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -5, y:12, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 4, y:14, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -4, y:14, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 3, y:16, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -3, y:16, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:18, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -2, y:18, width: 2, height: 2, color: 1))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:20, width: 2, height: 2, color: 2))
+      
+      sec2_seg2.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:20, width: 2, height: 2, color: 2))
+      
+      //---section 2 segment 2
+      let sec2_seg3 = Segment()
+      sec2_seg3.height = 14
+      sec2.add(segment: sec2_seg3)
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 0, y:5, width: 1, height: 10, color: 2))
+      
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 4, y:0, width: 2, height: 2, color: 2))
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 6, y:4, width: 2, height: 2, color: 2))
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 2, y:8, width: 2, height: 2, color: 2))
+      
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -8, y:2, width: 2, height: 2, color: 1))
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -8, y:6, width: 2, height: 2, color: 1))
+      
+      sec2_seg3.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -4, y:10, width: 2, height: 2, color: 1))
+      
+      
       
 //      //section 1 segment 2
 //      let sec1_seg2 = Segment()

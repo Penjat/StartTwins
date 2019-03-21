@@ -12,4 +12,8 @@ class Section : Object{
   func add(segment:Segment){
     segments.append(segment)
   }
+  func getDistance()->CGFloat{
+    
+    return CGFloat(distance)*StaticHelper.widthRatio
+  }
 }
