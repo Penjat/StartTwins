@@ -66,7 +66,7 @@ class PlayerMaster {
     addLife(scene: scene)
     score = 0
     scoreLabel.text = "\(score)"
-    playerRed.createTail(movingNode: delegate.getMovingNode())
+    
   }
   
   func moveTo(pos:CGPoint){
@@ -173,7 +173,16 @@ class PlayerMaster {
     lives.append(life)
     scene.staticNode.addChild(life)
   }
+  
   func update(_ currentTime: TimeInterval){
+    let movingNodePos = delegate.getMovingNode().position.y
     
+    //TODO posibly only need to check one
+    if playerRed.checkTail(movingNodePos){
+      playerRed.createTail(movingNode: delegate.getMovingNode())
+    }
+    if playerBlue.checkTail(movingNodePos){
+      playerBlue.createTail(movingNode: delegate.getMovingNode())
+    }
   }
 }

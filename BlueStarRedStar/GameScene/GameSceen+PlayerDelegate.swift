@@ -27,6 +27,10 @@ extension GameScene : PlayerDelegate{
     staticNode.run(actionSeq);
     
   }
+  func getScreenEdge() -> CGFloat{
+    //TODO take out +100
+    return ((frame.height+100)/2.0)
+  }
   
   
 }

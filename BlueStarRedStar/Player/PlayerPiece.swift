@@ -3,14 +3,25 @@
 import UIKit
 import SpriteKit
 
-class PlayerPiece: SKSpriteNode {
+class PlayerPiece : SKSpriteNode {
   var pieceColor : PieceColor!
-  var lastTailPiece : SKSpriteNode?
-  let tailSpacing = 100.0
+  var lastTailPiece : TailPiece?
+  let tailSpacing : CGFloat = 100.0
+  let tailPieces = [TailPiece]()
   
-  func checkTail() -> Bool{
+  func checkTail(_ moveNodeYPos:CGFloat) -> Bool{
     //check if should create a tail
-    return false
+    
+    if let lastTailPiece = lastTailPiece{
+      
+      let dx = position.x - lastTailPiece.position.x
+      let dy = position.y - lastTailPiece.position.y - moveNodeYPos
+      let dist = sqrt(dx * dx + dy * dy);
+      if dist < tailSpacing{
+        return false
+      }
+    }
+    return true
   }
   
   func createTail(movingNode:SKNode){
@@ -19,8 +30,15 @@ class PlayerPiece: SKSpriteNode {
     let x = self.position.x
     let y = self.position.y - movingNode.position.y
     tailPiece.position = CGPoint(x:x,y:y)
+    lastTailPiece = tailPiece
     movingNode.addChild(tailPiece)
     //TODO keep track of tailPieces
+  }
+  func checkRemoveTail(playerDelegate:PlayerDelegate){
+    
+    if tailPieces.count > 0 {
+      tailPieces[0].checkShouldRemove(playerDelegate:PlayerDelegate)
+    }
   }
 }
 

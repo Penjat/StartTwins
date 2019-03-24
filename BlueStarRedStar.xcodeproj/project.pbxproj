@@ -237,10 +237,10 @@
 		0B2F874B223D90F5001D50E6 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				0B2F8747223D8AA8001D50E6 /* PlayerPiece.swift */,
 				0B2F8749223D8DC9001D50E6 /* PlayerMaster.swift */,
-				0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */,
+				0B2F8747223D8AA8001D50E6 /* PlayerPiece.swift */,
 				0BB390BE2247F1B6009F08B1 /* TailPiece.swift */,
+				0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
