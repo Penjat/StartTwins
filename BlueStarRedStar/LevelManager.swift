@@ -6,7 +6,7 @@ import RealmSwift
 class LevelManager{
   
   let realm = try! Realm()
-  let startClean = true//for debugging, when true deletes all data on
+  let startClean = true//for debugging, when true deletes all data on device
   
   func setUp(){
     

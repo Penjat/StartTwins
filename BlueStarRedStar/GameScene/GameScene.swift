@@ -27,19 +27,15 @@ class GameScene: SKScene {
     staticNode.addChild(movingNode)
 
     player = PlayerMaster(scene: self)
-    
-    
-    
+
     toTitle()
-    
-    //startGame()
+
   }
-  
-  
-  
+
   override func update(_ currentTime: TimeInterval) {
     
     pieceFactory.checkShouldChange(scene: self)
     pieceFactory.checkShouldClear(scene: self)
+    player.update(currentTime)
   }
 }

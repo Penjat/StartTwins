@@ -49,6 +49,7 @@
 		0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC049223F1FD5003E84EF /* Coin.swift */; };
 		0B7AC04C223F25A4003E84EF /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04B223F25A4003E84EF /* GameScene+Collisions.swift */; };
 		0B7AC04E223F266C003E84EF /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
+		0BB390BF2247F1B6009F08B1 /* TailPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB390BE2247F1B6009F08B1 /* TailPiece.swift */; };
 		303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */; };
 		F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +111,7 @@
 		0B7AC049223F1FD5003E84EF /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		0B7AC04B223F25A4003E84EF /* GameScene+Collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Collisions.swift"; sourceTree = "<group>"; };
 		0B7AC04D223F266C003E84EF /* CollisionCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategories.swift; sourceTree = "<group>"; };
+		0BB390BE2247F1B6009F08B1 /* TailPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailPiece.swift; sourceTree = "<group>"; };
 		2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,8 +237,9 @@
 		0B2F874B223D90F5001D50E6 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				0B2F8747223D8AA8001D50E6 /* PlayerPiece.swift */,
 				0B2F8749223D8DC9001D50E6 /* PlayerMaster.swift */,
+				0B2F8747223D8AA8001D50E6 /* PlayerPiece.swift */,
+				0BB390BE2247F1B6009F08B1 /* TailPiece.swift */,
 				0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */,
 			);
 			path = Player;
@@ -475,6 +478,7 @@
 				0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */,
 				0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */,
 				0B172A812241E57B0003CE03 /* NewHighScoreView.swift in Sources */,
+				0BB390BF2247F1B6009F08B1 /* TailPiece.swift in Sources */,
 				0B172A702241423C0003CE03 /* GameScene+Start+End.swift in Sources */,
 				0B2F8745223C7321001D50E6 /* GameScene+Touches.swift in Sources */,
 				0B08D2CB223DB8D5006942A0 /* Level.swift in Sources */,
