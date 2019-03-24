@@ -3,6 +3,10 @@
 import SpriteKit
 
 extension GameScene : PlayerDelegate{
+  func getMovingNode() -> SKNode {
+    return movingNode
+  }
+  
   func shakeScreen(){
     //TODO could pass in shake level
     

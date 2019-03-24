@@ -66,7 +66,7 @@ class PlayerMaster {
     addLife(scene: scene)
     score = 0
     scoreLabel.text = "\(score)"
-    
+    playerRed.createTail(movingNode: delegate.getMovingNode())
   }
   
   func moveTo(pos:CGPoint){
@@ -173,5 +173,7 @@ class PlayerMaster {
     lives.append(life)
     scene.staticNode.addChild(life)
   }
-  
+  func update(_ currentTime: TimeInterval){
+    
+  }
 }
