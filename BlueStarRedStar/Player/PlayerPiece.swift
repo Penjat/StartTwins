@@ -7,7 +7,7 @@ class PlayerPiece : SKSpriteNode {
   var pieceColor : PieceColor!
   var lastTailPiece : TailPiece?
   let tailSpacing : CGFloat = 100.0
-  let tailPieces = [TailPiece]()
+  var tailPieces = [TailPiece]()
   
   func checkTail(_ moveNodeYPos:CGFloat) -> Bool{
     //check if should create a tail
@@ -32,12 +32,16 @@ class PlayerPiece : SKSpriteNode {
     tailPiece.position = CGPoint(x:x,y:y)
     lastTailPiece = tailPiece
     movingNode.addChild(tailPiece)
-    //TODO keep track of tailPieces
+    tailPieces.append(tailPiece)
   }
   func checkRemoveTail(playerDelegate:PlayerDelegate){
     
-    if tailPieces.count > 0 {
-      tailPieces[0].checkShouldRemove(playerDelegate:PlayerDelegate)
+    //check if there are any tail pieces, check if the oldest one needs to be removed
+    if tailPieces.count > 0 , tailPieces[0].checkShouldRemove(playerDelegate) {
+      
+      tailPieces[0].removeFromParent()
+      tailPieces.remove(at: 0)
+      
     }
   }
 }
