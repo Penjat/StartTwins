@@ -38,6 +38,15 @@ class MenuTitleView: UIView {
     // add the gradient layer to the views layer for rendering
     titleView.layer.addSublayer(gradient)
     titleView.mask = titleLabel
+    
+    let fromAnimation = CABasicAnimation(keyPath: "colors")
+    fromAnimation.duration = 2.0
+    fromAnimation.toValue = [UIColor.blue.cgColor,UIColor.red.cgColor]
+    fromAnimation.fillMode = CAMediaTimingFillMode.forwards
+    fromAnimation.isRemovedOnCompletion = false
+    fromAnimation.repeatCount = HUGE
+    fromAnimation.autoreverses = true
+    gradient.add(fromAnimation, forKey: "colorChange")
   }
   @IBAction func pressedPlay(_ sender: Any) {
     if let delegate = delegate{
