@@ -10,6 +10,7 @@ class MenuTitleView: UIView {
   var delegate : MenuDelegate?
   override init(frame: CGRect) {
     super.init(frame: frame)
+    
     commonInit()
   }
   
@@ -27,11 +28,12 @@ class MenuTitleView: UIView {
     let gradient = CAGradientLayer()
     
     // gradient colors in order which they will visually appear
-    gradient.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
+    gradient.colors = [UIColor.red.cgColor, UIColor.blue.cgColor,UIColor.red.cgColor, UIColor.blue.cgColor]
     
     // Gradient from left to right
-    gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
-    gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
+    gradient.startPoint = CGPoint(x: 0.0, y: 1)
+    gradient.endPoint = CGPoint(x: 0.5, y: 0.5)
+    gradient.locations = [-2,-1,0,1]
     
     // set the gradient layer to the same size as the view
     gradient.frame = titleView.bounds
@@ -39,14 +41,14 @@ class MenuTitleView: UIView {
     titleView.layer.addSublayer(gradient)
     titleView.mask = titleLabel
     
-    let fromAnimation = CABasicAnimation(keyPath: "colors")
-    fromAnimation.duration = 2.0
-    fromAnimation.toValue = [UIColor.blue.cgColor,UIColor.red.cgColor]
+    let fromAnimation = CABasicAnimation(keyPath: "locations")
+    fromAnimation.duration = 5.0
+    fromAnimation.toValue = [0,1,2,3]
     fromAnimation.fillMode = CAMediaTimingFillMode.forwards
     fromAnimation.isRemovedOnCompletion = false
     fromAnimation.repeatCount = HUGE
-    fromAnimation.autoreverses = true
-    gradient.add(fromAnimation, forKey: "colorChange")
+    //fromAnimation.autoreverses = true
+    gradient.add(fromAnimation, forKey: "locationChange")
   }
   @IBAction func pressedPlay(_ sender: Any) {
     if let delegate = delegate{
