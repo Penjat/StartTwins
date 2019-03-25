@@ -33,7 +33,7 @@ class MenuHighScoresView: UIView {
 
   @IBAction func pressedBack(_ sender: Any) {
     if let delegate = delegate{
-      delegate.toTitle()
+      delegate.toTitle(withIntro: false)
     }
   }
   

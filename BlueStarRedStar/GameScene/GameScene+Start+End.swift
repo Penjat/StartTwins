@@ -35,7 +35,7 @@ extension GameScene{
       curMenu.removeFromSuperview()
     }
     
-    if false{//HighScoreManager.checkHigh(score: player.score){
+    if HighScoreManager.checkHigh(score: player.score){
       
       print("new high score")
       let newHighScoreView = NewHighScoreView(frame: (view?.frame)!)

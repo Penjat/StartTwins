@@ -20,7 +20,7 @@ extension GameScene : MenuDelegate{
     curMenu = highScoreView
   }
   
-  func toTitle(){
+  func toTitle(withIntro:Bool){
     if let curMenu = curMenu{
       curMenu.removeFromSuperview()
     }
@@ -29,6 +29,9 @@ extension GameScene : MenuDelegate{
     view!.addSubview(titleView)
     titleView.delegate = self
     curMenu = titleView
+    if withIntro{
+      titleView.startFadeIn()
+    }
   }
   
   func toStartGame() {
@@ -39,7 +42,7 @@ extension GameScene : MenuDelegate{
   func enterHighScore(name: String) {
     //TODO save score and go to game over menu
     HighScoreManager.saveHigh(score: player.score, playerName: name)
-    toTitle()
+    toTitle(withIntro: false)
   }
   
   func restart() {

@@ -28,8 +28,8 @@ class GameScene: SKScene {
 
     player = PlayerMaster(scene: self)
 
-    toTitle()
-
+    toTitle(withIntro: true)
+    
   }
 
   override func update(_ currentTime: TimeInterval) {

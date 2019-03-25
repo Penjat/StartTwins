@@ -53,7 +53,7 @@ class MenuTitleView: UIView {
     //fromAnimation.autoreverses = true
     gradient.add(fromAnimation, forKey: "locationChange")
     
-    startFadeIn()
+    //startFadeIn()
   }
   @IBAction func pressedPlay(_ sender: Any) {
     if let delegate = delegate{

@@ -34,7 +34,7 @@ class MenuGameOverView: UIView {
   }
   @IBAction func pressedTitle(_ sender: Any) {
     if let delegate = delegate{
-      delegate.toTitle()
+      delegate.toTitle(withIntro: false)
     }else{
       print("no delegate set")
     }
