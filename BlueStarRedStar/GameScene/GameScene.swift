@@ -36,7 +36,10 @@ class GameScene: SKScene {
     if isPlaying{
       pieceFactory.checkShouldChange(scene: self)
       pieceFactory.checkShouldClear(scene: self)
+      
+      //TODO keep moving for intro
+      player.update(currentTime)
     }
-    player.update(currentTime)
+    
   }
 }
