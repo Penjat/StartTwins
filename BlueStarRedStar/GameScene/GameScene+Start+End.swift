@@ -23,7 +23,11 @@ extension GameScene{
   
   
   func gameOver(){
-    //TODO show menu
+    
+    //hide the player
+    player.hide(true)
+    
+    
     movingNode.removeAllActions()
     //TODO calculate actual time
     let moveOffScreen = SKAction.moveBy(x: 0, y: -frame.height*2, duration: 10.0)

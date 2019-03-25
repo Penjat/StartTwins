@@ -192,4 +192,8 @@ class PlayerMaster {
     playerBlue.checkRemoveTail(playerDelegate: delegate)
     
   }
+  func hide(_ isHidden:Bool){
+    playerRed.isHidden = isHidden
+    playerBlue.isHidden = isHidden
+  }
 }
