@@ -5,6 +5,10 @@ import SpriteKit
 extension GameScene{
   
   func startGame() {
+    print("starting game")
+    //make sure the player is showing
+    //TODO animate in somehow
+    player.hide(false)
     
     //remove any menus
     if let curMenu = curMenu{
@@ -16,6 +20,11 @@ extension GameScene{
     
     //move the moving node
     let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -250.0, duration: 1))
+    
+    //remove all in case still moving from another animation
+    movingNode.removeAllActions()
+    
+    //start moving
     movingNode.run(movingNodeMove)
     player.startGame(scene: self)
     isPlaying = true
@@ -23,7 +32,7 @@ extension GameScene{
   
   
   func gameOver(){
-    
+    print("gameover")
     //hide the player
     player.hide(true)
     
