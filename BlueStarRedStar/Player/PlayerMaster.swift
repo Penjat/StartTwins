@@ -83,6 +83,9 @@ class PlayerMaster {
     case (_,PieceType.Wall.toString()):
       //print("player hit a wall should take damage")
       takeDamage()
+      if let playerPiece = playerPiece.node as? PlayerPiece{
+        playerPiece.hitEffect(delegate)
+      }
       break
 
     case (PieceType.Player.toString(), PieceType.Coin.toString() ):
@@ -195,5 +198,11 @@ class PlayerMaster {
   func hide(_ isHidden:Bool){
     playerRed.isHidden = isHidden
     playerBlue.isHidden = isHidden
+  }
+  
+  func explode(){
+    //TODO deleay one of the explosions
+    playerRed.explode(delegate)
+    playerBlue.explode(delegate)
   }
 }

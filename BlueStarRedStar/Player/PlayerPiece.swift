@@ -44,6 +44,29 @@ class PlayerPiece : SKSpriteNode {
       
     }
   }
+  
+  func explode(_ playerDelegate:PlayerDelegate){
+    let staticNode = playerDelegate.getStaticNode()
+    let path = Bundle.main.path(forResource: "PlayerExplode", ofType: "sks")
+    var rainParticle = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    
+    rainParticle.position = position
+    rainParticle.name = "rainParticle"
+    rainParticle.targetNode = self.scene
+    
+    staticNode.addChild(rainParticle)
+  }
+  func hitEffect(_ playerDelegate:PlayerDelegate){
+    let staticNode = playerDelegate.getStaticNode()
+    let path = Bundle.main.path(forResource: "PlayerHurt", ofType: "sks")
+    var hit = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    
+    hit.position = position
+    hit.name = "rainParticle"
+    hit.targetNode = self.scene
+    
+    staticNode.addChild(hit)
+  }
 }
 
 

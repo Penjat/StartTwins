@@ -10,6 +10,8 @@ extension GameScene{
     //TODO animate in somehow
     player.hide(false)
     
+    
+    
     //remove any menus
     if let curMenu = curMenu{
       curMenu.removeFromSuperview()
@@ -33,7 +35,9 @@ extension GameScene{
   
   func gameOver(){
     print("gameover")
+    
     //hide the player
+    player.explode()
     player.hide(true)
     
     

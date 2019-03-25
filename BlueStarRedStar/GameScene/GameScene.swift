@@ -30,6 +30,10 @@ class GameScene: SKScene {
 
     toTitle(withIntro: true)
     
+    
+    
+    //rainParticle.removeFromParent()
+    
   }
 
   override func update(_ currentTime: TimeInterval) {

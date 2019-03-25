@@ -3,6 +3,10 @@
 import SpriteKit
 
 extension GameScene : PlayerDelegate{
+  func getStaticNode() -> SKNode {
+    return staticNode
+  }
+  
   func getMovingNode() -> SKNode {
     return movingNode
   }
