@@ -3,6 +3,10 @@
 import SpriteKit
 
 extension GameScene : PlayerDelegate{
+  func getMovingNode() -> SKNode {
+    return movingNode
+  }
+  
   func shakeScreen(){
     //TODO could pass in shake level
     
@@ -22,6 +26,10 @@ extension GameScene : PlayerDelegate{
     let actionSeq = SKAction.sequence(actionsArray);
     staticNode.run(actionSeq);
     
+  }
+  func getScreenEdge() -> CGFloat{
+    //TODO take out +100
+    return ((frame.height+100)/2.0)
   }
   
   

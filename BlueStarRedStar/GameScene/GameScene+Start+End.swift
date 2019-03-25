@@ -25,7 +25,11 @@ extension GameScene{
   func gameOver(){
     //TODO show menu
     movingNode.removeAllActions()
+    //TODO calculate actual time
+    let moveOffScreen = SKAction.moveBy(x: 0, y: -frame.height, duration: 3.0)
+    movingNode.run(moveOffScreen)
     isPlaying = false
+    return
     
     if let curMenu = curMenu{
       curMenu.removeFromSuperview()
