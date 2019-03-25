@@ -21,20 +21,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnE-P5-Vwy">
-                    <rect key="frame" x="133.5" y="269" width="108" height="27"/>
+                    <rect key="frame" x="133.5" y="255.5" width="108" height="27"/>
                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMb-Fo-Pg6">
-                    <rect key="frame" x="161" y="312" width="53" height="30"/>
+                    <rect key="frame" x="161" y="298.5" width="53" height="30"/>
                     <state key="normal" title="restart?"/>
                     <connections>
                         <action selector="restartPressed:" destination="-1" eventType="touchUpInside" id="k2T-fC-dyO"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-fA-Czr">
-                    <rect key="frame" x="172.5" y="358" width="30" height="30"/>
+                    <rect key="frame" x="172.5" y="344.5" width="30" height="30"/>
                     <state key="normal" title="Title"/>
                     <connections>
                         <action selector="pressedTitle:" destination="-1" eventType="touchUpInside" id="sz2-cT-Hig"/>
@@ -43,7 +43,7 @@
             </subviews>
             <constraints>
                 <constraint firstItem="nMb-Fo-Pg6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="GRA-34-E8J"/>
-                <constraint firstItem="JnE-P5-Vwy" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Mxn-Bq-gGd"/>
+                <constraint firstItem="JnE-P5-Vwy" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Mxn-Bq-gGd"/>
                 <constraint firstItem="4fB-fA-Czr" firstAttribute="top" secondItem="nMb-Fo-Pg6" secondAttribute="bottom" constant="16" id="g8a-xe-AkN"/>
                 <constraint firstItem="nMb-Fo-Pg6" firstAttribute="top" secondItem="JnE-P5-Vwy" secondAttribute="bottom" constant="16" id="nMd-Rt-NhS"/>
                 <constraint firstItem="JnE-P5-Vwy" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="sE7-Bf-sRH"/>
