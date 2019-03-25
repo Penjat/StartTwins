@@ -7,6 +7,9 @@ class MenuTitleView: UIView {
   @IBOutlet weak var titleView: UIView!
   @IBOutlet weak var titleLabel: UILabel!
   
+  @IBOutlet weak var playButton: UIButton!
+  @IBOutlet weak var highScoresButton: UIButton!
+  
   var delegate : MenuDelegate?
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -49,6 +52,8 @@ class MenuTitleView: UIView {
     fromAnimation.repeatCount = HUGE
     //fromAnimation.autoreverses = true
     gradient.add(fromAnimation, forKey: "locationChange")
+    
+    startFadeIn()
   }
   @IBAction func pressedPlay(_ sender: Any) {
     if let delegate = delegate{
@@ -63,6 +68,23 @@ class MenuTitleView: UIView {
     }else{
       print("no delegate set")
     }
+  }
+  func startFadeIn(){
+    titleView.alpha = 0.0
+    playButton.alpha = 0.0
+    highScoresButton.alpha = 0.0
+    UIView.animateKeyframes(withDuration: 10.0, delay: 0.0, options: [], animations: {
+      UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5, animations: {
+        self.titleView.alpha = 1.0
+      })
+      UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.25, animations: {
+        self.playButton.alpha = 1.0
+      })
+      UIView.addKeyframe(withRelativeStartTime: 0.75, relativeDuration: 0.5, animations: {
+        self.highScoresButton.alpha = 1.0
+      })
+    }, completion: {_ in})
+   
   }
   
 }

@@ -26,10 +26,10 @@ extension GameScene{
     //TODO show menu
     movingNode.removeAllActions()
     //TODO calculate actual time
-    let moveOffScreen = SKAction.moveBy(x: 0, y: -frame.height, duration: 3.0)
+    let moveOffScreen = SKAction.moveBy(x: 0, y: -frame.height, duration: 5.0)
     movingNode.run(moveOffScreen)
     isPlaying = false
-    return
+    
     
     if let curMenu = curMenu{
       curMenu.removeFromSuperview()
@@ -54,6 +54,17 @@ extension GameScene{
       
       curMenu = gameOverView
       
+    }
+    if let curMenu = curMenu, let view = view{
+      let x = view.frame.minX
+      let y = -view.frame.height
+      let width = view.frame.width
+      let height = view.frame.height
+      curMenu.frame = CGRect(x: x, y: y, width: width, height: height)
+      
+      UIView.animate(withDuration: 5) {
+        curMenu.frame = self.view!.frame
+      }
     }
 
   }

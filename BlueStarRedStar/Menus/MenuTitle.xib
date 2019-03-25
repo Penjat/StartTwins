@@ -21,6 +21,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuTitleView" customModule="BlueStarRedStar" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="AWv-w4-vTk"/>
+                <outlet property="highScoresButton" destination="vgz-bD-tar" id="iWj-pk-p1x"/>
+                <outlet property="playButton" destination="Zt1-Pd-Cxt" id="JZa-du-Ofr"/>
                 <outlet property="titleLabel" destination="bqH-a4-Y9O" id="PwZ-Xt-uXb"/>
                 <outlet property="titleView" destination="c4a-sl-poj" id="LZ0-5I-Ty7"/>
             </connections>
