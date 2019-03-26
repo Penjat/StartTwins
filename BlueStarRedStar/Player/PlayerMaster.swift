@@ -94,7 +94,7 @@ class PlayerMaster {
         playerPiece.hitEffect(delegate)
       }else if Date().timeIntervalSince(lastHit) < 0.005 , let playerPiece = playerPiece.node as? PlayerPiece {
         //check if both player pieces hit something at the same time
-        print("last hit \(Date().timeIntervalSince(lastHit))")
+        
         playerPiece.hitEffect(delegate)
       }
       
