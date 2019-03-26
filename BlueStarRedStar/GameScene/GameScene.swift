@@ -6,7 +6,7 @@ import GameplayKit
 class GameScene: SKScene {
   
   
-  let pieceFactory = PieceFactory()
+  var pieceFactory : PieceFactory!
   
   private var label : SKLabelNode?
   private var spinnyNode : SKShapeNode?
@@ -21,6 +21,11 @@ class GameScene: SKScene {
   
   
   override func didMove(to view: SKView) {
+    
+    pieceFactory = PieceFactory()
+    HighScoreManager.createPlaceHolderScores()
+    
+    
     StaticHelper.setRatio(scene: self)
     physicsWorld.contactDelegate = self
     self.addChild(staticNode)
