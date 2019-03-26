@@ -17,7 +17,7 @@ class PlayerPiece : SKSpriteNode {
     
     tail.position = CGPoint(x:size.width/2,y:size.height/2)
     tail.name = "tailParticle"
-    tail.targetNode = playerDelegate.getStaticNode()
+    tail.targetNode = playerDelegate.getMovingNode()
     
     addChild(tail)
   }
