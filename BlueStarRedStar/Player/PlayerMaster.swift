@@ -92,7 +92,13 @@ class PlayerMaster {
       
       if !isFlashing, let playerPiece = playerPiece.node as? PlayerPiece{
         playerPiece.hitEffect(delegate)
+      }else if Date().timeIntervalSince(lastHit) < 0.005 , let playerPiece = playerPiece.node as? PlayerPiece {
+        //check if both player pieces hit something at the same time
+        print("last hit \(Date().timeIntervalSince(lastHit))")
+        playerPiece.hitEffect(delegate)
       }
+      
+      
       takeDamage()
       break
 
@@ -141,6 +147,7 @@ class PlayerMaster {
     if isFlashing{
       return
     }
+    lastHit = Date()
     if lives.count > 0 {
       let life = lives.removeLast()
       life.removeFromParent()
