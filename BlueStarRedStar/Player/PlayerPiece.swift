@@ -73,13 +73,18 @@ class PlayerPiece : SKSpriteNode {
   func explode(_ playerDelegate:PlayerDelegate){
     let staticNode = playerDelegate.getStaticNode()
     let path = Bundle.main.path(forResource: "PlayerExplode", ofType: "sks")
-    var rainParticle = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    var explosion = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
     
-    rainParticle.position = position
-    rainParticle.name = "rainParticle"
-    rainParticle.targetNode = self.scene
+    explosion.position = position
+    explosion.name = "rainParticle"
+    explosion.targetNode = self.scene
     
-    staticNode.addChild(rainParticle)
+    //set to be piece color
+    explosion.particleColorSequence = nil;
+    explosion.particleColorBlendFactor = 1.0;
+    explosion.particleColor = pieceColor.getColor()
+    
+    staticNode.addChild(explosion)
   }
   func hitEffect(_ playerDelegate:PlayerDelegate){
     let staticNode = playerDelegate.getStaticNode()
