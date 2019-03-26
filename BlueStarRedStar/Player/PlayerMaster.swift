@@ -185,21 +185,21 @@ class PlayerMaster {
   }
   
   func update(_ currentTime: TimeInterval){
-    let movingNodePos = delegate.getMovingNode().position.y
+//    let movingNodePos = delegate.getMovingNode().position.y
     
     //check if it is time to create a new tail piece
     //TODO posibly only need to check one
-    if playerRed.checkTail(movingNodePos){
-      playerRed.createTail(movingNode: delegate.getMovingNode())
-    }
-    if playerBlue.checkTail(movingNodePos){
-      playerBlue.createTail(movingNode: delegate.getMovingNode())
-    }
+//    if playerRed.checkTail(movingNodePos){
+//      playerRed.createTail(movingNode: delegate.getMovingNode())
+//    }
+//    if playerBlue.checkTail(movingNodePos){
+//      playerBlue.createTail(movingNode: delegate.getMovingNode())
+//    }
     
     //check if it is time to delete an old tail piece
     //TODO posibly only check this when creating a new one
-    playerRed.checkRemoveTail(playerDelegate: delegate)
-    playerBlue.checkRemoveTail(playerDelegate: delegate)
+//    playerRed.checkRemoveTail(playerDelegate: delegate)
+//    playerBlue.checkRemoveTail(playerDelegate: delegate)
     
   }
   func hide(_ isHidden:Bool){

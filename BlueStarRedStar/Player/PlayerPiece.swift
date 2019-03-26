@@ -19,6 +19,9 @@ class PlayerPiece : SKSpriteNode {
     tail.name = "tailParticle"
     tail.targetNode = playerDelegate.getMovingNode()
     
+    tail.particleColorSequence = nil;
+    tail.particleColorBlendFactor = 1.0;
+    tail.particleColor = pieceColor.getColor()
     addChild(tail)
   }
   func checkTail(_ moveNodeYPos:CGFloat) -> Bool{
