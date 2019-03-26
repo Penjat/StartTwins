@@ -55,6 +55,8 @@
 		0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C922496C61009F08B1 /* PlayerExplode.sks */; };
 		0BB390CC22496C61009F08B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390CA22496C61009F08B1 /* Assets.xcassets */; };
 		0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390CE224979EF009F08B1 /* PlayerHurt.sks */; };
+		0BB390D1224980C4009F08B1 /* points.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D0224980C4009F08B1 /* points.sks */; };
+		0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D22249BAA9009F08B1 /* Tail.sks */; };
 		303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */; };
 		F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,8 @@
 		0BB390C922496C61009F08B1 /* PlayerExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerExplode.sks; sourceTree = "<group>"; };
 		0BB390CA22496C61009F08B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BB390CE224979EF009F08B1 /* PlayerHurt.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerHurt.sks; sourceTree = "<group>"; };
+		0BB390D0224980C4009F08B1 /* points.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = points.sks; sourceTree = "<group>"; };
+		0BB390D22249BAA9009F08B1 /* Tail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tail.sks; sourceTree = "<group>"; };
 		2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
@@ -292,8 +296,10 @@
 			isa = PBXGroup;
 			children = (
 				0BB390C922496C61009F08B1 /* PlayerExplode.sks */,
-				0BB390CA22496C61009F08B1 /* Assets.xcassets */,
 				0BB390CE224979EF009F08B1 /* PlayerHurt.sks */,
+				0BB390D0224980C4009F08B1 /* points.sks */,
+				0BB390D22249BAA9009F08B1 /* Tail.sks */,
+				0BB390CA22496C61009F08B1 /* Assets.xcassets */,
 			);
 			path = Effects;
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B2F872A223C6F41001D50E6 /* Main.storyboard in Resources */,
+				0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */,
 				0BB390C822487122009F08B1 /* pure_and_simple_everytime.ttf in Resources */,
 				0B172A8322427D4D0003CE03 /* MenuTitle.xib in Resources */,
 				0B172A8B22428A5C0003CE03 /* HighScore.xib in Resources */,
@@ -413,6 +420,7 @@
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
+				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
 				0B2F872F223C6F42001D50E6 /* LaunchScreen.storyboard in Resources */,
 				0B172A87224285120003CE03 /* MenuHighScores.xib in Resources */,

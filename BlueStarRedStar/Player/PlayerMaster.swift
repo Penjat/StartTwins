@@ -6,6 +6,8 @@ class PlayerMaster {
   
   var delegate : PlayerDelegate!
   
+  var lastHit = Date()//the time the player was last hit
+  
   var isFlashing = false
   
   var playerBlue : PlayerPiece!
@@ -41,6 +43,8 @@ class PlayerMaster {
     playerBlue.physicsBody?.isDynamic = false
     playerBlue.name = PieceType.Player.toString()
     playerBlue.pieceColor = .Blue
+    
+    playerBlue.startParticleTail(delegate)
     scene.addChild(playerBlue)
     
     
@@ -56,6 +60,8 @@ class PlayerMaster {
     playerRed.name = PieceType.Player.toString()
     playerRed.pieceColor = .Red
     
+    playerRed.startParticleTail(delegate)
+    
     scene.addChild(playerRed)
     
     //startGame(scene: scene)
@@ -66,7 +72,8 @@ class PlayerMaster {
     addLife(scene: scene)
     score = 0
     scoreLabel.text = "\(score)"
-    
+    playerBlue.tailActive(true)
+    playerRed.tailActive(true)
   }
   
   func moveTo(pos:CGPoint){
@@ -82,10 +89,17 @@ class PlayerMaster {
 
     case (_,PieceType.Wall.toString()):
       //print("player hit a wall should take damage")
-      takeDamage()
-      if let playerPiece = playerPiece.node as? PlayerPiece{
+      
+      if !isFlashing, let playerPiece = playerPiece.node as? PlayerPiece{
+        playerPiece.hitEffect(delegate)
+      }else if Date().timeIntervalSince(lastHit) < 0.005 , let playerPiece = playerPiece.node as? PlayerPiece {
+        //check if both player pieces hit something at the same time
+        
         playerPiece.hitEffect(delegate)
       }
+      
+      
+      takeDamage()
       break
 
     case (PieceType.Player.toString(), PieceType.Coin.toString() ):
@@ -133,6 +147,7 @@ class PlayerMaster {
     if isFlashing{
       return
     }
+    lastHit = Date()
     if lives.count > 0 {
       let life = lives.removeLast()
       life.removeFromParent()
@@ -178,21 +193,21 @@ class PlayerMaster {
   }
   
   func update(_ currentTime: TimeInterval){
-    let movingNodePos = delegate.getMovingNode().position.y
+//    let movingNodePos = delegate.getMovingNode().position.y
     
     //check if it is time to create a new tail piece
     //TODO posibly only need to check one
-    if playerRed.checkTail(movingNodePos){
-      playerRed.createTail(movingNode: delegate.getMovingNode())
-    }
-    if playerBlue.checkTail(movingNodePos){
-      playerBlue.createTail(movingNode: delegate.getMovingNode())
-    }
+//    if playerRed.checkTail(movingNodePos){
+//      playerRed.createTail(movingNode: delegate.getMovingNode())
+//    }
+//    if playerBlue.checkTail(movingNodePos){
+//      playerBlue.createTail(movingNode: delegate.getMovingNode())
+//    }
     
     //check if it is time to delete an old tail piece
     //TODO posibly only check this when creating a new one
-    playerRed.checkRemoveTail(playerDelegate: delegate)
-    playerBlue.checkRemoveTail(playerDelegate: delegate)
+//    playerRed.checkRemoveTail(playerDelegate: delegate)
+//    playerBlue.checkRemoveTail(playerDelegate: delegate)
     
   }
   func hide(_ isHidden:Bool){
@@ -204,5 +219,7 @@ class PlayerMaster {
     //TODO deleay one of the explosions
     playerRed.explode(delegate)
     playerBlue.explode(delegate)
+    playerBlue.tailActive(false)
+    playerRed.tailActive(false)
   }
 }

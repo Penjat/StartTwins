@@ -9,6 +9,24 @@ class PlayerPiece : SKSpriteNode {
   let tailSpacing : CGFloat = 100.0
   var tailPieces = [TailPiece]()
   
+  var tail : SKEmitterNode!
+  var tailRate :CGFloat = 0.0
+  
+  func startParticleTail(_ playerDelegate:PlayerDelegate){
+    
+    let path = Bundle.main.path(forResource: "Tail", ofType: "sks")
+    tail = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    
+    tail.position = CGPoint(x:size.width/2,y:size.height/2)
+    tail.name = "tailParticle"
+    tail.targetNode = playerDelegate.getMovingNode()
+    
+    tail.particleColorSequence = nil;
+    tail.particleColorBlendFactor = 1.0;
+    tail.particleColor = pieceColor.getColor()
+    tailRate = tail.particleBirthRate
+    addChild(tail)
+  }
   func checkTail(_ moveNodeYPos:CGFloat) -> Bool{
     //check if should create a tail
     
@@ -22,6 +40,13 @@ class PlayerPiece : SKSpriteNode {
       }
     }
     return true
+  }
+  func tailActive(_ isActive:Bool){
+    if isActive{
+      tail.particleBirthRate = tailRate
+      return
+    }
+    tail.particleBirthRate = 0.0
   }
   
   func createTail(movingNode:SKNode){

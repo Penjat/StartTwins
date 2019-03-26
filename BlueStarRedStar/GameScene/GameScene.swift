@@ -28,7 +28,7 @@ class GameScene: SKScene {
 
     player = PlayerMaster(scene: self)
 
-    toTitle(withIntro: true)
+    toTitle(withIntro: false)
     
     
     

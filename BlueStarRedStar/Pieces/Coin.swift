@@ -34,8 +34,12 @@ class Coin : PieceNode{
   
   func pickedUp(){
     
-    print("adding points")
-    removeFromParent()
+    //print("adding points")
+    let fadeOut = SKAction.fadeOut(withDuration: 0.4)
+    let growOut = SKAction.scale(by: 1.4, duration: 0.4)
+    let sequence = SKAction.sequence([SKAction.group([fadeOut,growOut]),SKAction.removeFromParent() ])
+    run(sequence)
+    //removeFromParent()
   }
   
   
