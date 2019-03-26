@@ -72,7 +72,8 @@ class PlayerMaster {
     addLife(scene: scene)
     score = 0
     scoreLabel.text = "\(score)"
-    
+    playerBlue.tailActive(true)
+    playerRed.tailActive(true)
   }
   
   func moveTo(pos:CGPoint){
@@ -211,5 +212,7 @@ class PlayerMaster {
     //TODO deleay one of the explosions
     playerRed.explode(delegate)
     playerBlue.explode(delegate)
+    playerBlue.tailActive(false)
+    playerRed.tailActive(false)
   }
 }
