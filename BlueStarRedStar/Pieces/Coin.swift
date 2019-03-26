@@ -34,7 +34,8 @@ class Coin : PieceNode{
   
   func pickedUp(){
     
-    print("adding points")
+    //print("adding points")
+    
     removeFromParent()
   }
   

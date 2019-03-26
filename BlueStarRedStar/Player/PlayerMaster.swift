@@ -6,6 +6,8 @@ class PlayerMaster {
   
   var delegate : PlayerDelegate!
   
+  var lastHit = Date()//the time the player was last hit
+  
   var isFlashing = false
   
   var playerBlue : PlayerPiece!
@@ -41,6 +43,8 @@ class PlayerMaster {
     playerBlue.physicsBody?.isDynamic = false
     playerBlue.name = PieceType.Player.toString()
     playerBlue.pieceColor = .Blue
+    
+    playerBlue.startParticleTail(delegate)
     scene.addChild(playerBlue)
     
     
@@ -55,6 +59,8 @@ class PlayerMaster {
     playerRed.physicsBody?.isDynamic = false
     playerRed.name = PieceType.Player.toString()
     playerRed.pieceColor = .Red
+    
+    playerRed.startParticleTail(delegate)
     
     scene.addChild(playerRed)
     
@@ -82,10 +88,11 @@ class PlayerMaster {
 
     case (_,PieceType.Wall.toString()):
       //print("player hit a wall should take damage")
-      takeDamage()
-      if let playerPiece = playerPiece.node as? PlayerPiece{
+      
+      if !isFlashing, let playerPiece = playerPiece.node as? PlayerPiece{
         playerPiece.hitEffect(delegate)
       }
+      takeDamage()
       break
 
     case (PieceType.Player.toString(), PieceType.Coin.toString() ):

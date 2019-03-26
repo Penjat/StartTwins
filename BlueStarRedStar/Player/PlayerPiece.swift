@@ -8,7 +8,19 @@ class PlayerPiece : SKSpriteNode {
   var lastTailPiece : TailPiece?
   let tailSpacing : CGFloat = 100.0
   var tailPieces = [TailPiece]()
+  var tail : SKEmitterNode!
   
+  func startParticleTail(_ playerDelegate:PlayerDelegate){
+    
+    let path = Bundle.main.path(forResource: "Tail", ofType: "sks")
+    tail = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    
+    tail.position = CGPoint(x:size.width/2,y:size.height/2)
+    tail.name = "tailParticle"
+    tail.targetNode = playerDelegate.getStaticNode()
+    
+    addChild(tail)
+  }
   func checkTail(_ moveNodeYPos:CGFloat) -> Bool{
     //check if should create a tail
     
