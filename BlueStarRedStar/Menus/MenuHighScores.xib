@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ca.ttf">
+            <string>CosmicAlien</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuHighScoresView" customModule="BlueStarRedStar" customModuleProvider="target">
             <connections>
@@ -26,8 +31,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-6K-Yh6">
-                    <rect key="frame" x="132" y="52" width="111.5" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="84.5" y="52" width="206.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="CosmicAlien" family="Cosmic Alien" pointSize="25"/>
                     <color key="textColor" red="0.84665006399999998" green="0.13121607730000001" blue="0.1154940854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -39,22 +44,22 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-wj-ATz">
-                    <rect key="frame" x="32" y="136.5" width="311" height="498.5"/>
+                    <rect key="frame" x="32" y="132.5" width="311" height="502.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvV-fo-XIO" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="311" height="99.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="100.5"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDs-fv-OBu" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="99.5" width="311" height="100"/>
+                            <rect key="frame" x="0.0" y="100.5" width="311" height="100.5"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpJ-he-Fb7" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="199.5" width="311" height="99.5"/>
+                            <rect key="frame" x="0.0" y="201" width="311" height="100.5"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De3-mF-fTm" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="299" width="311" height="100"/>
+                            <rect key="frame" x="0.0" y="301.5" width="311" height="100.5"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1h-eh-6VP" customClass="HighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="399" width="311" height="99.5"/>
+                            <rect key="frame" x="0.0" y="402" width="311" height="100.5"/>
                         </view>
                     </subviews>
                 </stackView>

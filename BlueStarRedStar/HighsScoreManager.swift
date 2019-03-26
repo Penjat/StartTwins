@@ -36,7 +36,7 @@ class HighScoreManager{
   
   static func getHighScores()->[HighScore]{
     let realm = try! Realm()
-    let highScores = realm.objects(HighScore.self)
+    let highScores = realm.objects(HighScore.self).sorted(byKeyPath: "score", ascending: false)
     
     return highScores.map{$0}
   }

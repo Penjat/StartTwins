@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Simply Rounded Italic.ttf">
-            <string>SimplyRounded-Italic</string>
+        <array key="Retronoid Italic.ttf">
+            <string>Retronoid-Italic</string>
         </array>
         <array key="pure_and_simple_everytime.ttf">
             <string>pureandsimpleeverytime</string>
@@ -59,9 +59,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Star Twins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqH-a4-Y9O">
-                            <rect key="frame" x="30" y="0.0" width="224.5" height="47"/>
+                            <rect key="frame" x="11" y="0.0" width="263" height="51"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="SimplyRounded-Italic" family="Simply Rounded" pointSize="45"/>
+                            <fontDescription key="fontDescription" name="Retronoid-Italic" family="Retronoid" pointSize="45"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
