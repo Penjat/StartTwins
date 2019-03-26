@@ -51,15 +51,16 @@ extension GameScene{
     if let curMenu = curMenu{
       curMenu.removeFromSuperview()
     }
-    
-    if HighScoreManager.checkHigh(score: player.score){
+    let playerScorePlace = HighScoreManager.checkHigh(score: player.score)
+    if  playerScorePlace < HighScoreManager.numberOfHighScores{
       
       print("new high score")
+      print("player place is \(playerScorePlace+1)")
       let newHighScoreView = NewHighScoreView(frame: (view?.frame)!)
       view?.addSubview(newHighScoreView)
       newHighScoreView.delegate = self
-      
-      
+      newHighScoreView.set(score: player!.score)
+      newHighScoreView.set(place: playerScorePlace+1)
       curMenu = newHighScoreView
       
     }else{

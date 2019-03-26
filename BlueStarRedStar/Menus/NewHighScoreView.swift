@@ -9,7 +9,8 @@ class NewHighScoreView: UIView {
   
   @IBOutlet weak var textFieldPlayerName: UITextField!
   
-  @IBOutlet weak var score: UILabel!
+  @IBOutlet weak var scoreLabel: UILabel!
+  
   @IBOutlet weak var placeLabel: UILabel!
 
     override init(frame: CGRect) {
@@ -34,6 +35,27 @@ class NewHighScoreView: UIView {
     }else{
       print("no delegate set")
     }
+  }
+  func set(score:Int){
+    scoreLabel.text = "\(score)"
+  }
+  func set(place:Int){
+    
+    switch place{
+    case 1:
+      placeLabel.text = "1st"
+      break
+    case 2:
+      placeLabel.text = "2nd"
+      break
+    case 3:
+      placeLabel.text = "3rd"
+      break
+    default:
+      placeLabel.text = "\(place)th"
+      break
+    }
+
   }
   
 }

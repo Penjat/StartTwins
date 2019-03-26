@@ -19,7 +19,7 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="rEt-CQ-Of1"/>
                 <outlet property="placeLabel" destination="sxA-CT-ZS1" id="Ot0-Ju-1Pn"/>
-                <outlet property="score" destination="qH2-1i-g6I" id="re9-mD-5PB"/>
+                <outlet property="scoreLabel" destination="qH2-1i-g6I" id="kT6-Gq-Tar"/>
                 <outlet property="textFieldPlayerName" destination="rAy-UN-hyo" id="qAu-M3-ftT"/>
             </connections>
         </placeholder>
