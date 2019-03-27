@@ -7,6 +7,7 @@ class NewHighScoreView: UIView {
   @IBOutlet var contentView: UIView!
   var delegate : MenuDelegate?
   
+  @IBOutlet weak var keyboard: UIStackView!
   @IBOutlet weak var textFieldPlayerName: UITextField!
   
   @IBOutlet weak var scoreLabel: UILabel!
@@ -28,6 +29,7 @@ class NewHighScoreView: UIView {
     addSubview(contentView)
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
+    keyboard.isHidden = true
   }
   @IBAction func pressedDone(_ sender: Any) {
     if let delegate = delegate{
@@ -57,5 +59,6 @@ class NewHighScoreView: UIView {
     }
 
   }
+  
   
 }
