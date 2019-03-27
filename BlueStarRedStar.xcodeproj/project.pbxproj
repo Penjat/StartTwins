@@ -53,6 +53,7 @@
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
 		0B98CCDB224ABC3A00C2D763 /* ca.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCDA224ABC3A00C2D763 /* ca.ttf */; };
+		0B98CCDD224B14C800C2D763 /* Space.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCDC224B14C800C2D763 /* Space.sks */; };
 		0BB390BF2247F1B6009F08B1 /* TailPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB390BE2247F1B6009F08B1 /* TailPiece.swift */; };
 		0BB390C6224856EF009F08B1 /* Simply Rounded Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C5224856EF009F08B1 /* Simply Rounded Italic.ttf */; };
 		0BB390C822487122009F08B1 /* pure_and_simple_everytime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C722487122009F08B1 /* pure_and_simple_everytime.ttf */; };
@@ -126,6 +127,7 @@
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
 		0B98CCDA224ABC3A00C2D763 /* ca.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ca.ttf; sourceTree = "<group>"; };
+		0B98CCDC224B14C800C2D763 /* Space.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Space.sks; sourceTree = "<group>"; };
 		0BB390BE2247F1B6009F08B1 /* TailPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailPiece.swift; sourceTree = "<group>"; };
 		0BB390C5224856EF009F08B1 /* Simply Rounded Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simply Rounded Italic.ttf"; sourceTree = "<group>"; };
 		0BB390C722487122009F08B1 /* pure_and_simple_everytime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pure_and_simple_everytime.ttf; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				0BB390CE224979EF009F08B1 /* PlayerHurt.sks */,
 				0BB390D0224980C4009F08B1 /* points.sks */,
 				0BB390D22249BAA9009F08B1 /* Tail.sks */,
+				0B98CCDC224B14C800C2D763 /* Space.sks */,
 				0BB390CA22496C61009F08B1 /* Assets.xcassets */,
 			);
 			path = Effects;
@@ -440,6 +443,7 @@
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
 				0B2F872F223C6F42001D50E6 /* LaunchScreen.storyboard in Resources */,
 				0B172A87224285120003CE03 /* MenuHighScores.xib in Resources */,
+				0B98CCDD224B14C800C2D763 /* Space.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
