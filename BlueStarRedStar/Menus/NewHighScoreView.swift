@@ -29,8 +29,29 @@ class NewHighScoreView: UIView , Menu{
     addSubview(contentView)
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
-    keyboard.isHidden = true
+    //TODO animate keyboard in
+    keyboard.isHidden = false
+    setUpKeyboard()
   }
+  func setUpKeyboard(){
+    
+    createKeyRow(["A","B","C","])
+    
+  }
+  func createKeyRow(_ keyNames:[String]){
+    
+    let stackView = UIStackView(frame: CGRect.zero)
+    
+    for keyname in keyNames{
+      let key = KeyView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+      key.set(key: keyname)
+      stackView.addSubview(key)
+    }
+    keyboard.addSubview(stackView)
+    
+    
+  }
+  
   @IBAction func pressedDone(_ sender: Any) {
     if let delegate = delegate{
       delegate.enterHighScore(name: textFieldPlayerName.text!)

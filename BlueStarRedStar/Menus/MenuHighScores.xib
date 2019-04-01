@@ -37,8 +37,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7L-jZ-lFL">
-                    <rect key="frame" x="16" y="36" width="34" height="30"/>
-                    <state key="normal" title="back"/>
+                    <rect key="frame" x="16" y="36" width="30" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="⬅︎"/>
                     <connections>
                         <action selector="pressedBack:" destination="-1" eventType="touchUpInside" id="M8D-0w-hGl"/>
                     </connections>
