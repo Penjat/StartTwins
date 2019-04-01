@@ -44,7 +44,7 @@ class NewHighScoreView: UIView , Menu{
     keyCount = createKeyRow(["A","B","C","D","E","F","G"],keyCount: keyCount)
     keyCount = createKeyRow(["H","I","J","K","L","M","N"],keyCount: keyCount)
     keyCount = createKeyRow(["O","P","Q","R","S","T","U"],keyCount: keyCount)
-    keyCount = createKeyRow(["V","W","X","Y","Z","<","DONE"],keyCount: keyCount)
+    keyCount = createKeyRow(["V","W","X","Y","Z","⬅︎",""],keyCount: keyCount)
     animateDoneButton(keyCount: keyCount)
     
   }

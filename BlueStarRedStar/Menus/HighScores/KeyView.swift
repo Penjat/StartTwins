@@ -60,6 +60,9 @@ class KeyView: UIView {
   func set(delay:Double){
     contentView.alpha = 0.0
     contentView.transform = CGAffineTransform(translationX: 0.0, y: 100.0)
+    if keyLabel.text == ""{
+      return 
+    }
     UIView.animate(withDuration: 0.5, delay: delay, options: [], animations: {
       self.contentView.alpha = 1.0
       self.contentView.transform = CGAffineTransform(translationX: 0.0, y: 0.0)
