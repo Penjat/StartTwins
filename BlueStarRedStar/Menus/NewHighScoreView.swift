@@ -35,19 +35,24 @@ class NewHighScoreView: UIView , Menu{
   }
   func setUpKeyboard(){
     
-    createKeyRow(["A","B","C","])
+    createKeyRow(["A","B","C","D","E","F","G"])
+    createKeyRow(["H","I","J","K","L","M","N"])
+    createKeyRow(["O","P","Q","R","S","T","U"])
+    createKeyRow(["V","W","X","Y","Z","<","DONE"])
     
   }
   func createKeyRow(_ keyNames:[String]){
     
-    let stackView = UIStackView(frame: CGRect.zero)
+    let keyRow = UIStackView(frame: CGRect.zero)
+    keyRow.distribution = .fillEqually
+    keyRow.spacing = 4.0
     
     for keyname in keyNames{
       let key = KeyView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
       key.set(key: keyname)
-      stackView.addSubview(key)
+      keyRow.addArrangedSubview(key)
     }
-    keyboard.addSubview(stackView)
+    keyboard.addArrangedSubview(keyRow)
     
     
   }
