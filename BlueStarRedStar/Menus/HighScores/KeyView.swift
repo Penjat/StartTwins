@@ -9,8 +9,11 @@ class KeyView: UIView {
   @IBOutlet weak var keyLabel: UILabel!
   
   
-  let backColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.5)
-  let pressColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.713479238)
+  let backColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.326359161)
+  let borderColor = #colorLiteral(red: 0.3471710086, green: 0.1413548291, blue: 0.9731728435, alpha: 0.6901220034)
+  let pressColor = #colorLiteral(red: 0.841042459, green: 0.6025169492, blue: 0.9570580125, alpha: 0.8432951627)
+  let fontColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+  
   
   private func commonInit(){
     Bundle.main.loadNibNamed("Key", owner: self, options: nil)
@@ -21,6 +24,12 @@ class KeyView: UIView {
     contentView.layer.cornerRadius = 5;
     contentView.layer.masksToBounds = true;
     contentView.backgroundColor = backColor
+    contentView.layer.borderColor = borderColor.cgColor
+    contentView.layer.borderWidth = 3.0
+    
+    keyLabel.adjustsFontSizeToFitWidth = true
+    keyLabel.textColor = fontColor
+    
     let tap = UITapGestureRecognizer(target: self, action:  #selector (self.pressSelf(_:) ))
     
     contentView.addGestureRecognizer(tap)
