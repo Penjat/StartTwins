@@ -29,4 +29,11 @@ class HighScoreView: UIView {
     scoreLabel.text = "\(highScore.score)"
     nameLabel.text = "\(highScore.playerName)"
   }
+  func sway(index:Double){
+    print("time to sway")
+    
+    UIView.animate(withDuration: 6.0+(index*0.2) , delay: (index*0.2), options: [.curveEaseInOut ,.autoreverse,.repeat], animations: {
+      self.contentView.transform = CGAffineTransform(translationX: 5.0, y: 30.0)
+    }, completion: {_ in})
+  }
 }

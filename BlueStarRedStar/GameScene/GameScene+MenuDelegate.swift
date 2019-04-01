@@ -8,7 +8,8 @@ extension GameScene : MenuDelegate{
   func toHighScores() {
     
     if let curMenu = curMenu{
-      curMenu.removeFromSuperview()
+      //curMenu.removeFromSuperview()
+      curMenu.clear(menuCommand: .None)
     }
     
     let highScoreView = MenuHighScoresView(frame: view!.frame)
@@ -22,7 +23,8 @@ extension GameScene : MenuDelegate{
   
   func toTitle(withIntro:Bool){
     if let curMenu = curMenu{
-      curMenu.removeFromSuperview()
+      //curMenu.removeFromSuperview()
+      curMenu.clear(menuCommand: .None)
     }
     //TODO could add bool if it is first time
     let titleView = MenuTitleView(frame: view!.frame)
@@ -55,7 +57,8 @@ extension GameScene : MenuDelegate{
     player.startGame(scene: self)
     
     //TODO function to animate out
-    curMenu?.removeFromSuperview()
+    //curMenu?.removeFromSuperview()
+    curMenu?.clear(menuCommand: .None)
     
   }
 }

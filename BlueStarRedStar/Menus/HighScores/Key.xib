@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="atari full.ttf">
+            <string>Atari-Font-Full-Version</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyView" customModule="BlueStarRedStar" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="grN-4t-hPW"/>
+                <outlet property="keyLabel" destination="s6T-Ay-fn5" id="yfZ-RY-MI5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="s6T-Ay-fn5">
+                    <rect key="frame" x="0.0" y="0.0" width="198" height="122"/>
+                    <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.62941267150000002" green="0.78339398920000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s6T-Ay-fn5" secondAttribute="trailing" id="Hq6-1p-UQs"/>
+                <constraint firstItem="s6T-Ay-fn5" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="S9V-tt-4zR"/>
+                <constraint firstItem="s6T-Ay-fn5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="q1B-gp-edg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="s6T-Ay-fn5" secondAttribute="bottom" id="tBq-jL-wgX"/>
+                <constraint firstItem="s6T-Ay-fn5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="wzS-La-91m"/>
+                <constraint firstItem="s6T-Ay-fn5" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="y1o-7d-1WE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-396.80000000000001" y="-310.34482758620692"/>
+        </view>
+    </objects>
+</document>

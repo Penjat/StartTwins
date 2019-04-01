@@ -2,7 +2,7 @@
 
 import UIKit
 
-class MenuGameOverView: UIView {
+class MenuGameOverView: UIView , Menu{
   @IBOutlet var contentView: UIView!
   
   var delegate : MenuDelegate?
@@ -38,5 +38,9 @@ class MenuGameOverView: UIView {
     }else{
       print("no delegate set")
     }
+  }
+  func clear(menuCommand: MenuCommand) {
+    //TODO add more variation
+    removeFromSuperview()
   }
 }

@@ -6,7 +6,7 @@ import GameplayKit
 class GameScene: SKScene {
   
   
-  let pieceFactory = PieceFactory()
+  var pieceFactory : PieceFactory!
   
   private var label : SKLabelNode?
   private var spinnyNode : SKShapeNode?
@@ -17,10 +17,15 @@ class GameScene: SKScene {
   
   var isPlaying = false
   
-  var curMenu : UIView?
+  var curMenu : Menu?
   
   
   override func didMove(to view: SKView) {
+    
+    pieceFactory = PieceFactory()
+    HighScoreManager.createPlaceHolderScores()
+    
+    
     StaticHelper.setRatio(scene: self)
     physicsWorld.contactDelegate = self
     self.addChild(staticNode)
@@ -32,7 +37,21 @@ class GameScene: SKScene {
     
     
     
-    //rainParticle.removeFromParent()
+    let path = Bundle.main.path(forResource: "Space", ofType: "sks")
+    var spaceEffect = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    
+    spaceEffect.position = CGPoint(x:0,y:frame.height/2.0)
+    spaceEffect.name = "spaceParticle"
+    spaceEffect.targetNode = self.scene
+    spaceEffect.particlePositionRange = CGVector(dx: frame.width, dy: 0)
+    spaceEffect.advanceSimulationTime(60)
+    addChild(spaceEffect)
+    
+    
+    //set to be piece color
+//    spaceEffect.particleColorSequence = nil;
+//    spaceEffect.particleColorBlendFactor = 1.0;
+//    spaceEffect.particleColor = pieceColor.getColor()
     
   }
 

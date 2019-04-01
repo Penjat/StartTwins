@@ -2,7 +2,12 @@
 
 import UIKit
 
-class MenuHighScoresView: UIView {
+class MenuHighScoresView: UIView , Menu {
+  func clear(menuCommand: MenuCommand) {
+    //TODO add more variation
+    removeFromSuperview()
+  }
+  
   @IBOutlet weak var highScore1: HighScoreView!
   @IBOutlet weak var highScore2: HighScoreView!
   @IBOutlet weak var highScore3: HighScoreView!
@@ -47,6 +52,15 @@ class MenuHighScoresView: UIView {
       if i < scores.count{
         let score = scores[i]
         highScoreLabels[i]?.setUp(highScore: score)
+        let translated = CGAffineTransform(translationX: 0, y: 800)
+        highScoreLabels[i]?.transform = translated
+        UIView.animate(withDuration: 2.0, delay: Double(i)*0.2, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+          highScoreLabels[i]?.transform = CGAffineTransform(translationX: 0, y: 0)
+        },completion:
+          {_ in highScoreLabels[i]?.sway(index:Double(i))}
+        )
+        
+        
       }else{
         //if no highscore yet hide the label
         highScoreLabels[i]?.isHidden = true
@@ -55,4 +69,5 @@ class MenuHighScoresView: UIView {
       
     }
   }
+  
 }

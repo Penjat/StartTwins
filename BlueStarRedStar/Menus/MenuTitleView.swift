@@ -2,7 +2,7 @@
 
 import UIKit
 
-class MenuTitleView: UIView {
+class MenuTitleView: UIView , Menu{
   @IBOutlet var contentView: UIView!
   @IBOutlet weak var titleView: UIView!
   @IBOutlet weak var titleLabel: UILabel!
@@ -85,6 +85,26 @@ class MenuTitleView: UIView {
       })
     }, completion: {_ in})
    
+  }
+  
+  func clear(menuCommand: MenuCommand) {
+    switch menuCommand{
+    case .StartGame:
+      //startgame animation
+      self.isUserInteractionEnabled = false
+      UIView.animate(withDuration: 2.0, delay: 0.0, options: [], animations: {
+        self.contentView.alpha = 0.0
+        self.transform = CGAffineTransform(translationX: 0, y: 100.0)
+      }, completion: {_ in
+        self.removeFromSuperview()
+        
+        
+      })
+      
+      break
+    default:
+      removeFromSuperview()
+    }
   }
   
 }
