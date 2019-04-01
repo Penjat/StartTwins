@@ -140,6 +140,11 @@ class PlayerMaster {
   func add(points:Int){
     score += points
     scoreLabel.text = "\(score)"
+    
+    let grow = SKAction.scale(to: 1.3, duration: 0.1)
+    let shrink = SKAction.scale(to: 1.0, duration: 0.1)
+    scoreLabel.run(SKAction.sequence([grow,shrink]))
+    
   }
   func takeDamage(){
     

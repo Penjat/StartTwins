@@ -14,6 +14,7 @@ extension GameScene{
   
   func touchUp(atPoint pos : CGPoint) {
     
+    
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
