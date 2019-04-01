@@ -13,6 +13,13 @@ class KeyView: UIView {
     addSubview(contentView)
     contentView.frame = self.bounds
     contentView.autoresizingMask = [.flexibleWidth , .flexibleHeight]
+    
+    let tap = UITapGestureRecognizer(target: self, action:  #selector (self.pressSelf(_:) ))
+    
+    contentView.addGestureRecognizer(tap)
+  }
+  @objc func pressSelf(_ sender:UITapGestureRecognizer){
+    print("I was pressed")
   }
   override init(frame: CGRect) {
     super.init(frame: frame)
