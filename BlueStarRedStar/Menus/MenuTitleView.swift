@@ -91,6 +91,7 @@ class MenuTitleView: UIView , Menu{
     switch menuCommand{
     case .StartGame:
       //startgame animation
+      self.isUserInteractionEnabled = false
       UIView.animate(withDuration: 2.0, delay: 0.0, options: [], animations: {
         self.contentView.alpha = 0.0
         self.transform = CGAffineTransform(translationX: 0, y: 100.0)

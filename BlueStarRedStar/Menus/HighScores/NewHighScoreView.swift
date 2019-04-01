@@ -10,6 +10,7 @@ class NewHighScoreView: UIView , Menu{
   @IBOutlet weak var playerNameLabel: UILabel!
   
   @IBOutlet weak var keyboard: UIStackView!
+  @IBOutlet weak var doneButton: UIButton!
   
   
   @IBOutlet weak var scoreLabel: UILabel!
@@ -34,6 +35,7 @@ class NewHighScoreView: UIView , Menu{
     playerNameLabel.text = ""
     //TODO animate keyboard in
     keyboard.isHidden = false
+    doneButton.alpha = 0.0
     setUpKeyboard()
   }
   
@@ -43,6 +45,16 @@ class NewHighScoreView: UIView , Menu{
     keyCount = createKeyRow(["H","I","J","K","L","M","N"],keyCount: keyCount)
     keyCount = createKeyRow(["O","P","Q","R","S","T","U"],keyCount: keyCount)
     keyCount = createKeyRow(["V","W","X","Y","Z","<","DONE"],keyCount: keyCount)
+    animateDoneButton(keyCount: keyCount)
+    
+  }
+  func animateDoneButton(keyCount:Int){
+    doneButton.transform = CGAffineTransform(translationX: 0.0, y: 100.0)
+    
+    UIView.animate(withDuration: 0.5, delay: 4.0 + (Double(keyCount)*0.04), options: [], animations: {
+      self.doneButton.alpha = 1.0
+      self.doneButton.transform = CGAffineTransform(translationX: 0.0, y: 0.0)
+    }, completion: {_ in})
     
   }
   func createKeyRow(_ keyNames:[String],keyCount:Int)->Int{

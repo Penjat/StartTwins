@@ -21,6 +21,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewHighScoreView" customModule="BlueStarRedStar" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="rEt-CQ-Of1"/>
+                <outlet property="doneButton" destination="XEE-jy-lKz" id="fRb-bn-WO7"/>
                 <outlet property="keyboard" destination="7cU-VO-vRE" id="3bw-Lw-YoQ"/>
                 <outlet property="placeLabel" destination="sxA-CT-ZS1" id="Ot0-Ju-1Pn"/>
                 <outlet property="playerNameLabel" destination="mKG-B6-bKk" id="GVi-0F-P4w"/>
