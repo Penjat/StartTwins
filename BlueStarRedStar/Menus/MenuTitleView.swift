@@ -2,7 +2,7 @@
 
 import UIKit
 
-class MenuTitleView: UIView {
+class MenuTitleView: UIView , Menu{
   @IBOutlet var contentView: UIView!
   @IBOutlet weak var titleView: UIView!
   @IBOutlet weak var titleLabel: UILabel!
@@ -85,6 +85,17 @@ class MenuTitleView: UIView {
       })
     }, completion: {_ in})
    
+  }
+  
+  func clear(menuCommand: MenuCommand) {
+    switch menuCommand{
+    case .StartGame:
+      //startgame animation
+      removeFromSuperview()
+      break
+    default:
+      removeFromSuperview()
+    }
   }
   
 }

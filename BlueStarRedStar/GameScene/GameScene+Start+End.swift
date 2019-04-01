@@ -14,7 +14,8 @@ extension GameScene{
     
     //remove any menus
     if let curMenu = curMenu{
-      curMenu.removeFromSuperview()
+      //curMenu.removeFromSuperview()
+      curMenu.clear(menuCommand: .StartGame)
     }
     
     //start creating pieces
@@ -49,7 +50,8 @@ extension GameScene{
     
     
     if let curMenu = curMenu{
-      curMenu.removeFromSuperview()
+      //curMenu.removeFromSuperview()
+      curMenu.clear(menuCommand: .None)
     }
     let playerScorePlace = HighScoreManager.checkHigh(score: player.score)
     if  playerScorePlace < HighScoreManager.numberOfHighScores{
@@ -63,6 +65,7 @@ extension GameScene{
       newHighScoreView.set(place: playerScorePlace+1)
       curMenu = newHighScoreView
       
+      
     }else{
       print("you didn't get a high score")
       let gameOverView = MenuGameOverView(frame: (view?.frame)!)
@@ -73,7 +76,7 @@ extension GameScene{
       curMenu = gameOverView
       
     }
-    if let curMenu = curMenu, let view = view{
+    if let curMenu = curMenu as? UIView, let view = view{
       let x = view.frame.minX
       let y = -view.frame.height/2
       let width = view.frame.width

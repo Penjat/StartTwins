@@ -2,7 +2,7 @@
 
 import UIKit
 
-class NewHighScoreView: UIView {
+class NewHighScoreView: UIView , Menu{
 
   @IBOutlet var contentView: UIView!
   var delegate : MenuDelegate?
@@ -58,6 +58,10 @@ class NewHighScoreView: UIView {
       break
     }
 
+  }
+  func clear(menuCommand: MenuCommand) {
+    //TODO add more variation
+    removeFromSuperview()
   }
   
   

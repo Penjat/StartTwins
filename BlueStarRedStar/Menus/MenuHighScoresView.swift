@@ -2,7 +2,12 @@
 
 import UIKit
 
-class MenuHighScoresView: UIView {
+class MenuHighScoresView: UIView , Menu {
+  func clear(menuCommand: MenuCommand) {
+    //TODO add more variation
+    removeFromSuperview()
+  }
+  
   @IBOutlet weak var highScore1: HighScoreView!
   @IBOutlet weak var highScore2: HighScoreView!
   @IBOutlet weak var highScore3: HighScoreView!

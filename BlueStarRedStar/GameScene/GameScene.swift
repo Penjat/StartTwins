@@ -17,7 +17,7 @@ class GameScene: SKScene {
   
   var isPlaying = false
   
-  var curMenu : UIView?
+  var curMenu : Menu?
   
   
   override func didMove(to view: SKView) {
