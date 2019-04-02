@@ -25,10 +25,15 @@ class PlayerMaster {
     
     scoreLabel = SKLabelNode(text: "0")
     
+    
+    scoreLabel.fontName = "Atari Font Full Version"
+    scoreLabel.isHidden = true
+    
     let x = -50.0 + scene.frame.width/2
     let y = 60.0 - scene.frame.height/2
     scoreLabel.position = CGPoint(x:x , y:y)
-    scoreLabel.fontSize = 50.0
+    scoreLabel.fontSize = 40.0
+    scoreLabel.horizontalAlignmentMode = .right
     scene.staticNode.addChild(scoreLabel)
     
     
@@ -74,6 +79,7 @@ class PlayerMaster {
     scoreLabel.text = "\(score)"
     playerBlue.tailActive(true)
     playerRed.tailActive(true)
+    scoreLabel.isHidden = false
   }
   
   func moveTo(pos:CGPoint){
@@ -141,8 +147,8 @@ class PlayerMaster {
     score += points
     scoreLabel.text = "\(score)"
     
-    let grow = SKAction.scale(to: 1.3, duration: 0.1)
-    let shrink = SKAction.scale(to: 1.0, duration: 0.1)
+    let grow = SKAction.scale(to: 1.1, duration: 0.05)
+    let shrink = SKAction.scale(to: 1.0, duration: 0.05)
     scoreLabel.run(SKAction.sequence([grow,shrink]))
     
   }
@@ -218,6 +224,10 @@ class PlayerMaster {
   func hide(_ isHidden:Bool){
     playerRed.isHidden = isHidden
     playerBlue.isHidden = isHidden
+    
+  }
+  func hideScore(){
+    scoreLabel.isHidden = true
   }
   
   func explode(){
