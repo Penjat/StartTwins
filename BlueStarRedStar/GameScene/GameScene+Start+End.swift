@@ -55,7 +55,7 @@ extension GameScene{
     }
     let playerScorePlace = HighScoreManager.checkHigh(score: player.score)
     if  playerScorePlace < HighScoreManager.numberOfHighScores{
-      
+      player.hideScore()
       print("new high score")
       print("player place is \(playerScorePlace+1)")
       let newHighScoreView = NewHighScoreView(frame: (view?.frame)!)

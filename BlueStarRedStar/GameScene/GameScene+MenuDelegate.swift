@@ -6,7 +6,7 @@ extension GameScene : MenuDelegate{
 
   
   func toHighScores() {
-    
+    player.hideScore()
     if let curMenu = curMenu{
       //curMenu.removeFromSuperview()
       curMenu.clear(menuCommand: .None)
@@ -27,6 +27,7 @@ extension GameScene : MenuDelegate{
       curMenu.clear(menuCommand: .None)
     }
     //TODO could add bool if it is first time
+    player.hideScore()
     let titleView = MenuTitleView(frame: view!.frame)
     view!.addSubview(titleView)
     titleView.delegate = self
@@ -42,7 +43,8 @@ extension GameScene : MenuDelegate{
   }
   
   func enterHighScore(name: String) {
-    //TODO save score and go to game over menu
+    
+    
     HighScoreManager.saveHigh(score: player.score, playerName: name)
     toTitle(withIntro: false)
   }
