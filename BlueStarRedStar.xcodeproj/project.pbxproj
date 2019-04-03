@@ -67,7 +67,6 @@
 		0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390CE224979EF009F08B1 /* PlayerHurt.sks */; };
 		0BB390D1224980C4009F08B1 /* points.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D0224980C4009F08B1 /* points.sks */; };
 		0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D22249BAA9009F08B1 /* Tail.sks */; };
-		0BC0476322541C1300789924 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F8730223C6F42001D50E6 /* Info.plist */; };
 		303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */; };
 		F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */; };
 /* End PBXBuildFile section */
@@ -457,7 +456,6 @@
 				0B172A8B22428A5C0003CE03 /* HighScore.xib in Resources */,
 				0B2F8721223C6F41001D50E6 /* GameScene.sks in Resources */,
 				0BB390C6224856EF009F08B1 /* Simply Rounded Italic.ttf in Resources */,
-				0BC0476322541C1300789924 /* Info.plist in Resources */,
 				0B98CCDB224ABC3A00C2D763 /* ca.ttf in Resources */,
 				0B24CCCA22527B0D002F3410 /* Key.xib in Resources */,
 				0BB390CC22496C61009F08B1 /* Assets.xcassets in Resources */,

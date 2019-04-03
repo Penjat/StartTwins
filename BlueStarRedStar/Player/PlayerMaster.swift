@@ -35,9 +35,10 @@ class PlayerMaster {
     scoreLabel.fontSize = 40.0
     scoreLabel.horizontalAlignmentMode = .right
     scene.staticNode.addChild(scoreLabel)
+    let redPlayerTexture = SKTexture(imageNamed: "star2")
+    let bluePlayerTexture = SKTexture(imageNamed: "star")
     
-    
-    playerBlue = PlayerPiece.init(texture: nil, color: playerBlueColor, size: CGSize(width: 20.0, height: 20.0))
+    playerBlue = PlayerPiece.init(texture: bluePlayerTexture, color: playerBlueColor, size: CGSize(width: 60.0, height: 60.0))
 
     playerBlue.position = CGPoint(x:40.0,y:0.0)
 
@@ -53,7 +54,7 @@ class PlayerMaster {
     scene.addChild(playerBlue)
     
     
-    playerRed = PlayerPiece.init(texture: nil, color: playerRedColor, size: CGSize(width: 20.0, height: 20.0))
+    playerRed = PlayerPiece.init(texture: redPlayerTexture, color: playerRedColor, size: CGSize(width: 60.0, height: 60.0))
     
     playerRed.position = CGPoint(x:-40.0,y:0.0)
     
