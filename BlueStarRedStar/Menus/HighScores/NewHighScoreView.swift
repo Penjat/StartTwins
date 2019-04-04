@@ -1,6 +1,6 @@
 
 
-import UIKit
+import SpriteKit
 
 class NewHighScoreView: UIView , Menu{
 
@@ -39,6 +39,19 @@ class NewHighScoreView: UIView , Menu{
     doneButton.alpha = 0.0
     setUpKeyboard()
     letterLabel.adjustsFontSizeToFitWidth = true
+    
+    let path = Bundle.main.path(forResource: "highScoreStars", ofType: "sks")
+    let tail = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    
+    tail.position = CGPoint(x:0,y:0)
+    tail.name = "tailParticle"
+    //tail.targetNode = playerDelegate.getMovingNode()
+    
+    tail.particleColorSequence = nil;
+    tail.particleColorBlendFactor = 1.0;
+    //tail.particleColor = pieceColor.getColor()
+    //tailRate = tail.particleBirthRate
+    addChild(tail)
   }
   
   func setUpKeyboard(){
