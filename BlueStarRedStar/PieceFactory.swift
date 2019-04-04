@@ -167,7 +167,7 @@ class PieceFactory{
       //only check the first piece
       let piece = pieceList[0]
       
-      if piece.position.y + scene.movingNode.position.y < -(scene.frame.height+100)/2 {
+      if piece.position.y + scene.movingNode.position.y < -(scene.frame.height+(piece.size.height))/2 {
         piece.removeFromParent()
         pieceList.remove(at: 0)
 
