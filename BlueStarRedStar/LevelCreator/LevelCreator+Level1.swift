@@ -71,18 +71,19 @@ extension LevelCreator{
       
       sec1_seg6.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: 8, y:50, width: 10, height: 98, color: 1))
       sec1_seg6.add(piece: Piece.create(type: PieceType.Wall.rawValue, x: -8, y:50, width: 10, height: 98, color: 1))
-      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:4, width: 2, height: 2, color: 2))
+      
+      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:4, width: 2, height: 2, color: 2))
       
       sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:12, width: 2, height: 2, color: 2))
-      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:20, width: 2, height: 2, color: 2))
+      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:20, width: 2, height: 2, color: 2))
       sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:28, width: 2, height: 2, color: 2))
-      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:36, width: 2, height: 2, color: 2))
+      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:36, width: 2, height: 2, color: 2))
       sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:44, width: 2, height: 2, color: 2))
-      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:52, width: 2, height: 2, color: 2))
+      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:52, width: 2, height: 2, color: 2))
       sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:60, width: 2, height: 2, color: 2))
-      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:68, width: 2, height: 2, color: 2))
+      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:68, width: 2, height: 2, color: 2))
       sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:76, width: 2, height: 2, color: 2))
-      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:84, width: 2, height: 2, color: 2))
+      sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: -1, y:84, width: 2, height: 2, color: 2))
       sec1_seg6.add(piece: Piece.create(type: PieceType.Coin.rawValue, x: 1, y:92, width: 2, height: 2, color: 2))
       
       //---------------------------section 2---------------------------
