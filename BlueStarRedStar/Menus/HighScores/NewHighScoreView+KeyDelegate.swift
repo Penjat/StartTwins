@@ -11,6 +11,7 @@ extension NewHighScoreView : KeyDelegate{
       return
     }
     playerNameLabel.text = "\(playerNameLabel.text ?? "")\(value)"
+    animate(letter: value)
   }
   
   

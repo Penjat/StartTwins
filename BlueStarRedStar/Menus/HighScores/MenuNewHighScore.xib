@@ -23,6 +23,7 @@
                 <outlet property="contentView" destination="iN0-l3-epB" id="rEt-CQ-Of1"/>
                 <outlet property="doneButton" destination="XEE-jy-lKz" id="fRb-bn-WO7"/>
                 <outlet property="keyboard" destination="7cU-VO-vRE" id="3bw-Lw-YoQ"/>
+                <outlet property="letterLabel" destination="gzR-JS-YCR" id="oJM-Cv-HTU"/>
                 <outlet property="placeLabel" destination="sxA-CT-ZS1" id="Ot0-Ju-1Pn"/>
                 <outlet property="playerNameLabel" destination="mKG-B6-bKk" id="GVi-0F-P4w"/>
                 <outlet property="scoreLabel" destination="qH2-1i-g6I" id="kT6-Gq-Tar"/>
@@ -33,22 +34,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-xu-HEe">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="HIGH SCORE!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-xu-HEe">
                     <rect key="frame" x="75.5" y="312" width="224" height="31.5"/>
                     <fontDescription key="fontDescription" name="SimplyRounded-Italic" family="Simply Rounded" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-1i-g6I">
-                    <rect key="frame" x="63" y="227" width="97" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxA-CT-ZS1">
-                    <rect key="frame" x="192" y="227" width="85" height="17"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH2-1i-g6I">
+                    <rect key="frame" x="86.5" y="247" width="85" height="17"/>
                     <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -56,13 +49,6 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-VO-vRE">
                     <rect key="frame" x="16" y="359.5" width="343" height="259.5"/>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="player name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-B6-bKk">
-                    <rect key="frame" x="16" y="147" width="335" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEE-jy-lKz">
                     <rect key="frame" x="153.5" y="627" width="68" height="32"/>
                     <constraints>
@@ -74,12 +60,54 @@
                         <action selector="pressedDone:" destination="-1" eventType="touchUpInside" id="Gdj-Mu-XKF"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edu-cf-uRP">
+                    <rect key="frame" x="64" y="84" width="247" height="131"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzR-JS-YCR" userLabel="Letter Label">
+                            <rect key="frame" x="8" y="8" width="231" height="115"/>
+                            <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="80"/>
+                            <color key="textColor" red="0.59332232227534298" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="player name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-B6-bKk">
+                            <rect key="frame" x="8" y="57" width="231" height="17"/>
+                            <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gzR-JS-YCR" firstAttribute="centerX" secondItem="edu-cf-uRP" secondAttribute="centerX" id="0dr-XG-a92"/>
+                        <constraint firstItem="mKG-B6-bKk" firstAttribute="leading" secondItem="edu-cf-uRP" secondAttribute="leading" constant="8" id="LKJ-uZ-1YV"/>
+                        <constraint firstItem="mKG-B6-bKk" firstAttribute="centerY" secondItem="edu-cf-uRP" secondAttribute="centerY" id="Pna-oi-Xb4"/>
+                        <constraint firstItem="gzR-JS-YCR" firstAttribute="top" secondItem="edu-cf-uRP" secondAttribute="top" constant="8" id="V1g-mn-6cd"/>
+                        <constraint firstAttribute="bottom" secondItem="gzR-JS-YCR" secondAttribute="bottom" constant="8" id="aYu-f3-tK2"/>
+                        <constraint firstAttribute="trailing" secondItem="gzR-JS-YCR" secondAttribute="trailing" constant="8" id="kud-ek-5fU"/>
+                        <constraint firstAttribute="height" constant="131" id="lc2-xe-hV4"/>
+                        <constraint firstAttribute="trailing" secondItem="mKG-B6-bKk" secondAttribute="trailing" constant="8" id="u8F-ey-2zm"/>
+                        <constraint firstItem="gzR-JS-YCR" firstAttribute="leading" secondItem="edu-cf-uRP" secondAttribute="leading" constant="8" id="vXS-WW-PDJ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxA-CT-ZS1">
+                    <rect key="frame" x="203.5" y="247" width="85" height="17"/>
+                    <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="edu-cf-uRP" secondAttribute="trailing" constant="64" id="GlG-Zu-Fx2"/>
+                <constraint firstItem="edu-cf-uRP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="64" id="Nmb-y7-hTs"/>
+                <constraint firstItem="sxA-CT-ZS1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="16" id="QHv-kG-ZBY"/>
                 <constraint firstItem="kWT-xu-HEe" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="QgL-ZY-TtS"/>
                 <constraint firstItem="kWT-xu-HEe" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="RdZ-a6-nlh"/>
+                <constraint firstItem="qH2-1i-g6I" firstAttribute="top" secondItem="edu-cf-uRP" secondAttribute="bottom" constant="32" id="cBc-fQ-A9o"/>
                 <constraint firstItem="7cU-VO-vRE" firstAttribute="top" secondItem="kWT-xu-HEe" secondAttribute="bottom" constant="16" id="daO-mc-8Ks"/>
+                <constraint firstItem="kWT-xu-HEe" firstAttribute="top" secondItem="qH2-1i-g6I" secondAttribute="bottom" constant="48" id="e4v-mb-577"/>
+                <constraint firstItem="kWT-xu-HEe" firstAttribute="top" secondItem="sxA-CT-ZS1" secondAttribute="bottom" constant="48" id="gWu-k9-kTo"/>
                 <constraint firstItem="XEE-jy-lKz" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="gke-6E-NcT"/>
+                <constraint firstItem="edu-cf-uRP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="64" id="glu-Va-Q11"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="centerX" secondItem="qH2-1i-g6I" secondAttribute="trailing" constant="16" id="jLf-BL-pij"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XEE-jy-lKz" secondAttribute="bottom" constant="8" id="mK7-XS-Fu5"/>
                 <constraint firstItem="7cU-VO-vRE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="prF-cI-RW6"/>
                 <constraint firstItem="XEE-jy-lKz" firstAttribute="top" secondItem="7cU-VO-vRE" secondAttribute="bottom" constant="8" id="tTZ-0b-xG9"/>
