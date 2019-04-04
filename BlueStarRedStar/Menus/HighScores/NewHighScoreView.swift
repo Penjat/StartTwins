@@ -15,6 +15,8 @@ class NewHighScoreView: UIView , Menu{
   
   
   @IBOutlet weak var scoreLabel: UILabel!
+  @IBOutlet weak var highScoreGradientCon: UIView!
+  @IBOutlet weak var highScoreLabel: UILabel!
   
   @IBOutlet weak var placeLabel: UILabel!
 
@@ -40,18 +42,53 @@ class NewHighScoreView: UIView , Menu{
     setUpKeyboard()
     letterLabel.adjustsFontSizeToFitWidth = true
     
-    let path = Bundle.main.path(forResource: "highScoreStars", ofType: "sks")
-    let tail = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    //TODO put in own function
+    let gradient = CAGradientLayer()
     
-    tail.position = CGPoint(x:0,y:0)
-    tail.name = "tailParticle"
-    //tail.targetNode = playerDelegate.getMovingNode()
+    // gradient colors in order which they will visually appear
+    let color1 = #colorLiteral(red: 0.9566636682, green: 0.9515314698, blue: 0, alpha: 1)
+    let color2 = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+    let color3 = #colorLiteral(red: 0.9244538546, green: 0, blue: 0, alpha: 1)
+    let color4 = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+    gradient.colors = [color1.cgColor, color2.cgColor,color3.cgColor, color4.cgColor,color1.cgColor, color2.cgColor,color3.cgColor, color4.cgColor]
     
-    tail.particleColorSequence = nil;
-    tail.particleColorBlendFactor = 1.0;
-    //tail.particleColor = pieceColor.getColor()
-    //tailRate = tail.particleBirthRate
-    addChild(tail)
+    // Gradient from left to right
+    gradient.startPoint = CGPoint(x: 0.0, y: 1)
+    gradient.endPoint = CGPoint(x: 1, y: 1)
+    gradient.locations = [-2,-1.5,-1,-0.5,0,0.5,1,1.5]
+    
+    // set the gradient layer to the same size as the view
+    gradient.frame = highScoreGradientCon.bounds
+    // add the gradient layer to the views layer for rendering
+    highScoreGradientCon.layer.addSublayer(gradient)
+    highScoreGradientCon.mask = highScoreLabel
+    
+    let fromAnimation = CABasicAnimation(keyPath: "locations")
+    fromAnimation.duration = 2.5
+    fromAnimation.toValue = [0,0.5,1,1.5,2,2.5,3,3.5]
+    fromAnimation.fillMode = CAMediaTimingFillMode.forwards
+    fromAnimation.isRemovedOnCompletion = false
+    fromAnimation.repeatCount = HUGE
+    //fromAnimation.autoreverses = true
+    gradient.add(fromAnimation, forKey: "locationChange")
+    
+
+    UIView.animateKeyframes(withDuration: 4.0, delay: 0.0, options: [.repeat,.calculationModePaced], animations: {
+      
+      UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.25) {
+        self.playerNameLabel.transform = CGAffineTransform(rotationAngle: -0.1)
+      }
+      UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25) {
+        self.playerNameLabel.transform = CGAffineTransform(rotationAngle: 0)
+      }
+      UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.25) {
+        self.playerNameLabel.transform = CGAffineTransform(rotationAngle: 0.1)
+      }
+      UIView.addKeyframe(withRelativeStartTime: 0.75, relativeDuration: 0.25) {
+        self.playerNameLabel.transform = CGAffineTransform(rotationAngle: 0)
+      }
+
+    }, completion: {_ in})
   }
   
   func setUpKeyboard(){
