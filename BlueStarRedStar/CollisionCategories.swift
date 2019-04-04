@@ -25,16 +25,25 @@ enum PieceColor{
   static func getPieceColor(num:Int)-> PieceColor{
     
     switch num{
+      
+    //random between red and blue
+    case -1:
+      let rand = Int.random(in: 0...1)
+      if rand == 0{
+        return .Blue
+      }
+      return .Red
+      
     case 0:
-      return Gray
+      return .Gray
     case 1:
-      return Red
+      return .Red
     case 2:
-      return Blue
+      return .Blue
     case 3:
-      return White
+      return .White
     default:
-      return Gray
+      return .Gray
     }
     
   }

@@ -11,6 +11,7 @@ class Piece : Object{
   @objc dynamic var y = 0
   @objc dynamic var color = 0
   
+  
   func getX()->CGFloat{
     return CGFloat(x)*StaticHelper.widthRatio
   }
@@ -32,6 +33,7 @@ class Piece : Object{
     piece.y = y
     piece.type = type
     piece.color = color
+    
   
     return piece
   }
