@@ -17,7 +17,7 @@ class PlayerPiece : SKSpriteNode {
     let path = Bundle.main.path(forResource: "Tail", ofType: "sks")
     tail = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
     
-    tail.position = CGPoint(x:size.width/2,y:size.height/2)
+    tail.position = CGPoint(x:0,y:0)
     tail.name = "tailParticle"
     tail.targetNode = playerDelegate.getMovingNode()
     

@@ -8,6 +8,7 @@ class NewHighScoreView: UIView , Menu{
   var delegate : MenuDelegate?
   
   @IBOutlet weak var playerNameLabel: UILabel!
+  @IBOutlet weak var letterLabel: UILabel!
   
   @IBOutlet weak var keyboard: UIStackView!
   @IBOutlet weak var doneButton: UIButton!
@@ -37,6 +38,7 @@ class NewHighScoreView: UIView , Menu{
     keyboard.isHidden = false
     doneButton.alpha = 0.0
     setUpKeyboard()
+    letterLabel.adjustsFontSizeToFitWidth = true
   }
   
   func setUpKeyboard(){
