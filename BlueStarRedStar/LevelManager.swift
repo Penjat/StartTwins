@@ -9,7 +9,8 @@ class LevelManager{
   let startClean = false//for debugging, when true deletes all data on device
   
   func setUp(){
-    
+    print("getting realm file location")
+    print(Realm.Configuration.defaultConfiguration.fileURL!)
     //for debugging level creator
     if startClean {
       deleteAllData()

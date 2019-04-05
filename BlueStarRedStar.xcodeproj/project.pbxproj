@@ -63,6 +63,9 @@
 		0B63A20B2257BC6900ACC399 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D0223DC2F2006942A0 /* Segment.swift */; };
 		0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D2223DC352006942A0 /* Piece.swift */; };
 		0B63A20D2257BC6900ACC399 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A7A2241D8450003CE03 /* HighScore.swift */; };
+		0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D4223DCEA7006942A0 /* LevelCreator.swift */; };
+		0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A8F2242E9DD0003CE03 /* LevelCreator+Level1.swift */; };
+		0B63A2112258157900ACC399 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A2102258157900ACC399 /* TileView.swift */; };
 		0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC043223EDD88003E84EF /* PieceNode.swift */; };
 		0B7AC046223EE811003E84EF /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC045223EE811003E84EF /* Wall.swift */; };
 		0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC047223EF7FC003E84EF /* StaticHelper.swift */; };
@@ -153,6 +156,7 @@
 		0B4A8ABD225704D00089B642 /* TwinStarLevelEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwinStarLevelEditor.entitlements; sourceTree = "<group>"; };
 		0B5E2F1B22571A5D009A091F /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
 		0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetColor.swift"; sourceTree = "<group>"; };
+		0B63A2102258157900ACC399 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		0B7AC043223EDD88003E84EF /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
 		0B7AC045223EE811003E84EF /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		0B7AC047223EF7FC003E84EF /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
@@ -341,6 +345,7 @@
 				0B4A8AB3225704CF0089B642 /* AppDelegate.swift */,
 				0B4A8AB5225704CF0089B642 /* ViewController.swift */,
 				0B5E2F1B22571A5D009A091F /* StaticHelper.swift */,
+				0B63A2102258157900ACC399 /* TileView.swift */,
 				0B4A8AB7225704D00089B642 /* Assets.xcassets */,
 				0B4A8AB9225704D00089B642 /* Main.storyboard */,
 				0B4A8ABC225704D00089B642 /* Info.plist */,
@@ -749,13 +754,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B4A8AB6225704CF0089B642 /* ViewController.swift in Sources */,
+				0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */,
 				0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */,
 				0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */,
 				0B63A20B2257BC6900ACC399 /* Segment.swift in Sources */,
 				0B63A20D2257BC6900ACC399 /* HighScore.swift in Sources */,
+				0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */,
 				0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */,
 				0B63A20A2257BC6900ACC399 /* Section.swift in Sources */,
 				0B63A2092257BC6900ACC399 /* Level.swift in Sources */,
+				0B63A2112258157900ACC399 /* TileView.swift in Sources */,
 				0B4A8AB4225704CF0089B642 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
