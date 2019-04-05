@@ -6,7 +6,7 @@ import RealmSwift
 class LevelManager{
   
   let realm = try! Realm()
-  let startClean = true//for debugging, when true deletes all data on device
+  let startClean = false//for debugging, when true deletes all data on device
   
   func setUp(){
     
@@ -19,7 +19,7 @@ class LevelManager{
     
     if levels.count == 0{
       print("No levels yet created")
-      LevelCreator.createLevels(realm: realm)
+      //LevelCreator.createLevels(realm: realm)
     }else{
       print("There are \(levels.count) levels")
     }
