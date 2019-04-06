@@ -138,6 +138,10 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Sections" id="vve-aw-zae">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Sections" id="gE4-Bq-dQG"/>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
