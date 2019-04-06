@@ -3,5 +3,5 @@
 import Foundation
 
 protocol TileManagerDelegate {
-  func create(rect:CGRect)
+  func create(rect:NSRect)
 }

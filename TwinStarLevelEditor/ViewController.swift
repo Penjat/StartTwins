@@ -8,7 +8,13 @@ class ViewController: NSViewController {
   let tileManager = TileManager()
 
   @IBOutlet weak var containerView: NSView!
-  
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    tileManager.delegate = self
+    createGrid()
+    
+  }
   
   func createGrid(){
     for var y in 0...10{
@@ -18,15 +24,6 @@ class ViewController: NSViewController {
         tileView.delegate = tileManager
       }
     }
-    
-  }
-  
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    createGrid()
-    
-    
     
   }
   
