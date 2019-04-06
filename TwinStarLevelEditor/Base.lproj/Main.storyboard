@@ -707,35 +707,44 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="TwinStarLevelEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="328" height="438"/>
+                        <rect key="frame" x="0.0" y="0.0" width="463" height="438"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-3v-9eg">
-                                <rect key="frame" x="8" y="8" width="312" height="366"/>
+                                <rect key="frame" x="8" y="8" width="362" height="366"/>
                                 <clipView key="contentView" id="B0i-9j-ZFf">
-                                    <rect key="frame" x="1" y="1" width="295" height="349"/>
+                                    <rect key="frame" x="1" y="1" width="345" height="349"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-2J-ueR">
-                                            <rect key="frame" x="0.0" y="0.0" width="900" height="900"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="950" height="900"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="5N2-lP-Bel">
-                                    <rect key="frame" x="1" y="350" width="295" height="15"/>
+                                    <rect key="frame" x="1" y="350" width="345" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cKs-F1-5Fm">
-                                    <rect key="frame" x="296" y="1" width="15" height="349"/>
+                                    <rect key="frame" x="346" y="1" width="15" height="349"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hv5-2Y-9eR">
+                                <rect key="frame" x="380" y="346" width="81" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ape-2X-b6H">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hv5-2Y-9eR" secondAttribute="trailing" constant="8" id="CUW-T7-1nO"/>
+                            <constraint firstItem="Hv5-2Y-9eR" firstAttribute="leading" secondItem="L3k-3v-9eg" secondAttribute="trailing" constant="16" id="FSu-2q-CCL"/>
                             <constraint firstItem="L3k-3v-9eg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="64" id="GKb-fU-gpy"/>
                             <constraint firstItem="L3k-3v-9eg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="8" id="K50-5A-gYY"/>
-                            <constraint firstAttribute="trailing" secondItem="L3k-3v-9eg" secondAttribute="trailing" constant="8" id="T87-gc-Wey"/>
+                            <constraint firstItem="Hv5-2Y-9eR" firstAttribute="top" secondItem="L3k-3v-9eg" secondAttribute="firstBaseline" id="V4l-5h-8DE"/>
                             <constraint firstAttribute="bottom" secondItem="L3k-3v-9eg" secondAttribute="bottom" constant="8" id="ggO-eg-iVf"/>
                         </constraints>
                     </view>
@@ -745,7 +754,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="741"/>
+            <point key="canvasLocation" x="31.5" y="741"/>
         </scene>
     </scenes>
 </document>
