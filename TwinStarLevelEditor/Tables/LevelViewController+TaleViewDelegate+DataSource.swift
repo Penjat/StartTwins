@@ -11,19 +11,22 @@ extension LevelViewController : NSTableViewDataSource , NSTableViewDelegate {
   func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
     
     let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "levelCell"), owner: nil) as? NSTableCellView
-    cell?.textField?.stringValue = "assmass"
-
+    
+    //TODO make sure in range
+    cell?.textField?.stringValue = levels[row].name
+    
     return cell
   }
   
   func tableViewSelectionDidChange(_ notification: Notification) {
     
+    let levelIndex = levelTableView.selectedRow
+    let pressedLevel = levels[levelIndex]
+    
     //set the current level to selected
     
-    let levelIndex = levelTableView.selectedRow
     //TODO do a check to make sure is in range
-    TableManager.shared.setCur(level: levels[levelIndex])
-    
+    TableManager.shared.setCur(level: pressedLevel)
     
   }
 }

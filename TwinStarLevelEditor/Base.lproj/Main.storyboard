@@ -144,7 +144,7 @@
                 </tabViewController>
                 <customObject id="Lla-ag-gVm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="366"/>
+            <point key="canvasLocation" x="-435" y="329"/>
         </scene>
         <!--Browse-->
         <scene sceneID="QlW-2o-MPb">
@@ -254,6 +254,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="createSegment:" target="yxG-g9-CDO" id="VyS-YC-Zkf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -465,12 +468,24 @@
                                     <action selector="createLevel:" target="wWD-nn-rZF" id="kaV-mm-0Fe"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QUE-4w-Zbp">
+                                <rect key="frame" x="10" y="264" width="64" height="32"/>
+                                <buttonCell key="cell" type="push" title="Edit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N01-s8-2GP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressedEdit:" target="wWD-nn-rZF" id="0T2-cE-HF4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="dys-wT-hyT" firstAttribute="top" secondItem="upk-eP-aoJ" secondAttribute="bottom" constant="8" id="2dZ-w1-Ta1"/>
                             <constraint firstAttribute="trailing" secondItem="dys-wT-hyT" secondAttribute="trailing" constant="8" id="7BI-vR-sSc"/>
                             <constraint firstAttribute="trailing" secondItem="NbO-2r-ZII" secondAttribute="trailing" constant="16" id="Hkw-BX-pB2"/>
+                            <constraint firstItem="QUE-4w-Zbp" firstAttribute="top" secondItem="EP5-ql-zsv" secondAttribute="top" constant="8" id="Ob7-AM-IFE"/>
                             <constraint firstItem="upk-eP-aoJ" firstAttribute="top" secondItem="EP5-ql-zsv" secondAttribute="top" constant="8" id="Qis-GQ-9p3"/>
+                            <constraint firstItem="QUE-4w-Zbp" firstAttribute="leading" secondItem="EP5-ql-zsv" secondAttribute="leading" constant="16" id="frV-K3-Qmo"/>
                             <constraint firstAttribute="bottom" secondItem="dys-wT-hyT" secondAttribute="bottom" constant="8" id="q7W-ZE-DHk"/>
                             <constraint firstItem="upk-eP-aoJ" firstAttribute="centerX" secondItem="EP5-ql-zsv" secondAttribute="centerX" id="vjx-5z-Fuf"/>
                             <constraint firstItem="dys-wT-hyT" firstAttribute="leading" secondItem="EP5-ql-zsv" secondAttribute="leading" constant="8" id="xEd-ZA-AeD"/>
@@ -479,6 +494,7 @@
                     </view>
                     <connections>
                         <outlet property="levelTableView" destination="H5J-WY-hff" id="ZCn-ZX-Iy9"/>
+                        <segue destination="kSy-gc-xyb" kind="modal" identifier="editLevel" id="lDO-SP-ayr"/>
                     </connections>
                 </viewController>
                 <customObject id="PNQ-ar-qFd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -546,6 +562,94 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="22" y="952"/>
+        </scene>
+        <!--Edit Level-->
+        <scene sceneID="E5l-P3-8rC">
+            <objects>
+                <viewController title="Edit Level" id="kSy-gc-xyb" customClass="EditLevelViewController" customModule="TwinStarLevelEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Zxm-Yj-5nd">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJF-7c-2HH">
+                                <rect key="frame" x="152" y="220" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="v3H-SW-dDI">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIK-bc-FrP">
+                                <rect key="frame" x="57" y="154" width="74" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Dificulty" id="72N-RP-eOX">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZT-N6-Tde">
+                                <rect key="frame" x="57" y="223" width="89" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Level Name" id="Dqw-T4-CFc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwR-0f-j4T">
+                                <rect key="frame" x="152" y="154" width="22" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="0" id="f45-Zg-qsS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PW6-KG-wrW">
+                                <rect key="frame" x="152" y="122" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="+" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QZX-My-0Bb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressedPlus:" target="kSy-gc-xyb" id="Og7-IZ-Oev"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pZ-oY-APE">
+                                <rect key="frame" x="188" y="122" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="-" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jgB-bN-cR2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressedMinus:" target="kSy-gc-xyb" id="CIO-m3-30O"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mWG-6f-VTc">
+                                <rect key="frame" x="220" y="33" width="44" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" title="Save" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CiQ-Wg-LyS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressedSave:" target="kSy-gc-xyb" id="bEo-uc-itZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="difficultyLabel" destination="UwR-0f-j4T" id="jKG-HJ-cmg"/>
+                        <outlet property="levelNameTextField" destination="tJF-7c-2HH" id="Uln-L4-GbC"/>
+                    </connections>
+                </viewController>
+                <customObject id="1gR-wm-HA5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="2203"/>
         </scene>
     </scenes>
 </document>

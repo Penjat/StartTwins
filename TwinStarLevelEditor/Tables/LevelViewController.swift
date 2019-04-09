@@ -25,5 +25,24 @@ class LevelViewController: NSViewController {
     levels.append(level)
     levelTableView.reloadData()
   }
+  @IBAction func pressedEdit(_ sender: Any) {
+    print("pressed edit")
+    guard TableManager.shared.curLevel != nil else{
+      print("please select a level")
+      return
+    }
+    
+    performSegue(withIdentifier: "editLevel", sender: nil)
+  }
+  override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+    if segue.identifier == "editLevel"{
+      let editLevelVC = segue.destinationController as! EditLevelViewController
+      editLevelVC.setUp(level: TableManager.shared.curLevel!)
+    }
+  }
+  func updateTable(){
+    
+    levelTableView.reloadData()
+  }
   
 }
