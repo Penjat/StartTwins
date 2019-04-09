@@ -17,6 +17,7 @@ class LevelViewController: NSViewController {
     levelTableView.delegate = self
     
   }
+  
   @IBAction func createLevel(_ sender: Any) {
     //TODO make sure it has unique name
     let level = Level()

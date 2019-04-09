@@ -178,11 +178,11 @@
             <objects>
                 <viewController id="yxG-g9-CDO" customClass="SegmentViewController" customModule="TwinStarLevelEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="c6x-C1-951">
-                        <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xN5-zF-4T7">
-                                <rect key="frame" x="53" y="275" width="65" height="17"/>
+                                <rect key="frame" x="70" y="275" width="65" height="17"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Segments" id="52B-01-9lb">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -190,19 +190,19 @@
                                 </textFieldCell>
                             </textField>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="4Nd-Yf-DQ6">
-                                <rect key="frame" x="8" y="8" width="154" height="259"/>
+                                <rect key="frame" x="8" y="8" width="188" height="259"/>
                                 <clipView key="contentView" id="g62-lz-7Pd">
-                                    <rect key="frame" x="1" y="1" width="152" height="257"/>
+                                    <rect key="frame" x="1" y="1" width="186" height="257"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="DiI-zV-UPe">
-                                            <rect key="frame" x="0.0" y="0.0" width="152" height="257"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="186" height="257"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="149" minWidth="40" maxWidth="1000" id="yf3-22-8qP">
+                                                <tableColumn width="183" minWidth="40" maxWidth="1000" id="yf3-22-8qP">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -216,11 +216,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="wW6-eE-KxT">
-                                                            <rect key="frame" x="1" y="1" width="149" height="17"/>
+                                                            <rect key="frame" x="1" y="1" width="183" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3UR-bD-oMc">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="149" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Mb1-7V-X6Q">
                                                                         <font key="font" metaFont="system"/>
@@ -248,12 +248,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-eB-3Er">
+                                <rect key="frame" x="145" y="264" width="49" height="32"/>
+                                <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bfP-QR-zPN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="xN5-zF-4T7" firstAttribute="centerX" secondItem="c6x-C1-951" secondAttribute="centerX" id="72A-qj-Uhu"/>
                             <constraint firstAttribute="trailing" secondItem="4Nd-Yf-DQ6" secondAttribute="trailing" constant="8" id="FBm-YN-vRR"/>
                             <constraint firstItem="4Nd-Yf-DQ6" firstAttribute="leading" secondItem="c6x-C1-951" secondAttribute="leading" constant="8" id="ME4-T6-Gr5"/>
+                            <constraint firstItem="iGm-eB-3Er" firstAttribute="top" secondItem="c6x-C1-951" secondAttribute="top" constant="8" id="ME7-Y1-yFK"/>
                             <constraint firstItem="4Nd-Yf-DQ6" firstAttribute="top" secondItem="xN5-zF-4T7" secondAttribute="bottom" constant="8" id="PAY-y7-o5M"/>
+                            <constraint firstAttribute="trailing" secondItem="iGm-eB-3Er" secondAttribute="trailing" constant="16" id="X4q-VM-7s7"/>
                             <constraint firstAttribute="bottom" secondItem="4Nd-Yf-DQ6" secondAttribute="bottom" constant="8" id="gUp-6n-7mS"/>
                             <constraint firstItem="xN5-zF-4T7" firstAttribute="top" secondItem="c6x-C1-951" secondAttribute="top" constant="8" id="pbs-5S-fDY"/>
                         </constraints>
@@ -264,7 +273,7 @@
                 </viewController>
                 <customObject id="xBo-HB-BKP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="1725"/>
+            <point key="canvasLocation" x="949" y="1725"/>
         </scene>
         <!--Section View Controller-->
         <scene sceneID="uYZ-Rm-8hN">
@@ -341,14 +350,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C2l-Vj-P7a">
+                                <rect key="frame" x="134" y="264" width="49" height="32"/>
+                                <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L0m-mU-3xM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="createSection:" target="HNj-Nd-wlE" id="kgG-tP-ll6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="01g-bo-gMd" firstAttribute="top" secondItem="90I-1b-LDp" secondAttribute="top" constant="8" id="2Zs-E0-82M"/>
                             <constraint firstItem="01g-bo-gMd" firstAttribute="centerX" secondItem="90I-1b-LDp" secondAttribute="centerX" id="4DL-oH-VWR"/>
                             <constraint firstItem="qh0-wS-ZBW" firstAttribute="top" secondItem="01g-bo-gMd" secondAttribute="bottom" constant="8" id="AT9-qa-Ovi"/>
                             <constraint firstAttribute="trailing" secondItem="qh0-wS-ZBW" secondAttribute="trailing" constant="8" id="IGT-e0-bPU"/>
+                            <constraint firstAttribute="trailing" secondItem="C2l-Vj-P7a" secondAttribute="trailing" constant="16" id="NuK-AW-LYe"/>
                             <constraint firstAttribute="bottom" secondItem="qh0-wS-ZBW" secondAttribute="bottom" constant="8" id="Oek-SG-gat"/>
                             <constraint firstItem="qh0-wS-ZBW" firstAttribute="leading" secondItem="90I-1b-LDp" secondAttribute="leading" constant="8" id="WtG-Xj-cKq"/>
+                            <constraint firstItem="C2l-Vj-P7a" firstAttribute="top" secondItem="90I-1b-LDp" secondAttribute="top" constant="8" id="iTI-Ua-1Gz"/>
                         </constraints>
                     </view>
                     <connections>
