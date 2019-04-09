@@ -18,11 +18,12 @@ class EditLevelViewController: NSViewController {
   
   @IBAction func pressedSave(_ sender: Any) {
     level.name = levelNameTextField.stringValue
+    TableManager.shared.updateLevels()
+    //TODO update difficulty
+    dismiss(self)
   }
   
   func setUp(level:Level){
-    //TODO connect all the UI elements
     self.level = level
-    
   }
 }
