@@ -7,6 +7,7 @@ import RealmSwift
 class EditSegmentViewController: NSViewController {
   
   let tileManager = TileManager()
+  var tiles = [[TileView]]()
   var pieces = [Piece]()
 
   @IBOutlet weak var heightTextField: NSTextField!
@@ -26,14 +27,27 @@ class EditSegmentViewController: NSViewController {
     //TODO set up all properties and show all pieces
     print("setting up")
     if let curSegment = TableManager.shared.curSegment{
+      
+      //set the height in text field
       heightTextField.stringValue = "\(curSegment.height)"
+      
+      //show all the pieces
+      let pieces = curSegment.pieces.map{$0}
+      for piece in pieces{
+        create(x: piece.x, y: piece.y)
+      }
     }
   }
   
   func createGrid(){
-    for var y in 0...10{
-      for var x in 0...32{
+    
+    for x in 0...32{
+      tiles.append([])
+      for y in 0...10{
+        
         let tileView = TileView.init(frame: NSRect(x: 20+x*16, y: 20 + y*16, width: 15, height: 15))
+        
+        tiles[x].append(tileView) 
         tileView.setPosition(x: x, y: y)
         containerView.addSubview(tileView)
         tileView.delegate = tileManager
@@ -72,9 +86,22 @@ class EditSegmentViewController: NSViewController {
   @IBAction func pressedSave(_ sender: Any) {
     print("pressed save")
     if let curSegment = TableManager.shared.curSegment{
+      
+      //save height
       curSegment.height = heightTextField.integerValue
+      
+      //save all pieces
+      curSegment.pieces.removeAll()
+      for piece in pieces{
+        curSegment.add(piece: piece)
+      }
+      
     }
     dismiss(self)
+  }
+  
+  func getTile(x:Int,y:Int) -> TileView{
+    return tiles[x][y]
   }
   
   

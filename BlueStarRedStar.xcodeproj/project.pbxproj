@@ -96,6 +96,8 @@
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
 		0B98CCDB224ABC3A00C2D763 /* ca.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCDA224ABC3A00C2D763 /* ca.ttf */; };
 		0B98CCDD224B14C800C2D763 /* Space.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCDC224B14C800C2D763 /* Space.sks */; };
+		0B9CA1A4226045DD005C8066 /* PieceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CA1A3226045DD005C8066 /* PieceViewDelegate.swift */; };
+		0B9CA1A62260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CA1A52260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift */; };
 		0BB390BF2247F1B6009F08B1 /* TailPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB390BE2247F1B6009F08B1 /* TailPiece.swift */; };
 		0BB390C6224856EF009F08B1 /* Simply Rounded Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C5224856EF009F08B1 /* Simply Rounded Italic.ttf */; };
 		0BB390C822487122009F08B1 /* pure_and_simple_everytime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C722487122009F08B1 /* pure_and_simple_everytime.ttf */; };
@@ -206,6 +208,8 @@
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
 		0B98CCDA224ABC3A00C2D763 /* ca.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ca.ttf; sourceTree = "<group>"; };
 		0B98CCDC224B14C800C2D763 /* Space.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Space.sks; sourceTree = "<group>"; };
+		0B9CA1A3226045DD005C8066 /* PieceViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceViewDelegate.swift; sourceTree = "<group>"; };
+		0B9CA1A52260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditSegmentViewController+PieceViewDelegate.swift"; sourceTree = "<group>"; };
 		0BB390BE2247F1B6009F08B1 /* TailPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailPiece.swift; sourceTree = "<group>"; };
 		0BB390C5224856EF009F08B1 /* Simply Rounded Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simply Rounded Italic.ttf"; sourceTree = "<group>"; };
 		0BB390C722487122009F08B1 /* pure_and_simple_everytime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pure_and_simple_everytime.ttf; sourceTree = "<group>"; };
@@ -411,9 +415,9 @@
 			isa = PBXGroup;
 			children = (
 				0B63A2102258157900ACC399 /* TileView.swift */,
+				0B63A21622582FBC00ACC399 /* TileDelegate.swift */,
 				0B63A21422582F8A00ACC399 /* TileManager.swift */,
 				0B63A2182258303400ACC399 /* TileManager+TileDelegate.swift */,
-				0B63A21622582FBC00ACC399 /* TileDelegate.swift */,
 				0B63A21B225832B300ACC399 /* TileManagerDelegate.swift */,
 			);
 			path = Tiles;
@@ -475,7 +479,9 @@
 			children = (
 				0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */,
 				0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */,
+				0B9CA1A52260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift */,
 				0B63A21F2258342E00ACC399 /* PieceView.swift */,
+				0B9CA1A3226045DD005C8066 /* PieceViewDelegate.swift */,
 				0B63A21A2258305200ACC399 /* Tiles */,
 			);
 			path = EditSegments;
@@ -872,6 +878,7 @@
 				0B63A21E225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift in Sources */,
 				0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */,
 				0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */,
+				0B9CA1A4226045DD005C8066 /* PieceViewDelegate.swift in Sources */,
 				0B63A20A2257BC6900ACC399 /* Section.swift in Sources */,
 				0B63A2092257BC6900ACC399 /* Level.swift in Sources */,
 				0B63A21722582FBC00ACC399 /* TileDelegate.swift in Sources */,
@@ -882,6 +889,7 @@
 				0B63A2112258157900ACC399 /* TileView.swift in Sources */,
 				0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */,
 				0B63A231225BA7CF00ACC399 /* TableViewController.swift in Sources */,
+				0B9CA1A62260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift in Sources */,
 				0B63A23A225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift in Sources */,
 				0B4A8AB4225704CF0089B642 /* AppDelegate.swift in Sources */,
 				0B63A2202258342E00ACC399 /* PieceView.swift in Sources */,

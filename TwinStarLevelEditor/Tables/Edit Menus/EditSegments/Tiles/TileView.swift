@@ -10,7 +10,7 @@ class TileView: NSView {
   
   
   func setPosition(x:Int,y:Int){
-    
+    position = (x,y)
   }
   
   override func draw(_ dirtyRect: NSRect) {
