@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		066087A0A99A5B7343E89E98 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36660718BDD52A8B8F434AF6 /* Pods_BlueStarRedStarTests.framework */; };
 		0B08D2CB223DB8D5006942A0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2CA223DB8D5006942A0 /* Level.swift */; };
 		0B08D2CD223DB9B3006942A0 /* LevelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2CC223DB9B3006942A0 /* LevelManager.swift */; };
 		0B08D2CF223DC261006942A0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2CE223DC261006942A0 /* Section.swift */; };
@@ -50,6 +51,40 @@
 		0B2F874A223D8DC9001D50E6 /* PlayerMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F8749223D8DC9001D50E6 /* PlayerMaster.swift */; };
 		0B4A8AAA225589930089B642 /* NewHighScoreView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AA9225589930089B642 /* NewHighScoreView+Animations.swift */; };
 		0B4A8AAC225681100089B642 /* HighScoreStars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AAB225681100089B642 /* HighScoreStars.sks */; };
+		0B4A8AB4225704CF0089B642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB3225704CF0089B642 /* AppDelegate.swift */; };
+		0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */; };
+		0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB7225704D00089B642 /* Assets.xcassets */; };
+		0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB9225704D00089B642 /* Main.storyboard */; };
+		0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
+		0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E2F1B22571A5D009A091F /* StaticHelper.swift */; };
+		0B5E2F1E22571C36009A091F /* PieceColor+GetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */; };
+		0B63A2092257BC6900ACC399 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2CA223DB8D5006942A0 /* Level.swift */; };
+		0B63A20A2257BC6900ACC399 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2CE223DC261006942A0 /* Section.swift */; };
+		0B63A20B2257BC6900ACC399 /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D0223DC2F2006942A0 /* Segment.swift */; };
+		0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D2223DC352006942A0 /* Piece.swift */; };
+		0B63A20D2257BC6900ACC399 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A7A2241D8450003CE03 /* HighScore.swift */; };
+		0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D4223DCEA7006942A0 /* LevelCreator.swift */; };
+		0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A8F2242E9DD0003CE03 /* LevelCreator+Level1.swift */; };
+		0B63A2112258157900ACC399 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A2102258157900ACC399 /* TileView.swift */; };
+		0B63A21522582F8A00ACC399 /* TileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21422582F8A00ACC399 /* TileManager.swift */; };
+		0B63A21722582FBC00ACC399 /* TileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21622582FBC00ACC399 /* TileDelegate.swift */; };
+		0B63A2192258303400ACC399 /* TileManager+TileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A2182258303400ACC399 /* TileManager+TileDelegate.swift */; };
+		0B63A21C225832B300ACC399 /* TileManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21B225832B300ACC399 /* TileManagerDelegate.swift */; };
+		0B63A21E225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */; };
+		0B63A2202258342E00ACC399 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21F2258342E00ACC399 /* PieceView.swift */; };
+		0B63A224225843FE00ACC399 /* EditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A223225843FE00ACC399 /* EditorWindowController.swift */; };
+		0B63A226225A838000ACC399 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A225225A838000ACC399 /* RealmManager.swift */; };
+		0B63A22F225AFD3800ACC399 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A22E225AFD3800ACC399 /* LevelViewController.swift */; };
+		0B63A231225BA7CF00ACC399 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A230225BA7CF00ACC399 /* TableViewController.swift */; };
+		0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */; };
+		0B63A235225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A234225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift */; };
+		0B63A238225C601200ACC399 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A237225C601200ACC399 /* SectionViewController.swift */; };
+		0B63A23A225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */; };
+		0B63A23C225C621400ACC399 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A23B225C621400ACC399 /* SegmentViewController.swift */; };
+		0B63A23E225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */; };
+		0B63A240225D409300ACC399 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A23F225D409300ACC399 /* TableManager.swift */; };
+		0B63A242225D5ED300ACC399 /* EditLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A241225D5ED300ACC399 /* EditLevelViewController.swift */; };
+		0B63A247225FDEE700ACC399 /* EditSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A245225FDEE700ACC399 /* EditSectionViewController.swift */; };
 		0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC043223EDD88003E84EF /* PieceNode.swift */; };
 		0B7AC046223EE811003E84EF /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC045223EE811003E84EF /* Wall.swift */; };
 		0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC047223EF7FC003E84EF /* StaticHelper.swift */; };
@@ -61,6 +96,8 @@
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
 		0B98CCDB224ABC3A00C2D763 /* ca.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCDA224ABC3A00C2D763 /* ca.ttf */; };
 		0B98CCDD224B14C800C2D763 /* Space.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCDC224B14C800C2D763 /* Space.sks */; };
+		0B9CA1A4226045DD005C8066 /* PieceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CA1A3226045DD005C8066 /* PieceViewDelegate.swift */; };
+		0B9CA1A62260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CA1A52260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift */; };
 		0BB390BF2247F1B6009F08B1 /* TailPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB390BE2247F1B6009F08B1 /* TailPiece.swift */; };
 		0BB390C6224856EF009F08B1 /* Simply Rounded Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C5224856EF009F08B1 /* Simply Rounded Italic.ttf */; };
 		0BB390C822487122009F08B1 /* pure_and_simple_everytime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390C722487122009F08B1 /* pure_and_simple_everytime.ttf */; };
@@ -69,8 +106,8 @@
 		0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390CE224979EF009F08B1 /* PlayerHurt.sks */; };
 		0BB390D1224980C4009F08B1 /* points.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D0224980C4009F08B1 /* points.sks */; };
 		0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D22249BAA9009F08B1 /* Tail.sks */; };
-		303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */; };
-		F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */; };
+		201E3F84A9BC15B946134067 /* Pods_TwinStarLevelEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59C62B5929A4F1C25F34CFF /* Pods_TwinStarLevelEditor.framework */; };
+		97DF5292F175791B7BBC75FB /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19447945DFD9BA2253AD61BF /* Pods_BlueStarRedStar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +168,35 @@
 		0B2F8749223D8DC9001D50E6 /* PlayerMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMaster.swift; sourceTree = "<group>"; };
 		0B4A8AA9225589930089B642 /* NewHighScoreView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewHighScoreView+Animations.swift"; sourceTree = "<group>"; };
 		0B4A8AAB225681100089B642 /* HighScoreStars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HighScoreStars.sks; sourceTree = "<group>"; };
+		0B4A8AB1225704CE0089B642 /* TwinStarLevelEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwinStarLevelEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4A8AB3225704CF0089B642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSegmentViewController.swift; sourceTree = "<group>"; };
+		0B4A8AB7225704D00089B642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B4A8ABA225704D00089B642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B4A8ABC225704D00089B642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4A8ABD225704D00089B642 /* TwinStarLevelEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwinStarLevelEditor.entitlements; sourceTree = "<group>"; };
+		0B5E2F1B22571A5D009A091F /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
+		0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetColor.swift"; sourceTree = "<group>"; };
+		0B63A2102258157900ACC399 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		0B63A21422582F8A00ACC399 /* TileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileManager.swift; sourceTree = "<group>"; };
+		0B63A21622582FBC00ACC399 /* TileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileDelegate.swift; sourceTree = "<group>"; };
+		0B63A2182258303400ACC399 /* TileManager+TileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TileManager+TileDelegate.swift"; sourceTree = "<group>"; };
+		0B63A21B225832B300ACC399 /* TileManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileManagerDelegate.swift; sourceTree = "<group>"; };
+		0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditSegmentViewController+TileManagerDelegate.swift"; sourceTree = "<group>"; };
+		0B63A21F2258342E00ACC399 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		0B63A223225843FE00ACC399 /* EditorWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorWindowController.swift; sourceTree = "<group>"; };
+		0B63A225225A838000ACC399 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		0B63A22E225AFD3800ACC399 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		0B63A230225BA7CF00ACC399 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+Delegate+DataSource.swift"; sourceTree = "<group>"; };
+		0B63A234225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LevelViewController+TaleViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
+		0B63A237225C601200ACC399 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionViewController+TableDataSource+Delegate.swift"; sourceTree = "<group>"; };
+		0B63A23B225C621400ACC399 /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentViewController+TableViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
+		0B63A23F225D409300ACC399 /* TableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		0B63A241225D5ED300ACC399 /* EditLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLevelViewController.swift; sourceTree = "<group>"; };
+		0B63A245225FDEE700ACC399 /* EditSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSectionViewController.swift; sourceTree = "<group>"; };
 		0B7AC043223EDD88003E84EF /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
 		0B7AC045223EE811003E84EF /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		0B7AC047223EF7FC003E84EF /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
@@ -142,6 +208,8 @@
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
 		0B98CCDA224ABC3A00C2D763 /* ca.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ca.ttf; sourceTree = "<group>"; };
 		0B98CCDC224B14C800C2D763 /* Space.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Space.sks; sourceTree = "<group>"; };
+		0B9CA1A3226045DD005C8066 /* PieceViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceViewDelegate.swift; sourceTree = "<group>"; };
+		0B9CA1A52260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditSegmentViewController+PieceViewDelegate.swift"; sourceTree = "<group>"; };
 		0BB390BE2247F1B6009F08B1 /* TailPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailPiece.swift; sourceTree = "<group>"; };
 		0BB390C5224856EF009F08B1 /* Simply Rounded Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simply Rounded Italic.ttf"; sourceTree = "<group>"; };
 		0BB390C722487122009F08B1 /* pure_and_simple_everytime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pure_and_simple_everytime.ttf; sourceTree = "<group>"; };
@@ -150,12 +218,15 @@
 		0BB390CE224979EF009F08B1 /* PlayerHurt.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerHurt.sks; sourceTree = "<group>"; };
 		0BB390D0224980C4009F08B1 /* points.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = points.sks; sourceTree = "<group>"; };
 		0BB390D22249BAA9009F08B1 /* Tail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tail.sks; sourceTree = "<group>"; };
-		2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.release.xcconfig"; sourceTree = "<group>"; };
-		4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
-		7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A7408706880162E6C86EB96 /* Pods-BlueStarRedStarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE2154F6F3B50168353396B0 /* Pods-BlueStarRedStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.debug.xcconfig"; sourceTree = "<group>"; };
+		13A8CDDEA484CCC0DF8D0EAE /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
+		19447945DFD9BA2253AD61BF /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E832262D18BE91BA2C5FB7 /* Pods-BlueStarRedStarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36660718BDD52A8B8F434AF6 /* Pods_BlueStarRedStarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BC926B982E4814E22A73C6 /* Pods-BlueStarRedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.release.xcconfig"; sourceTree = "<group>"; };
+		C59C62B5929A4F1C25F34CFF /* Pods_TwinStarLevelEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwinStarLevelEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B9B040C820E02BCA4CDA03 /* Pods-BlueStarRedStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.debug.xcconfig"; sourceTree = "<group>"; };
+		CA559244C213B12788674B82 /* Pods-TwinStarLevelEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwinStarLevelEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwinStarLevelEditor/Pods-TwinStarLevelEditor.release.xcconfig"; sourceTree = "<group>"; };
+		D87BC6471E8A845F413ABE73 /* Pods-TwinStarLevelEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwinStarLevelEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwinStarLevelEditor/Pods-TwinStarLevelEditor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				303B2C6FD9E6C3432667366E /* Pods_BlueStarRedStar.framework in Frameworks */,
+				97DF5292F175791B7BBC75FB /* Pods_BlueStarRedStar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +242,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F2DD8228FFA96A0F609257 /* Pods_BlueStarRedStarTests.framework in Frameworks */,
+				066087A0A99A5B7343E89E98 /* Pods_BlueStarRedStarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B4A8AAE225704CE0089B642 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201E3F84A9BC15B946134067 /* Pods_TwinStarLevelEditor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,10 +302,12 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871D223C6F41001D50E6 /* BlueStarRedStar */,
+				0B63A244225FD8A900ACC399 /* Shared Classes */,
+				0B4A8AB2225704CF0089B642 /* TwinStarLevelEditor */,
 				0B2F8738223C6F42001D50E6 /* BlueStarRedStarTests */,
 				0B2F871C223C6F41001D50E6 /* Products */,
-				CC21506F74FBB6CECEB27BCB /* Pods */,
-				5129CB716704C2C25DF2B308 /* Frameworks */,
+				ABFF9B6CC6E94BE009C10620 /* Pods */,
+				68FF7F2B04209B36B04EC7B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +316,7 @@
 			children = (
 				0B2F871B223C6F41001D50E6 /* BlueStarRedStar.app */,
 				0B2F8735223C6F42001D50E6 /* BlueStarRedStarTests.xctest */,
+				0B4A8AB1225704CE0089B642 /* TwinStarLevelEditor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +326,7 @@
 			children = (
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
 				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
+				0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
 				0B172A8E2242E9C00003CE03 /* LevelCreator */,
 				0B172A71224144F70003CE03 /* Menus */,
@@ -255,7 +338,6 @@
 				0B172A7C2241DA870003CE03 /* HighsScoreManager.swift */,
 				0BB390C4224856C9009F08B1 /* Fonts */,
 				0B7AC042223EDD74003E84EF /* Pieces */,
-				0B4E219C223DB87D0035AB99 /* Realm Objects */,
 				0B2F874B223D90F5001D50E6 /* Player */,
 				0B2F8728223C6F41001D50E6 /* Main.storyboard */,
 				0B2F872B223C6F42001D50E6 /* Assets.xcassets */,
@@ -299,6 +381,24 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
+		0B4A8AB2225704CF0089B642 /* TwinStarLevelEditor */ = {
+			isa = PBXGroup;
+			children = (
+				0B4A8AB3225704CF0089B642 /* AppDelegate.swift */,
+				0B5E2F1B22571A5D009A091F /* StaticHelper.swift */,
+				0B63A225225A838000ACC399 /* RealmManager.swift */,
+				0B63A22B225AB4A100ACC399 /* Windows */,
+				0B63A236225C5FCF00ACC399 /* Tables */,
+				0B63A230225BA7CF00ACC399 /* TableViewController.swift */,
+				0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */,
+				0B4A8AB7225704D00089B642 /* Assets.xcassets */,
+				0B4A8AB9225704D00089B642 /* Main.storyboard */,
+				0B4A8ABC225704D00089B642 /* Info.plist */,
+				0B4A8ABD225704D00089B642 /* TwinStarLevelEditor.entitlements */,
+			);
+			path = TwinStarLevelEditor;
+			sourceTree = "<group>";
+		};
 		0B4E219C223DB87D0035AB99 /* Realm Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +411,59 @@
 			path = "Realm Objects";
 			sourceTree = "<group>";
 		};
+		0B63A21A2258305200ACC399 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				0B63A2102258157900ACC399 /* TileView.swift */,
+				0B63A21622582FBC00ACC399 /* TileDelegate.swift */,
+				0B63A21422582F8A00ACC399 /* TileManager.swift */,
+				0B63A2182258303400ACC399 /* TileManager+TileDelegate.swift */,
+				0B63A21B225832B300ACC399 /* TileManagerDelegate.swift */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+		0B63A22B225AB4A100ACC399 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				0B63A223225843FE00ACC399 /* EditorWindowController.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		0B63A236225C5FCF00ACC399 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				0B63A23F225D409300ACC399 /* TableManager.swift */,
+				0B63A22E225AFD3800ACC399 /* LevelViewController.swift */,
+				0B63A234225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift */,
+				0B63A237225C601200ACC399 /* SectionViewController.swift */,
+				0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */,
+				0B63A23B225C621400ACC399 /* SegmentViewController.swift */,
+				0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */,
+				0B63A243225D5EDA00ACC399 /* Edit Menus */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		0B63A243225D5EDA00ACC399 /* Edit Menus */ = {
+			isa = PBXGroup;
+			children = (
+				0B63A241225D5ED300ACC399 /* EditLevelViewController.swift */,
+				0B63A245225FDEE700ACC399 /* EditSectionViewController.swift */,
+				0B9CA1A222600A3F005C8066 /* EditSegments */,
+			);
+			path = "Edit Menus";
+			sourceTree = "<group>";
+		};
+		0B63A244225FD8A900ACC399 /* Shared Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0B4E219C223DB87D0035AB99 /* Realm Objects */,
+			);
+			path = "Shared Classes";
+			sourceTree = "<group>";
+		};
 		0B7AC042223EDD74003E84EF /* Pieces */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +472,19 @@
 				0B7AC049223F1FD5003E84EF /* Coin.swift */,
 			);
 			path = Pieces;
+			sourceTree = "<group>";
+		};
+		0B9CA1A222600A3F005C8066 /* EditSegments */ = {
+			isa = PBXGroup;
+			children = (
+				0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */,
+				0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */,
+				0B9CA1A52260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift */,
+				0B63A21F2258342E00ACC399 /* PieceView.swift */,
+				0B9CA1A3226045DD005C8066 /* PieceViewDelegate.swift */,
+				0B63A21A2258305200ACC399 /* Tiles */,
+			);
+			path = EditSegments;
 			sourceTree = "<group>";
 		};
 		0BB390C4224856C9009F08B1 /* Fonts */ = {
@@ -348,22 +514,25 @@
 			path = Effects;
 			sourceTree = "<group>";
 		};
-		5129CB716704C2C25DF2B308 /* Frameworks */ = {
+		68FF7F2B04209B36B04EC7B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4FF3DC2A532183B0D580ECF4 /* Pods_BlueStarRedStar.framework */,
-				7348EAF4CF660E3E3ADE3AC8 /* Pods_BlueStarRedStarTests.framework */,
+				19447945DFD9BA2253AD61BF /* Pods_BlueStarRedStar.framework */,
+				36660718BDD52A8B8F434AF6 /* Pods_BlueStarRedStarTests.framework */,
+				C59C62B5929A4F1C25F34CFF /* Pods_TwinStarLevelEditor.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CC21506F74FBB6CECEB27BCB /* Pods */ = {
+		ABFF9B6CC6E94BE009C10620 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BE2154F6F3B50168353396B0 /* Pods-BlueStarRedStar.debug.xcconfig */,
-				705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */,
-				7A7408706880162E6C86EB96 /* Pods-BlueStarRedStarTests.debug.xcconfig */,
-				2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */,
+				C7B9B040C820E02BCA4CDA03 /* Pods-BlueStarRedStar.debug.xcconfig */,
+				13A8CDDEA484CCC0DF8D0EAE /* Pods-BlueStarRedStar.release.xcconfig */,
+				21E832262D18BE91BA2C5FB7 /* Pods-BlueStarRedStarTests.debug.xcconfig */,
+				47BC926B982E4814E22A73C6 /* Pods-BlueStarRedStarTests.release.xcconfig */,
+				D87BC6471E8A845F413ABE73 /* Pods-TwinStarLevelEditor.debug.xcconfig */,
+				CA559244C213B12788674B82 /* Pods-TwinStarLevelEditor.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -375,11 +544,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B2F873E223C6F42001D50E6 /* Build configuration list for PBXNativeTarget "BlueStarRedStar" */;
 			buildPhases = (
-				7E77E8956AA19E16DCB773AE /* [CP] Check Pods Manifest.lock */,
+				F8BBAA67B99956839FBB6C28 /* [CP] Check Pods Manifest.lock */,
 				0B2F8717223C6F41001D50E6 /* Sources */,
 				0B2F8718223C6F41001D50E6 /* Frameworks */,
 				0B2F8719223C6F41001D50E6 /* Resources */,
-				260DEC6A2064B45BA8D1B054 /* [CP] Embed Pods Frameworks */,
+				690C025A88A44B934C5DA18E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,7 +563,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B2F8741223C6F42001D50E6 /* Build configuration list for PBXNativeTarget "BlueStarRedStarTests" */;
 			buildPhases = (
-				FEDD516A3CF40A065AB9D9B5 /* [CP] Check Pods Manifest.lock */,
+				F240B2DB2CAF51351EE47AF9 /* [CP] Check Pods Manifest.lock */,
 				0B2F8731223C6F42001D50E6 /* Sources */,
 				0B2F8732223C6F42001D50E6 /* Frameworks */,
 				0B2F8733223C6F42001D50E6 /* Resources */,
@@ -408,6 +577,25 @@
 			productName = BlueStarRedStarTests;
 			productReference = 0B2F8735223C6F42001D50E6 /* BlueStarRedStarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B4A8AB0225704CE0089B642 /* TwinStarLevelEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4A8AC0225704D00089B642 /* Build configuration list for PBXNativeTarget "TwinStarLevelEditor" */;
+			buildPhases = (
+				827A085A1C1281CF698CB0F2 /* [CP] Check Pods Manifest.lock */,
+				0B4A8AAD225704CE0089B642 /* Sources */,
+				0B4A8AAE225704CE0089B642 /* Frameworks */,
+				0B4A8AAF225704CE0089B642 /* Resources */,
+				5CC689229D11293F7DB1A435 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwinStarLevelEditor;
+			productName = TwinStarLevelEditor;
+			productReference = 0B4A8AB1225704CE0089B642 /* TwinStarLevelEditor.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -426,6 +614,9 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 0B2F871A223C6F41001D50E6;
 					};
+					0B4A8AB0225704CE0089B642 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 0B2F8716223C6F40001D50E6 /* Build configuration list for PBXProject "BlueStarRedStar" */;
@@ -443,6 +634,7 @@
 			targets = (
 				0B2F871A223C6F41001D50E6 /* BlueStarRedStar */,
 				0B2F8734223C6F42001D50E6 /* BlueStarRedStarTests */,
+				0B4A8AB0225704CE0089B642 /* TwinStarLevelEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -485,10 +677,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B4A8AAF225704CE0089B642 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */,
+				0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		260DEC6A2064B45BA8D1B054 /* [CP] Embed Pods Frameworks */ = {
+		5CC689229D11293F7DB1A435 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwinStarLevelEditor/Pods-TwinStarLevelEditor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-macOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwinStarLevelEditor/Pods-TwinStarLevelEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690C025A88A44B934C5DA18E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,8 +722,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -512,7 +737,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E77E8956AA19E16DCB773AE /* [CP] Check Pods Manifest.lock */ = {
+		827A085A1C1281CF698CB0F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -527,14 +752,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BlueStarRedStar-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TwinStarLevelEditor-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FEDD516A3CF40A065AB9D9B5 /* [CP] Check Pods Manifest.lock */ = {
+		F240B2DB2CAF51351EE47AF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -550,6 +775,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BlueStarRedStarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8BBAA67B99956839FBB6C28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueStarRedStar-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -583,6 +830,7 @@
 				0B2F8725223C6F41001D50E6 /* GameScene.swift in Sources */,
 				0B24CCCC22527E05002F3410 /* KeyView.swift in Sources */,
 				0B2F874A223D8DC9001D50E6 /* PlayerMaster.swift in Sources */,
+				0B5E2F1E22571C36009A091F /* PieceColor+GetColor.swift in Sources */,
 				0B172A902242E9DD0003CE03 /* LevelCreator+Level1.swift in Sources */,
 				0B172A7D2241DA870003CE03 /* HighsScoreManager.swift in Sources */,
 				0B2F8727223C6F41001D50E6 /* GameViewController.swift in Sources */,
@@ -612,6 +860,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B4A8AAD225704CE0089B642 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */,
+				0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */,
+				0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */,
+				0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */,
+				0B63A20B2257BC6900ACC399 /* Segment.swift in Sources */,
+				0B63A226225A838000ACC399 /* RealmManager.swift in Sources */,
+				0B63A20D2257BC6900ACC399 /* HighScore.swift in Sources */,
+				0B63A2192258303400ACC399 /* TileManager+TileDelegate.swift in Sources */,
+				0B63A23E225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift in Sources */,
+				0B63A235225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift in Sources */,
+				0B63A22F225AFD3800ACC399 /* LevelViewController.swift in Sources */,
+				0B63A21E225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift in Sources */,
+				0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */,
+				0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */,
+				0B9CA1A4226045DD005C8066 /* PieceViewDelegate.swift in Sources */,
+				0B63A20A2257BC6900ACC399 /* Section.swift in Sources */,
+				0B63A2092257BC6900ACC399 /* Level.swift in Sources */,
+				0B63A21722582FBC00ACC399 /* TileDelegate.swift in Sources */,
+				0B63A238225C601200ACC399 /* SectionViewController.swift in Sources */,
+				0B63A21C225832B300ACC399 /* TileManagerDelegate.swift in Sources */,
+				0B63A247225FDEE700ACC399 /* EditSectionViewController.swift in Sources */,
+				0B63A242225D5ED300ACC399 /* EditLevelViewController.swift in Sources */,
+				0B63A2112258157900ACC399 /* TileView.swift in Sources */,
+				0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */,
+				0B63A231225BA7CF00ACC399 /* TableViewController.swift in Sources */,
+				0B9CA1A62260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift in Sources */,
+				0B63A23A225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift in Sources */,
+				0B4A8AB4225704CF0089B642 /* AppDelegate.swift in Sources */,
+				0B63A2202258342E00ACC399 /* PieceView.swift in Sources */,
+				0B63A224225843FE00ACC399 /* EditorWindowController.swift in Sources */,
+				0B63A240225D409300ACC399 /* TableManager.swift in Sources */,
+				0B63A21522582F8A00ACC399 /* TileManager.swift in Sources */,
+				0B63A23C225C621400ACC399 /* SegmentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -637,6 +925,14 @@
 				0B2F872E223C6F42001D50E6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0B4A8AB9225704D00089B642 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B4A8ABA225704D00089B642 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -760,7 +1056,7 @@
 		};
 		0B2F873F223C6F42001D50E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2154F6F3B50168353396B0 /* Pods-BlueStarRedStar.debug.xcconfig */;
+			baseConfigurationReference = C7B9B040C820E02BCA4CDA03 /* Pods-BlueStarRedStar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -779,7 +1075,7 @@
 		};
 		0B2F8740223C6F42001D50E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 705F61EC6E877E1939A397F8 /* Pods-BlueStarRedStar.release.xcconfig */;
+			baseConfigurationReference = 13A8CDDEA484CCC0DF8D0EAE /* Pods-BlueStarRedStar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -798,7 +1094,7 @@
 		};
 		0B2F8742223C6F42001D50E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A7408706880162E6C86EB96 /* Pods-BlueStarRedStarTests.debug.xcconfig */;
+			baseConfigurationReference = 21E832262D18BE91BA2C5FB7 /* Pods-BlueStarRedStarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -820,7 +1116,7 @@
 		};
 		0B2F8743223C6F42001D50E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D2619BB58D761E77A7DADDF /* Pods-BlueStarRedStarTests.release.xcconfig */;
+			baseConfigurationReference = 47BC926B982E4814E22A73C6 /* Pods-BlueStarRedStarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -837,6 +1133,54 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueStarRedStar.app/BlueStarRedStar";
+			};
+			name = Release;
+		};
+		0B4A8ABE225704D00089B642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87BC6471E8A845F413ABE73 /* Pods-TwinStarLevelEditor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TwinStarLevelEditor/TwinStarLevelEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L688AU9RCV;
+				INFOPLIST_FILE = TwinStarLevelEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencersymington.TwinStarLevelEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		0B4A8ABF225704D00089B642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA559244C213B12788674B82 /* Pods-TwinStarLevelEditor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TwinStarLevelEditor/TwinStarLevelEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = L688AU9RCV;
+				INFOPLIST_FILE = TwinStarLevelEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencersymington.TwinStarLevelEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -866,6 +1210,15 @@
 			buildConfigurations = (
 				0B2F8742223C6F42001D50E6 /* Debug */,
 				0B2F8743223C6F42001D50E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B4A8AC0225704D00089B642 /* Build configuration list for PBXNativeTarget "TwinStarLevelEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4A8ABE225704D00089B642 /* Debug */,
+				0B4A8ABF225704D00089B642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

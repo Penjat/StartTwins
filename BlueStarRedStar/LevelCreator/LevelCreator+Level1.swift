@@ -5,7 +5,7 @@ import RealmSwift
 extension LevelCreator{
   
   static func createLevel1(realm:Realm){
-    
+    print("creating level 1")
     try! realm.write {
       let level = Level()
       level.name = "level 1"

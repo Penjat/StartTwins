@@ -55,7 +55,7 @@ class HighScoreManager{
       saveHigh(score:100 , playerName:"ISON" ,realm:realm)
       
     }else{
-      print("There are \(highScores.count) levels")
+      print("There are \(highScores.count) highscores")
     }
     
     
