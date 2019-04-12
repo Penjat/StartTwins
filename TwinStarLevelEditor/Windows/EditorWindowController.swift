@@ -47,6 +47,11 @@ class EditorWindowController: NSWindowController {
     curLevelItem = levelItem
   }
   
+  @IBAction func pressedSave(_ sender: Any) {
+    print("pressed save")
+    TableManager.shared.saveTableData()
+  }
+  
   
   
 }
