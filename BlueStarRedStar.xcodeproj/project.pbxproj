@@ -52,7 +52,7 @@
 		0B4A8AAA225589930089B642 /* NewHighScoreView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AA9225589930089B642 /* NewHighScoreView+Animations.swift */; };
 		0B4A8AAC225681100089B642 /* HighScoreStars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AAB225681100089B642 /* HighScoreStars.sks */; };
 		0B4A8AB4225704CF0089B642 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB3225704CF0089B642 /* AppDelegate.swift */; };
-		0B4A8AB6225704CF0089B642 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB5225704CF0089B642 /* ViewController.swift */; };
+		0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */; };
 		0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB7225704D00089B642 /* Assets.xcassets */; };
 		0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB9225704D00089B642 /* Main.storyboard */; };
 		0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
@@ -66,17 +66,14 @@
 		0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2D4223DCEA7006942A0 /* LevelCreator.swift */; };
 		0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A8F2242E9DD0003CE03 /* LevelCreator+Level1.swift */; };
 		0B63A2112258157900ACC399 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A2102258157900ACC399 /* TileView.swift */; };
-		0B63A21322582C4200ACC399 /* EditSegmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21222582C4200ACC399 /* EditSegmentController.swift */; };
 		0B63A21522582F8A00ACC399 /* TileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21422582F8A00ACC399 /* TileManager.swift */; };
 		0B63A21722582FBC00ACC399 /* TileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21622582FBC00ACC399 /* TileDelegate.swift */; };
 		0B63A2192258303400ACC399 /* TileManager+TileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A2182258303400ACC399 /* TileManager+TileDelegate.swift */; };
 		0B63A21C225832B300ACC399 /* TileManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21B225832B300ACC399 /* TileManagerDelegate.swift */; };
-		0B63A21E225832D800ACC399 /* ViewController+TileManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21D225832D800ACC399 /* ViewController+TileManagerDelegate.swift */; };
+		0B63A21E225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */; };
 		0B63A2202258342E00ACC399 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A21F2258342E00ACC399 /* PieceView.swift */; };
 		0B63A224225843FE00ACC399 /* EditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A223225843FE00ACC399 /* EditorWindowController.swift */; };
 		0B63A226225A838000ACC399 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A225225A838000ACC399 /* RealmManager.swift */; };
-		0B63A229225AA56900ACC399 /* CreateLevelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A227225AA56900ACC399 /* CreateLevelWindow.swift */; };
-		0B63A22A225AA56900ACC399 /* CreateLevelWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B63A228225AA56900ACC399 /* CreateLevelWindow.xib */; };
 		0B63A22F225AFD3800ACC399 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A22E225AFD3800ACC399 /* LevelViewController.swift */; };
 		0B63A231225BA7CF00ACC399 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A230225BA7CF00ACC399 /* TableViewController.swift */; };
 		0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */; };
@@ -87,6 +84,7 @@
 		0B63A23E225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */; };
 		0B63A240225D409300ACC399 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A23F225D409300ACC399 /* TableManager.swift */; };
 		0B63A242225D5ED300ACC399 /* EditLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A241225D5ED300ACC399 /* EditLevelViewController.swift */; };
+		0B63A247225FDEE700ACC399 /* EditSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A245225FDEE700ACC399 /* EditSectionViewController.swift */; };
 		0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC043223EDD88003E84EF /* PieceNode.swift */; };
 		0B7AC046223EE811003E84EF /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC045223EE811003E84EF /* Wall.swift */; };
 		0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC047223EF7FC003E84EF /* StaticHelper.swift */; };
@@ -170,7 +168,7 @@
 		0B4A8AAB225681100089B642 /* HighScoreStars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HighScoreStars.sks; sourceTree = "<group>"; };
 		0B4A8AB1225704CE0089B642 /* TwinStarLevelEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwinStarLevelEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4A8AB3225704CF0089B642 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B4A8AB5225704CF0089B642 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSegmentViewController.swift; sourceTree = "<group>"; };
 		0B4A8AB7225704D00089B642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B4A8ABA225704D00089B642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B4A8ABC225704D00089B642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,17 +176,14 @@
 		0B5E2F1B22571A5D009A091F /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
 		0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetColor.swift"; sourceTree = "<group>"; };
 		0B63A2102258157900ACC399 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
-		0B63A21222582C4200ACC399 /* EditSegmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSegmentController.swift; sourceTree = "<group>"; };
 		0B63A21422582F8A00ACC399 /* TileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileManager.swift; sourceTree = "<group>"; };
 		0B63A21622582FBC00ACC399 /* TileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileDelegate.swift; sourceTree = "<group>"; };
 		0B63A2182258303400ACC399 /* TileManager+TileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TileManager+TileDelegate.swift"; sourceTree = "<group>"; };
 		0B63A21B225832B300ACC399 /* TileManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileManagerDelegate.swift; sourceTree = "<group>"; };
-		0B63A21D225832D800ACC399 /* ViewController+TileManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TileManagerDelegate.swift"; sourceTree = "<group>"; };
+		0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditSegmentViewController+TileManagerDelegate.swift"; sourceTree = "<group>"; };
 		0B63A21F2258342E00ACC399 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 		0B63A223225843FE00ACC399 /* EditorWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorWindowController.swift; sourceTree = "<group>"; };
 		0B63A225225A838000ACC399 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		0B63A227225AA56900ACC399 /* CreateLevelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLevelWindow.swift; sourceTree = "<group>"; };
-		0B63A228225AA56900ACC399 /* CreateLevelWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateLevelWindow.xib; sourceTree = "<group>"; };
 		0B63A22E225AFD3800ACC399 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		0B63A230225BA7CF00ACC399 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+Delegate+DataSource.swift"; sourceTree = "<group>"; };
@@ -199,6 +194,7 @@
 		0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentViewController+TableViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
 		0B63A23F225D409300ACC399 /* TableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
 		0B63A241225D5ED300ACC399 /* EditLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLevelViewController.swift; sourceTree = "<group>"; };
+		0B63A245225FDEE700ACC399 /* EditSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSectionViewController.swift; sourceTree = "<group>"; };
 		0B7AC043223EDD88003E84EF /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
 		0B7AC045223EE811003E84EF /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		0B7AC047223EF7FC003E84EF /* StaticHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticHelper.swift; sourceTree = "<group>"; };
@@ -302,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871D223C6F41001D50E6 /* BlueStarRedStar */,
+				0B63A244225FD8A900ACC399 /* Shared Classes */,
 				0B4A8AB2225704CF0089B642 /* TwinStarLevelEditor */,
 				0B2F8738223C6F42001D50E6 /* BlueStarRedStarTests */,
 				0B2F871C223C6F41001D50E6 /* Products */,
@@ -337,7 +334,6 @@
 				0B172A7C2241DA870003CE03 /* HighsScoreManager.swift */,
 				0BB390C4224856C9009F08B1 /* Fonts */,
 				0B7AC042223EDD74003E84EF /* Pieces */,
-				0B4E219C223DB87D0035AB99 /* Realm Objects */,
 				0B2F874B223D90F5001D50E6 /* Player */,
 				0B2F8728223C6F41001D50E6 /* Main.storyboard */,
 				0B2F872B223C6F42001D50E6 /* Assets.xcassets */,
@@ -385,15 +381,9 @@
 			isa = PBXGroup;
 			children = (
 				0B4A8AB3225704CF0089B642 /* AppDelegate.swift */,
-				0B4A8AB5225704CF0089B642 /* ViewController.swift */,
-				0B63A21D225832D800ACC399 /* ViewController+TileManagerDelegate.swift */,
 				0B5E2F1B22571A5D009A091F /* StaticHelper.swift */,
-				0B63A21F2258342E00ACC399 /* PieceView.swift */,
 				0B63A225225A838000ACC399 /* RealmManager.swift */,
 				0B63A22B225AB4A100ACC399 /* Windows */,
-				0B63A21A2258305200ACC399 /* Tiles */,
-				0B63A21222582C4200ACC399 /* EditSegmentController.swift */,
-				0B63A243225D5EDA00ACC399 /* Edit Menus */,
 				0B63A236225C5FCF00ACC399 /* Tables */,
 				0B63A230225BA7CF00ACC399 /* TableViewController.swift */,
 				0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */,
@@ -433,8 +423,6 @@
 			isa = PBXGroup;
 			children = (
 				0B63A223225843FE00ACC399 /* EditorWindowController.swift */,
-				0B63A227225AA56900ACC399 /* CreateLevelWindow.swift */,
-				0B63A228225AA56900ACC399 /* CreateLevelWindow.xib */,
 			);
 			path = Windows;
 			sourceTree = "<group>";
@@ -449,6 +437,7 @@
 				0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */,
 				0B63A23B225C621400ACC399 /* SegmentViewController.swift */,
 				0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */,
+				0B63A243225D5EDA00ACC399 /* Edit Menus */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -457,8 +446,18 @@
 			isa = PBXGroup;
 			children = (
 				0B63A241225D5ED300ACC399 /* EditLevelViewController.swift */,
+				0B63A245225FDEE700ACC399 /* EditSectionViewController.swift */,
+				0B9CA1A222600A3F005C8066 /* EditSegments */,
 			);
 			path = "Edit Menus";
+			sourceTree = "<group>";
+		};
+		0B63A244225FD8A900ACC399 /* Shared Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0B4E219C223DB87D0035AB99 /* Realm Objects */,
+			);
+			path = "Shared Classes";
 			sourceTree = "<group>";
 		};
 		0B7AC042223EDD74003E84EF /* Pieces */ = {
@@ -469,6 +468,17 @@
 				0B7AC049223F1FD5003E84EF /* Coin.swift */,
 			);
 			path = Pieces;
+			sourceTree = "<group>";
+		};
+		0B9CA1A222600A3F005C8066 /* EditSegments */ = {
+			isa = PBXGroup;
+			children = (
+				0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */,
+				0B63A21D225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift */,
+				0B63A21F2258342E00ACC399 /* PieceView.swift */,
+				0B63A21A2258305200ACC399 /* Tiles */,
+			);
+			path = EditSegments;
 			sourceTree = "<group>";
 		};
 		0BB390C4224856C9009F08B1 /* Fonts */ = {
@@ -667,7 +677,6 @@
 			files = (
 				0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */,
 				0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */,
-				0B63A22A225AA56900ACC399 /* CreateLevelWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +858,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B4A8AB6225704CF0089B642 /* ViewController.swift in Sources */,
+				0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */,
 				0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */,
 				0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */,
 				0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */,
@@ -860,16 +869,15 @@
 				0B63A23E225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift in Sources */,
 				0B63A235225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift in Sources */,
 				0B63A22F225AFD3800ACC399 /* LevelViewController.swift in Sources */,
-				0B63A229225AA56900ACC399 /* CreateLevelWindow.swift in Sources */,
-				0B63A21E225832D800ACC399 /* ViewController+TileManagerDelegate.swift in Sources */,
+				0B63A21E225832D800ACC399 /* EditSegmentViewController+TileManagerDelegate.swift in Sources */,
 				0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */,
 				0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */,
-				0B63A21322582C4200ACC399 /* EditSegmentController.swift in Sources */,
 				0B63A20A2257BC6900ACC399 /* Section.swift in Sources */,
 				0B63A2092257BC6900ACC399 /* Level.swift in Sources */,
 				0B63A21722582FBC00ACC399 /* TileDelegate.swift in Sources */,
 				0B63A238225C601200ACC399 /* SectionViewController.swift in Sources */,
 				0B63A21C225832B300ACC399 /* TileManagerDelegate.swift in Sources */,
+				0B63A247225FDEE700ACC399 /* EditSectionViewController.swift in Sources */,
 				0B63A242225D5ED300ACC399 /* EditLevelViewController.swift in Sources */,
 				0B63A2112258157900ACC399 /* TileView.swift in Sources */,
 				0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */,

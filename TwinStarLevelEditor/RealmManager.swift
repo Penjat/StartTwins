@@ -19,4 +19,16 @@ class RealmManager{
       realm.deleteAll()
     }
   }
+  static func printAll(){
+    
+    let levels = getLevels()
+    print("there are \(levels.count) levels")
+    
+    var i = 0
+    for level in levels{
+      i += 1
+      print("\(i) - \(level.name)")
+    }
+    
+  }
 }

@@ -32,4 +32,14 @@ class SegmentViewController: NSViewController {
     segmentTableView.reloadData()
   }
   
+  @IBAction func pressedEdit(_ sender: Any) {
+    print("pressed edit")
+    guard TableManager.shared.curSegment != nil else{
+      print("please select a segment")
+      return
+    }
+    
+    performSegue(withIdentifier: "editSegment", sender: nil)
+  }
+  
 }

@@ -20,7 +20,10 @@ class EditorWindowController: NSWindowController {
   
   @IBAction func deleteAll(_ sender: Any) {
     RealmManager.deleteAll()
-    
+  }
+  
+  @IBAction func printAll(_ sender: Any) {
+    RealmManager.printAll()
   }
   
   func updateLevelMenu(){
@@ -44,13 +47,6 @@ class EditorWindowController: NSWindowController {
     curLevelItem = levelItem
   }
   
-  @IBAction func newLevel(_ sender: Any) {
-    print("create new level")
-    let createLevelWindow = CreateLevelWindow(windowNibName: "CreateLevelWindow")
-    createLevelWindow.showWindow(self)
-    
-    
-    
-  }
+
   
 }

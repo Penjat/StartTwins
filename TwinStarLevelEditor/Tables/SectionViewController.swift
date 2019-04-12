@@ -8,6 +8,7 @@ class SectionViewController: NSViewController {
   
   @IBOutlet weak var sectionTableView: NSTableView!
   
+
   override func viewDidLoad() {
     super.viewDidLoad()
     TableManager.shared.sectionViewController = self
@@ -27,6 +28,15 @@ class SectionViewController: NSViewController {
     
     //if no current level
     print("you must select a level before creating a section")
+  }
+  @IBAction func pressedEdit(_ sender: Any) {
+    print("pressed edit")
+    guard TableManager.shared.curSection != nil else{
+      print("please select a section")
+      return
+    }
+    
+    performSegue(withIdentifier: "editSection", sender: nil)
   }
   
   func updateTable(){

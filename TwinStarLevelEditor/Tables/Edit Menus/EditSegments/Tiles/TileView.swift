@@ -5,6 +5,13 @@ import Cocoa
 class TileView: NSView {
   
   var delegate : TileDelegate?
+  var position = (0,0)
+  
+  
+  
+  func setPosition(x:Int,y:Int){
+    
+  }
   
   override func draw(_ dirtyRect: NSRect) {
     super.draw(dirtyRect)
