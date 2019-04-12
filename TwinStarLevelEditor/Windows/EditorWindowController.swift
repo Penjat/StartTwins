@@ -47,6 +47,6 @@ class EditorWindowController: NSWindowController {
     curLevelItem = levelItem
   }
   
-
+  
   
 }

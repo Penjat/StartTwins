@@ -60,11 +60,8 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="Delete All" id="OQo-Gf-to7">
+                                        <menuItem title="Save" id="i3f-zi-CYm">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="deleteAll:" target="Ady-hI-5gd" id="b0u-Cq-TmU"/>
-                                            </connections>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -74,6 +71,19 @@
                             </menuItem>
                             <menuItem title="Sections" id="vve-aw-zae">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Delete" id="yeR-Uv-ZC6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" id="JuA-1v-SWP">
+                                    <items>
+                                        <menuItem title="Delete All" id="OQo-Gf-to7">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="deleteAll:" target="Ady-hI-5gd" id="b0u-Cq-TmU"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
                             </menuItem>
                             <menuItem title="Print" id="smI-Io-HLV">
                                 <modifierMask key="keyEquivalentModifierMask"/>
