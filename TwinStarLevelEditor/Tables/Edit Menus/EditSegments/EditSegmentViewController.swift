@@ -41,17 +41,22 @@ class EditSegmentViewController: NSViewController {
   
   func createGrid(){
     
+    for y in 0...10{
+      addRow()
+    }
+    
+  }
+  
+  func addRow(){
+    let y = tiles.count
+    tiles.append([])
     for x in 0...32{
-      tiles.append([])
-      for y in 0...10{
-        
-        let tileView = TileView.init(frame: NSRect(x: 20+x*16, y: 20 + y*16, width: 15, height: 15))
-        
-        tiles[x].append(tileView) 
-        tileView.setPosition(x: x, y: y)
-        containerView.addSubview(tileView)
-        tileView.delegate = tileManager
-      }
+      let tileView = TileView.init(frame: NSRect(x: 20+x*16, y: 20 + y*16, width: 15, height: 15))
+      
+      tiles[y].append(tileView)
+      tileView.setPosition(x: x, y: y)
+      containerView.addSubview(tileView)
+      tileView.delegate = tileManager
     }
     
   }
@@ -101,7 +106,8 @@ class EditSegmentViewController: NSViewController {
   }
   
   func getTile(x:Int,y:Int) -> TileView{
-    return tiles[x][y]
+    //this looks backwards but is correct
+    return tiles[y][x]
   }
   
   
