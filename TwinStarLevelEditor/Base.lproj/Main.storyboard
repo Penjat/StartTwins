@@ -62,6 +62,9 @@
                                     <items>
                                         <menuItem title="Save" id="i3f-zi-CYm">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="pressedSave:" target="Ady-hI-5gd" id="HWg-tv-v3H"/>
+                                            </connections>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -648,7 +651,7 @@
                                     <rect key="frame" x="1" y="512" width="495" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.89292196007259528" horizontal="NO" id="cKs-F1-5Fm">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cKs-F1-5Fm">
                                     <rect key="frame" x="496" y="1" width="15" height="511"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>

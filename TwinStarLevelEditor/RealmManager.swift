@@ -29,6 +29,19 @@ class RealmManager{
       i += 1
       print("\(i) - \(level.name)")
     }
+
+  }
+  static func save(levels:[Level]){
     
+    let realm = try! Realm()
+    try! realm.write {
+      realm.deleteAll()
+      
+      for level in levels{
+        realm.add(level)
+      }
+      
+      
+    }
   }
 }

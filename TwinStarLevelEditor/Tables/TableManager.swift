@@ -35,11 +35,7 @@ class TableManager {
     
     
     //TODO set selected on table
-    
-    
-    
-    
-    
+ 
   }
   func setCur(section:Section?){
     curSection = section
@@ -89,6 +85,14 @@ class TableManager {
     
     //if not return empty array
     return []
+  }
+  
+  func saveTableData(){
+    
+    print("saving table data")
+    if let levels = levelViewController?.levels{
+      RealmManager.save(levels:levels )
+    }
   }
   
 }
