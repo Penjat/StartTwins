@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //          // And will update the schema on disk automatically
 //        }
 //    })
-////    config.fileURL = URL(fileURLWithPath: "file:///Users/spencersymington/Library/Developer/CoreSimulator/Devices/4265277D-5D94-4F4D-A05A-E080CE1543B6/data/Containers/Data/Application/20D09F60-DAA6-4C18-899A-B54FF9C8999D/Documents/default.realm")
+//    config.fileURL = URL(fileURLWithPath: "file:///Users/spencersymington/Library/Developer/CoreSimulator/Devices/4265277D-5D94-4F4D-A05A-E080CE1543B6/data/Containers/Data/Application/20D09F60-DAA6-4C18-899A-B54FF9C8999D/Documents/default.realm")
 //    config.deleteRealmIfMigrationNeeded = true
 //    Realm.Configuration.defaultConfiguration = config
 //    

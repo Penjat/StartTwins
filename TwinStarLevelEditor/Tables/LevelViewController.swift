@@ -12,10 +12,19 @@ class LevelViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     TableManager.shared.levelViewController = self
-    levels = RealmManager.getLevels()
+    loadLevels()
     levelTableView.dataSource = self
     levelTableView.delegate = self
     
+  }
+  func loadLevels(){
+    levels = [Level]()
+    let realmLevels = RealmManager.getLevels()
+    for realmLevel in realmLevels{
+      let level = Level(value:realmLevel)
+      level.parseSections()
+      levels.append(level)
+    }
   }
   
   @IBAction func createLevel(_ sender: Any) {
