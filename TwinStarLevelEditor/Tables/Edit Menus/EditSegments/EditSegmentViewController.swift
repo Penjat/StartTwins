@@ -14,12 +14,16 @@ class EditSegmentViewController: NSViewController {
   @IBOutlet weak var heightTextField: NSTextField!
   
   
-
+  @IBOutlet weak var toolTableView: NSTableView!
+  
   @IBOutlet weak var containerView: NSView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     tileManager.delegate = self
+    
+    toolTableView.dataSource = self
+    toolTableView.delegate = self
     
     setUp()
   }
