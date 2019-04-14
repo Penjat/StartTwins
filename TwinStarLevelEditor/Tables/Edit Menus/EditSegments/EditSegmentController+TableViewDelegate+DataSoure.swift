@@ -12,11 +12,11 @@ extension EditSegmentViewController : NSTableViewDelegate, NSTableViewDataSource
     
     let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "toolCell"), owner: nil) as? NSTableCellView
     //TODO custom cell class
-    
-    cell?.textField?.stringValue = ToolManager.shared.tools[row].name
+    let tool = ToolManager.shared.tools[row]
+    cell?.textField?.stringValue = tool.name
     //TODO set name
     //cell?.textField?.stringValue = levels[row].name
-    
+    cell?.textField?.backgroundColor = PieceColor.getPieceColor(num: tool.color).getColor()
     return cell
   }
   
