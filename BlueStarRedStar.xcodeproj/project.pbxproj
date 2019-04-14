@@ -96,6 +96,9 @@
 		0B8E05D62263D24D007B8741 /* ToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05D52263D24D007B8741 /* ToolManager.swift */; };
 		0B8E05D82263D2A8007B8741 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05D72263D2A7007B8741 /* Tool.swift */; };
 		0B8E05DC2263E19D007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05DB2263E19D007B8741 /* default.realm */; };
+		0B8E05DE2263E69F007B8741 /* PieceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05DD2263E69F007B8741 /* PieceColor.swift */; };
+		0B8E05DF2263E6F4007B8741 /* PieceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05DD2263E69F007B8741 /* PieceColor.swift */; };
+		0B8E05E12263E71F007B8741 /* PieceColor+GetNSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -213,6 +216,8 @@
 		0B8E05D52263D24D007B8741 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
 		0B8E05D72263D2A7007B8741 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		0B8E05DB2263E19D007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B8E05DD2263E69F007B8741 /* PieceColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceColor.swift; sourceTree = "<group>"; };
+		0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetNSColor.swift"; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -336,6 +341,7 @@
 			children = (
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
 				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
+				0B8E05DD2263E69F007B8741 /* PieceColor.swift */,
 				0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */,
 				0B8E05C82262F568007B8741 /* Assets */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
@@ -405,6 +411,7 @@
 				0B4A8AB9225704D00089B642 /* Main.storyboard */,
 				0B4A8ABC225704D00089B642 /* Info.plist */,
 				0B4A8ABD225704D00089B642 /* TwinStarLevelEditor.entitlements */,
+				0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */,
 			);
 			path = TwinStarLevelEditor;
 			sourceTree = "<group>";
@@ -863,6 +870,7 @@
 				0B2F8725223C6F41001D50E6 /* GameScene.swift in Sources */,
 				0B24CCCC22527E05002F3410 /* KeyView.swift in Sources */,
 				0B2F874A223D8DC9001D50E6 /* PlayerMaster.swift in Sources */,
+				0B8E05DE2263E69F007B8741 /* PieceColor.swift in Sources */,
 				0B5E2F1E22571C36009A091F /* PieceColor+GetColor.swift in Sources */,
 				0B172A902242E9DD0003CE03 /* LevelCreator+Level1.swift in Sources */,
 				0B172A7D2241DA870003CE03 /* HighsScoreManager.swift in Sources */,
@@ -914,6 +922,7 @@
 				0B63A20F2257E67600ACC399 /* LevelCreator+Level1.swift in Sources */,
 				0B8E05D82263D2A8007B8741 /* Tool.swift in Sources */,
 				0B63A20C2257BC6900ACC399 /* Piece.swift in Sources */,
+				0B8E05DF2263E6F4007B8741 /* PieceColor.swift in Sources */,
 				0B8E05C22260FF8E007B8741 /* Level+EditorParsing.swift in Sources */,
 				0B9CA1A4226045DD005C8066 /* PieceViewDelegate.swift in Sources */,
 				0B63A20A2257BC6900ACC399 /* Section.swift in Sources */,
@@ -932,6 +941,7 @@
 				0B63A224225843FE00ACC399 /* EditorWindowController.swift in Sources */,
 				0B63A240225D409300ACC399 /* TableManager.swift in Sources */,
 				0B63A21522582F8A00ACC399 /* TileManager.swift in Sources */,
+				0B8E05E12263E71F007B8741 /* PieceColor+GetNSColor.swift in Sources */,
 				0B63A23C225C621400ACC399 /* SegmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

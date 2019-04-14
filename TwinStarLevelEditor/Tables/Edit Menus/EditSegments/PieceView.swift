@@ -6,12 +6,13 @@ class PieceView: NSView {
   
   var piece : Piece!
   var delegate : PieceViewDelegate?
+  var myColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
 
   override func draw(_ dirtyRect: NSRect) {
     super.draw(dirtyRect)
     
     // Drawing code here.
-    #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1).setFill()
+    myColor.setFill()
     dirtyRect.fill()
   }
   
@@ -22,6 +23,8 @@ class PieceView: NSView {
     }
     
   }
+  
+  
   
   
   

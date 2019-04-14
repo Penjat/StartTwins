@@ -48,6 +48,7 @@ extension EditSegmentViewController : TileManagerDelegate{
     let pieceView = PieceView.init(frame: rect)
     pieceView.piece = piece
     pieceView.delegate = self
+    pieceView.myColor = PieceColor.getPieceColor(num: color).getColor()
     containerView.addSubview(pieceView)
   }
   
