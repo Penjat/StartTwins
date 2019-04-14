@@ -27,6 +27,8 @@ class GameScene: SKScene {
     
     
     StaticHelper.setRatio(scene: self)
+    StaticHelper.setOffset(scene: self)
+    
     physicsWorld.contactDelegate = self
     self.addChild(staticNode)
     staticNode.addChild(movingNode)

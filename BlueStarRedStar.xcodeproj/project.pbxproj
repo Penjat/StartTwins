@@ -93,6 +93,9 @@
 		0B7AC04E223F266C003E84EF /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
 		0B8E05C22260FF8E007B8741 /* Level+EditorParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05C12260FF8E007B8741 /* Level+EditorParsing.swift */; };
 		0B8E05C422610113007B8741 /* Section+EditorParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05C322610113007B8741 /* Section+EditorParsing.swift */; };
+		0B8E05CA2262F5D0007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05C92262F5D0007B8741 /* default.realm */; };
+		0B8E05CB2262F5D0007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05C92262F5D0007B8741 /* default.realm */; };
+		0B8E05CD2262FAF9007B8741 /* Piece+Getters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05CC2262FAF9007B8741 /* Piece+Getters.swift */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -207,6 +210,8 @@
 		0B7AC04D223F266C003E84EF /* CollisionCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategories.swift; sourceTree = "<group>"; };
 		0B8E05C12260FF8E007B8741 /* Level+EditorParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Level+EditorParsing.swift"; sourceTree = "<group>"; };
 		0B8E05C322610113007B8741 /* Section+EditorParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Section+EditorParsing.swift"; sourceTree = "<group>"; };
+		0B8E05C92262F5D0007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B8E05CC2262FAF9007B8741 /* Piece+Getters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Piece+Getters.swift"; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -306,7 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871D223C6F41001D50E6 /* BlueStarRedStar */,
-				0B63A244225FD8A900ACC399 /* Shared Classes */,
+				0B63A244225FD8A900ACC399 /* Shared Files */,
 				0B4A8AB2225704CF0089B642 /* TwinStarLevelEditor */,
 				0B2F8738223C6F42001D50E6 /* BlueStarRedStarTests */,
 				0B2F871C223C6F41001D50E6 /* Products */,
@@ -331,6 +336,7 @@
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
 				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
 				0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */,
+				0B8E05C82262F568007B8741 /* Assets */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
 				0B172A8E2242E9C00003CE03 /* LevelCreator */,
 				0B172A71224144F70003CE03 /* Menus */,
@@ -411,6 +417,7 @@
 				0B08D2CE223DC261006942A0 /* Section.swift */,
 				0B08D2D0223DC2F2006942A0 /* Segment.swift */,
 				0B08D2D2223DC352006942A0 /* Piece.swift */,
+				0B8E05CC2262FAF9007B8741 /* Piece+Getters.swift */,
 				0B172A7A2241D8450003CE03 /* HighScore.swift */,
 			);
 			path = "Realm Objects";
@@ -461,12 +468,12 @@
 			path = "Edit Menus";
 			sourceTree = "<group>";
 		};
-		0B63A244225FD8A900ACC399 /* Shared Classes */ = {
+		0B63A244225FD8A900ACC399 /* Shared Files */ = {
 			isa = PBXGroup;
 			children = (
 				0B4E219C223DB87D0035AB99 /* Realm Objects */,
 			);
-			path = "Shared Classes";
+			path = "Shared Files";
 			sourceTree = "<group>";
 		};
 		0B7AC042223EDD74003E84EF /* Pieces */ = {
@@ -486,6 +493,14 @@
 				0B8E05C322610113007B8741 /* Section+EditorParsing.swift */,
 			);
 			path = RealmExtensions;
+			sourceTree = "<group>";
+		};
+		0B8E05C82262F568007B8741 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0B8E05C92262F5D0007B8741 /* default.realm */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		0B9CA1A222600A3F005C8066 /* EditSegments */ = {
@@ -675,6 +690,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
+				0B8E05CA2262F5D0007B8741 /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
@@ -697,6 +713,7 @@
 			files = (
 				0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */,
 				0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */,
+				0B8E05CB2262F5D0007B8741 /* default.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,6 +846,7 @@
 				0B08D2CF223DC261006942A0 /* Section.swift in Sources */,
 				0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */,
 				0B7AC04C223F25A4003E84EF /* GameScene+Collisions.swift in Sources */,
+				0B8E05CD2262FAF9007B8741 /* Piece+Getters.swift in Sources */,
 				0B08D2D1223DC2F2006942A0 /* Segment.swift in Sources */,
 				0B08D2CD223DB9B3006942A0 /* LevelManager.swift in Sources */,
 				0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */,

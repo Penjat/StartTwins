@@ -52,6 +52,10 @@ class EditorWindowController: NSWindowController {
     TableManager.shared.saveTableData()
   }
   
+  @IBAction func copyToApp(_ sender: Any) {
+    RealmManager.copyToApp()
+    
+  }
   
   
 }

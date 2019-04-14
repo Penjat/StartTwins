@@ -4,6 +4,7 @@ import Foundation
 import RealmSwift
 
 class RealmManager{
+  
   static func getLevels()-> [Level]{
     //return all the levels
     let realm = try! Realm()
@@ -54,6 +55,16 @@ class RealmManager{
       }
       
       
+    }
+  }
+  static func copyToApp(){
+    print("copying to app...")
+    let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
+    let path = "/Users/spencersymington/Desktop/Projects/BlueStarRedStar/BlueStarRedStar/Assets/default.realm"
+    do {
+      try FileManager.default.copyItem(atPath: defaultPath!, toPath:path )
+    } catch {
+      print("Error copying to StarTwins app \(error)")
     }
   }
 }

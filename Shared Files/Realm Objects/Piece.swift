@@ -11,18 +11,7 @@ class Piece : Object{
   @objc dynamic var y = 0
   @objc dynamic var color = 0
   
-  func getX()->CGFloat{
-    return CGFloat(x)*StaticHelper.widthRatio
-  }
-  func getY()->CGFloat{
-    return CGFloat(y)*StaticHelper.widthRatio
-  }
-  func getWidth()->CGFloat{
-    return CGFloat(width)*StaticHelper.widthRatio
-  }
-  func getHeight()->CGFloat{
-    return CGFloat(height)*StaticHelper.widthRatio
-  }
+  
   
   static func create(type:Int,x:Int,y:Int,width:Int,height:Int,color:Int)->Piece{
     let piece = Piece()
