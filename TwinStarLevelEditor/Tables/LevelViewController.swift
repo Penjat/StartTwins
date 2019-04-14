@@ -11,6 +11,8 @@ class LevelViewController: NSViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
     TableManager.shared.levelViewController = self
     loadLevels()
     levelTableView.dataSource = self
