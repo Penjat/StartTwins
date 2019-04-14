@@ -771,11 +771,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="e59-i4-YyD"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="0.14285714285714285" horizontal="YES" id="s2E-c3-lQT">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.14285714285714285" horizontal="YES" id="s2E-c3-lQT">
                                     <rect key="frame" x="1" y="758" width="98" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pQ0-1O-6pg">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pQ0-1O-6pg">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>

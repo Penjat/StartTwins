@@ -10,6 +10,7 @@ class EditSegmentViewController: NSViewController {
   var tiles = [[TileView]]()
   var pieces = [Piece]()
   
+  var curTool : Tool?
 
   @IBOutlet weak var heightTextField: NSTextField!
   
@@ -39,7 +40,7 @@ class EditSegmentViewController: NSViewController {
       //show all the pieces
       let pieces = curSegment.pieces.map{$0}
       for piece in pieces{
-        create(x: piece.x, y: piece.y)
+        create(piece:piece)
       }
     }
   }

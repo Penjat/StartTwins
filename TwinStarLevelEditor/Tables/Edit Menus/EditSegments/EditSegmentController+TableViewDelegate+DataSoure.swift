@@ -22,7 +22,12 @@ extension EditSegmentViewController : NSTableViewDelegate, NSTableViewDataSource
   
   func tableViewSelectionDidChange(_ notification: Notification) {
     
-    
+    let tools = ToolManager.shared.tools
+    let toolIndex = toolTableView.selectedRow
+    guard toolIndex < tools.count , toolIndex >= 0 else{
+      return
+    }
+    curTool = tools[toolIndex]
     
   }
   
