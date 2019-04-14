@@ -21,6 +21,10 @@ extension LevelViewController : NSTableViewDataSource , NSTableViewDelegate {
   func tableViewSelectionDidChange(_ notification: Notification) {
     
     let levelIndex = levelTableView.selectedRow
+    guard levelIndex < levels.count , levelIndex >= 0 else{
+      return
+    }
+    
     let pressedLevel = levels[levelIndex]
     
     //set the current level to selected

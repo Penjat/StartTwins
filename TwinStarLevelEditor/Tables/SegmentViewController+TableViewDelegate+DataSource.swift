@@ -12,6 +12,10 @@ extension SegmentViewController : NSTableViewDataSource , NSTableViewDelegate{
     
     let segmentIndex = segmentTableView.selectedRow
     //TODO do a check to make sure is in range
+    guard segmentIndex < segments.count , segmentIndex >= 0 else{
+      return
+    }
+    
     TableManager.shared.setCur(segment: segments[segmentIndex])
     
   }

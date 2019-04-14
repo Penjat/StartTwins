@@ -13,7 +13,12 @@ extension SectionViewController : NSTableViewDataSource, NSTableViewDelegate{
     //set the current level to selected
     
     let sectionIndex = sectionTableView.selectedRow
-    //TODO do a check to make sure is in range
+    //check if in range
+    
+    guard sectionIndex < sections.count , sectionIndex >= 0  else{
+      return
+    }
+  
     TableManager.shared.setCur(section: sections[sectionIndex])
     
   }

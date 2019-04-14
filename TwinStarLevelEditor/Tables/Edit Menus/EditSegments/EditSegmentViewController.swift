@@ -9,6 +9,7 @@ class EditSegmentViewController: NSViewController {
   let tileManager = TileManager()
   var tiles = [[TileView]]()
   var pieces = [Piece]()
+  
 
   @IBOutlet weak var heightTextField: NSTextField!
   

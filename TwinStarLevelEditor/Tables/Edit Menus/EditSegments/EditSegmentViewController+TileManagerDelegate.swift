@@ -6,6 +6,9 @@ extension EditSegmentViewController : TileManagerDelegate{
   
   func create(x: Int, y: Int) {
     
+    guard y < tiles.count , x < tiles[0].count else{
+      return
+    }
     //TODO have all this info
     //TODO cur selected piece type
     let piece = Piece.create(type: 1, x: x, y: y, width: 2, height: 2, color: 2)
