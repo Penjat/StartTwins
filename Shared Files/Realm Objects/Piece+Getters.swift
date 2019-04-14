@@ -1,6 +1,6 @@
 
 
-import Foundation
+import SpriteKit
 
 extension Piece {
   func getX()->CGFloat{

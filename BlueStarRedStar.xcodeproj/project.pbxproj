@@ -75,8 +75,6 @@
 		0B63A224225843FE00ACC399 /* EditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A223225843FE00ACC399 /* EditorWindowController.swift */; };
 		0B63A226225A838000ACC399 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A225225A838000ACC399 /* RealmManager.swift */; };
 		0B63A22F225AFD3800ACC399 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A22E225AFD3800ACC399 /* LevelViewController.swift */; };
-		0B63A231225BA7CF00ACC399 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A230225BA7CF00ACC399 /* TableViewController.swift */; };
-		0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */; };
 		0B63A235225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A234225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift */; };
 		0B63A238225C601200ACC399 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A237225C601200ACC399 /* SectionViewController.swift */; };
 		0B63A23A225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */; };
@@ -93,9 +91,8 @@
 		0B7AC04E223F266C003E84EF /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
 		0B8E05C22260FF8E007B8741 /* Level+EditorParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05C12260FF8E007B8741 /* Level+EditorParsing.swift */; };
 		0B8E05C422610113007B8741 /* Section+EditorParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05C322610113007B8741 /* Section+EditorParsing.swift */; };
-		0B8E05CA2262F5D0007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05C92262F5D0007B8741 /* default.realm */; };
-		0B8E05CB2262F5D0007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05C92262F5D0007B8741 /* default.realm */; };
 		0B8E05CD2262FAF9007B8741 /* Piece+Getters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05CC2262FAF9007B8741 /* Piece+Getters.swift */; };
+		0B8E05D02263A375007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05CF2263A375007B8741 /* default.realm */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -192,8 +189,6 @@
 		0B63A223225843FE00ACC399 /* EditorWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorWindowController.swift; sourceTree = "<group>"; };
 		0B63A225225A838000ACC399 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		0B63A22E225AFD3800ACC399 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
-		0B63A230225BA7CF00ACC399 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController+Delegate+DataSource.swift"; sourceTree = "<group>"; };
 		0B63A234225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LevelViewController+TaleViewDelegate+DataSource.swift"; sourceTree = "<group>"; };
 		0B63A237225C601200ACC399 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionViewController+TableDataSource+Delegate.swift"; sourceTree = "<group>"; };
@@ -210,8 +205,8 @@
 		0B7AC04D223F266C003E84EF /* CollisionCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCategories.swift; sourceTree = "<group>"; };
 		0B8E05C12260FF8E007B8741 /* Level+EditorParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Level+EditorParsing.swift"; sourceTree = "<group>"; };
 		0B8E05C322610113007B8741 /* Section+EditorParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Section+EditorParsing.swift"; sourceTree = "<group>"; };
-		0B8E05C92262F5D0007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B8E05CC2262FAF9007B8741 /* Piece+Getters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Piece+Getters.swift"; sourceTree = "<group>"; };
+		0B8E05CF2263A375007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -400,8 +395,6 @@
 				0B63A225225A838000ACC399 /* RealmManager.swift */,
 				0B63A22B225AB4A100ACC399 /* Windows */,
 				0B63A236225C5FCF00ACC399 /* Tables */,
-				0B63A230225BA7CF00ACC399 /* TableViewController.swift */,
-				0B63A232225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift */,
 				0B4A8AB7225704D00089B642 /* Assets.xcassets */,
 				0B4A8AB9225704D00089B642 /* Main.storyboard */,
 				0B4A8ABC225704D00089B642 /* Info.plist */,
@@ -498,7 +491,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0B8E05C92262F5D0007B8741 /* default.realm */,
+				0B8E05CF2263A375007B8741 /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -690,7 +683,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0B8E05CA2262F5D0007B8741 /* default.realm in Resources */,
+				0B8E05D02263A375007B8741 /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
@@ -713,7 +706,6 @@
 			files = (
 				0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */,
 				0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */,
-				0B8E05CB2262F5D0007B8741 /* default.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,8 +913,6 @@
 				0B63A247225FDEE700ACC399 /* EditSectionViewController.swift in Sources */,
 				0B63A242225D5ED300ACC399 /* EditLevelViewController.swift in Sources */,
 				0B63A2112258157900ACC399 /* TileView.swift in Sources */,
-				0B63A233225BA82D00ACC399 /* TableViewController+Delegate+DataSource.swift in Sources */,
-				0B63A231225BA7CF00ACC399 /* TableViewController.swift in Sources */,
 				0B9CA1A62260462C005C8066 /* EditSegmentViewController+PieceViewDelegate.swift in Sources */,
 				0B63A23A225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift in Sources */,
 				0B4A8AB4225704CF0089B642 /* AppDelegate.swift in Sources */,
