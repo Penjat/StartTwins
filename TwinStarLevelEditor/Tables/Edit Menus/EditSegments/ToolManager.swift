@@ -10,8 +10,11 @@ class ToolManager{
   
   init() {
     tools = [
-      Tool(name: "coin",width: 2, height: 2, color: 0, type: 1),
-      Tool(name: "wall",width: 5, height: 1, color: 0, type: 2)
+      Tool(name: "coin",width: 2, height: 2, color: PieceColor.Blue.rawValue, type: PieceType.Coin.rawValue),
+      Tool(name: "coin",width: 2, height: 2, color: PieceColor.Red.rawValue, type: PieceType.Coin.rawValue),
+      Tool(name: "coin",width: 2, height: 2, color: PieceColor.White.rawValue, type: PieceType.Coin.rawValue),
+      Tool(name: "wall 5x2",width: 5, height: 2, color: PieceColor.Gray.rawValue, type: PieceType.Wall.rawValue),
+      Tool(name: "wall 2x10",width: 2, height: 10, color: PieceColor.Gray.rawValue, type: PieceType.Wall.rawValue)
       ]
     
   }

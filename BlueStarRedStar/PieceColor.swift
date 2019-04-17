@@ -3,8 +3,8 @@
 import Foundation
 
 
-enum PieceColor{
-  case Gray,Red,Blue,White
+enum PieceColor : Int{
+  case Gray = 0,Red = 1,Blue = 2,White = 3
   
   static func getPieceColor(num:Int)-> PieceColor{
     

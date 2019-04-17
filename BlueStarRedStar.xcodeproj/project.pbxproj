@@ -95,10 +95,10 @@
 		0B8E05D42263CB92007B8741 /* EditSegmentController+TableViewDelegate+DataSoure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05D32263CB92007B8741 /* EditSegmentController+TableViewDelegate+DataSoure.swift */; };
 		0B8E05D62263D24D007B8741 /* ToolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05D52263D24D007B8741 /* ToolManager.swift */; };
 		0B8E05D82263D2A8007B8741 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05D72263D2A7007B8741 /* Tool.swift */; };
-		0B8E05DC2263E19D007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05DB2263E19D007B8741 /* default.realm */; };
 		0B8E05DE2263E69F007B8741 /* PieceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05DD2263E69F007B8741 /* PieceColor.swift */; };
 		0B8E05DF2263E6F4007B8741 /* PieceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05DD2263E69F007B8741 /* PieceColor.swift */; };
 		0B8E05E12263E71F007B8741 /* PieceColor+GetNSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */; };
+		0B8E05E72263ED9E007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E05E62263ED9E007B8741 /* default.realm */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -215,9 +215,9 @@
 		0B8E05D32263CB92007B8741 /* EditSegmentController+TableViewDelegate+DataSoure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditSegmentController+TableViewDelegate+DataSoure.swift"; sourceTree = "<group>"; };
 		0B8E05D52263D24D007B8741 /* ToolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolManager.swift; sourceTree = "<group>"; };
 		0B8E05D72263D2A7007B8741 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
-		0B8E05DB2263E19D007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B8E05DD2263E69F007B8741 /* PieceColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceColor.swift; sourceTree = "<group>"; };
 		0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetNSColor.swift"; sourceTree = "<group>"; };
+		0B8E05E62263ED9E007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -504,7 +504,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0B8E05DB2263E19D007B8741 /* default.realm */,
+				0B8E05E62263ED9E007B8741 /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -699,7 +699,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0B8E05DC2263E19D007B8741 /* default.realm in Resources */,
+				0B8E05E72263ED9E007B8741 /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
