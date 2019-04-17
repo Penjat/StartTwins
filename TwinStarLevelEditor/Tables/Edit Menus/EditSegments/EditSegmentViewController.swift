@@ -56,7 +56,7 @@ class EditSegmentViewController: NSViewController {
   func addRow(){
     let y = tiles.count
     tiles.append([])
-    for x in 0...32{
+    for x in 0..<32{
       let tileView = TileView.init(frame: NSRect(x: 20+x*16, y: 20 + y*16, width: 15, height: 15))
       
       tiles[y].append(tileView)

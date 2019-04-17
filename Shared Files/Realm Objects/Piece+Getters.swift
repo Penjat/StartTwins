@@ -7,7 +7,7 @@ extension Piece {
     return CGFloat(x)*StaticHelper.widthRatio - StaticHelper.centerOffset + getWidth()/2
   }
   func getY()->CGFloat{
-    return CGFloat(y)*StaticHelper.widthRatio
+    return CGFloat(y)*StaticHelper.widthRatio + getHeight()/2
   }
   func getWidth()->CGFloat{
     return CGFloat(width)*StaticHelper.widthRatio
