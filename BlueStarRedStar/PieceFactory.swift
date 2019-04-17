@@ -112,6 +112,7 @@ class PieceFactory{
   func nextSection(scene:GameScene)->Bool{
     //returns true if was sucsessful false if time for next level
     sectionNumber += 1
+    print("section count = \(level!.sections.count)")
     if let section = getSection(){
       print("section \(sectionNumber) found")
       setCur(section: section, scene: scene)
