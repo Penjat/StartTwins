@@ -87,6 +87,9 @@
                                         </menuItem>
                                         <menuItem title="Delete Section" id="zZm-hn-5M4">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="deleteCurrentSection:" target="Ady-hI-5gd" id="EtT-2i-vjE"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Delete Level" id="fVj-k2-k1J">
                                             <modifierMask key="keyEquivalentModifierMask"/>

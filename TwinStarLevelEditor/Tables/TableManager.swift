@@ -96,16 +96,31 @@ class TableManager {
   }
   func deleteCurrentSegment(){
     
-    guard curSegment != nil , curSection != nil else{
+    guard let curSegment = curSegment ,let curSection = curSection else{
       print("no segment to delete")
       return
     }
     print("deleting current segment")
-    if let index = curSection!.segments.index(of: curSegment!){
-      curSection?.segments.remove(at: index)
+    if let index = curSection.segments.index(of: curSegment){
+      curSection.segments.remove(at: index)
     }
     segmentViewController?.updateTable()
     
+  }
+  func deleteCurrentSection(){
+
+    guard let curSection = curSection, let curLevel = curLevel else{
+      return
+    }
+    print("deleting current section")
+    if let index = curLevel.sections.index(of: curSection){
+      curLevel.sections.remove(at: index)
+    }
+    self.curSegment = nil
+    self.curSection = nil
+    segmentViewController?.updateTable()
+    
+    sectionViewController?.updateTable()
   }
   
 }

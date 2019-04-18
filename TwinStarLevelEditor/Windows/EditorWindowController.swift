@@ -60,5 +60,8 @@ class EditorWindowController: NSWindowController {
   @IBAction func deleteCurrentSegment(_ sender: Any) {
     TableManager.shared.deleteCurrentSegment()
   }
+  @IBAction func deleteCurrentSection(_ sender: Any) {
+    TableManager.shared.deleteCurrentSection()
+  }
   
 }
