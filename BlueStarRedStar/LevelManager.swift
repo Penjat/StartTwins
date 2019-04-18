@@ -5,16 +5,12 @@ import RealmSwift
 
 class LevelManager{
   
-  let realm = try! Realm()
-  let startClean = false//for debugging, when true deletes all data on device
+  let realm = try! Realm(fileURL: Bundle.main.url(forResource: "default", withExtension: "realm")!)
+  
   
   func setUp(){
     print("getting realm file location")
-    print(Realm.Configuration.defaultConfiguration.fileURL!)
-    //for debugging level creator
-    if startClean {
-      deleteAllData()
-    }
+    
     
     let levels: Results<Level> = { realm.objects(Level.self) }()
     
@@ -25,7 +21,7 @@ class LevelManager{
       print("There are \(levels.count) levels")
     }
     
-    print(Realm.Configuration.defaultConfiguration.fileURL!)
+    
   }
   
   func getLevel()->Level{
