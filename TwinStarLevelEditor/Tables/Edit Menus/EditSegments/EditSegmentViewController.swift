@@ -11,6 +11,8 @@ class EditSegmentViewController: NSViewController {
   var pieces = [Piece]()
   
   var curTool : Tool?
+  
+  let padding = 32
 
   @IBOutlet weak var heightTextField: NSTextField!
   
@@ -46,6 +48,7 @@ class EditSegmentViewController: NSViewController {
   }
   
   func createGrid(){
+    
     let height = heightTextField.integerValue
     for y in 0...height{
       addRow()
@@ -57,7 +60,7 @@ class EditSegmentViewController: NSViewController {
     let y = tiles.count
     tiles.append([])
     for x in 0..<32{
-      let tileView = TileView.init(frame: NSRect(x: 20+x*16, y: 20 + y*16, width: 15, height: 15))
+      let tileView = TileView.init(frame: NSRect(x: padding+x*16, y: 20 + y*16, width: 15, height: 15))
       
       tiles[y].append(tileView)
       tileView.setPosition(x: x, y: y)

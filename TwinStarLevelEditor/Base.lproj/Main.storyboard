@@ -238,7 +238,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3UR-bD-oMc">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
+                                                                    <rect key="frame" x="2" y="0.0" width="179" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" drawsBackground="YES" id="Mb1-7V-X6Q">
                                                                         <font key="font" metaFont="system"/>
@@ -444,7 +444,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField identifier="sectionCell" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yD0-1V-6xG">
-                                                                    <rect key="frame" x="0.0" y="10" width="172" height="17"/>
+                                                                    <rect key="frame" x="2" y="10" width="168" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" drawsBackground="YES" id="JUw-dE-FOB">
                                                                         <font key="font" metaFont="system"/>
@@ -638,7 +638,7 @@
             <objects>
                 <viewController title="Segment Editor" id="XfG-lQ-9wD" customClass="EditSegmentViewController" customModule="TwinStarLevelEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="858"/>
+                        <rect key="frame" x="0.0" y="0.0" width="724" height="858"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zua-Th-9Rj">
@@ -698,28 +698,31 @@
                                 </constraints>
                             </box>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-3v-9eg">
-                                <rect key="frame" x="8" y="8" width="476" height="774"/>
+                                <rect key="frame" x="8" y="8" width="600" height="774"/>
                                 <clipView key="contentView" id="B0i-9j-ZFf">
-                                    <rect key="frame" x="1" y="1" width="459" height="757"/>
+                                    <rect key="frame" x="1" y="1" width="583" height="757"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9be-2J-ueR">
-                                            <rect key="frame" x="0.0" y="0.0" width="1064" height="1308"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="664" height="2000"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                     </subviews>
                                 </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="cmh-Gi-ScV"/>
+                                </constraints>
                                 <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="5N2-lP-Bel">
-                                    <rect key="frame" x="1" y="758" width="459" height="15"/>
+                                    <rect key="frame" x="1" y="758" width="583" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cKs-F1-5Fm">
-                                    <rect key="frame" x="460" y="1" width="15" height="757"/>
+                                    <rect key="frame" x="584" y="1" width="15" height="757"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="46" horizontalPageScroll="10" verticalLineScroll="46" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiU-J4-NiQ">
-                                <rect key="frame" x="492" y="8" width="100" height="774"/>
+                                <rect key="frame" x="616" y="8" width="100" height="774"/>
                                 <clipView key="contentView" id="KPh-bk-aeq">
                                     <rect key="frame" x="1" y="0.0" width="98" height="758"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
