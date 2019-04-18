@@ -81,6 +81,9 @@
                                     <items>
                                         <menuItem title="Delete Segment" id="FLK-YJ-cbi">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="deleteCurrentSegment:" target="Ady-hI-5gd" id="kjc-H7-j4U"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="Delete Section" id="zZm-hn-5M4">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -121,7 +124,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="195" y="-28"/>
+            <point key="canvasLocation" x="156" y="-167"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">

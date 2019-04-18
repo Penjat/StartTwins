@@ -94,6 +94,19 @@ class TableManager {
       RealmManager.save(levels:levels )
     }
   }
+  func deleteCurrentSegment(){
+    
+    guard curSegment != nil , curSection != nil else{
+      print("no segment to delete")
+      return
+    }
+    print("deleting current segment")
+    if let index = curSection!.segments.index(of: curSegment!){
+      curSection?.segments.remove(at: index)
+    }
+    segmentViewController?.updateTable()
+    
+  }
   
 }
 
