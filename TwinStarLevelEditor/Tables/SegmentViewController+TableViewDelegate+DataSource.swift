@@ -6,6 +6,17 @@ extension SegmentViewController : NSTableViewDataSource , NSTableViewDelegate{
     return segments.count
     
   }
+  
+  func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    
+    let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "segmentCell"), owner: nil) as? NSTableCellView
+    
+    
+    cell?.textField?.stringValue = "\(row)"
+    
+    return cell
+  }
+  
   func tableViewSelectionDidChange(_ notification: Notification) {
     
     //set the current level to selected

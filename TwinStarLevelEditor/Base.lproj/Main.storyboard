@@ -233,17 +233,17 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="wW6-eE-KxT">
+                                                        <tableCellView identifier="segmentCell" id="wW6-eE-KxT">
                                                             <rect key="frame" x="1" y="1" width="183" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3UR-bD-oMc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="183" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Mb1-7V-X6Q">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" drawsBackground="YES" id="Mb1-7V-X6Q">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" red="0.92133218050003052" green="0.5496313937320938" blue="0.50584194346909594" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
@@ -413,13 +413,13 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-wS-ZBW">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="29" horizontalPageScroll="10" verticalLineScroll="29" verticalPageScroll="10" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-wS-ZBW">
                                 <rect key="frame" x="8" y="8" width="177" height="259"/>
                                 <clipView key="contentView" id="Lma-hH-C6A">
                                     <rect key="frame" x="1" y="1" width="175" height="257"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="g9f-jo-TBX">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="27" rowSizeStyle="automatic" viewBased="YES" id="g9f-jo-TBX">
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="257"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -439,17 +439,17 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="AGs-pr-ven">
-                                                            <rect key="frame" x="1" y="1" width="172" height="17"/>
+                                                        <tableCellView identifier="sectionCell" id="AGs-pr-ven">
+                                                            <rect key="frame" x="1" y="1" width="172" height="27"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yD0-1V-6xG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="17"/>
+                                                                <textField identifier="sectionCell" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yD0-1V-6xG">
+                                                                    <rect key="frame" x="0.0" y="10" width="172" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="JUw-dE-FOB">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" drawsBackground="YES" id="JUw-dE-FOB">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" red="0.83836159119999998" green="0.66882374280000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
@@ -567,7 +567,7 @@
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" drawsBackground="YES" id="m0t-0V-LO6">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
@@ -771,11 +771,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="e59-i4-YyD"/>
                                 </constraints>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.14285714285714285" horizontal="YES" id="s2E-c3-lQT">
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="s2E-c3-lQT">
                                     <rect key="frame" x="1" y="758" width="98" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pQ0-1O-6pg">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="pQ0-1O-6pg">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -897,6 +897,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fTh-83-Nwt"/>
+        <segue reference="sK3-dN-wF3"/>
     </inferredMetricsTieBreakers>
 </document>
