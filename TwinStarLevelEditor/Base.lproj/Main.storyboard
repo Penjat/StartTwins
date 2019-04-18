@@ -60,12 +60,6 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="Copy to app" id="Ukd-fX-3QN">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="copyToApp:" target="Ady-hI-5gd" id="q0U-e0-jm3"/>
-                                            </connections>
-                                        </menuItem>
                                         <menuItem title="Save" id="i3f-zi-CYm">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
@@ -83,8 +77,18 @@
                             </menuItem>
                             <menuItem title="Delete" id="yeR-Uv-ZC6">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" id="JuA-1v-SWP">
+                                <menu key="submenu" title="Delete" id="JuA-1v-SWP">
                                     <items>
+                                        <menuItem title="Delete Segment" id="FLK-YJ-cbi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Delete Section" id="zZm-hn-5M4">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="Delete Level" id="fVj-k2-k1J">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="abQ-kq-avE"/>
                                         <menuItem title="Delete All" id="OQo-Gf-to7">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
