@@ -1,9 +1,9 @@
 
 
-import UIKit
+import Cocoa
 
 extension PieceColor{
-  func getColor()-> UIColor{
+  func getColor()->NSColor{
     
     switch self{
     case .Gray:
@@ -17,25 +17,20 @@ extension PieceColor{
     case .Purple:
       return #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
     }
-    
   }
   static func getPieceColor(num:Int)-> PieceColor{
     
     switch num{
     case 0:
-      return Gray
+      return .Gray
     case 1:
-      return Red
+      return .Red
     case 2:
-      return Blue
+      return .Blue
     case 3:
-      return White
+      return .White
     case 4:
-      let rand = Bool.random()
-      if rand {
-        return Blue
-      }
-      return Red
+      return .Purple
       
     default:
       return Gray

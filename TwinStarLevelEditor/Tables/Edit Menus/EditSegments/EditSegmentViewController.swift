@@ -10,16 +10,21 @@ class EditSegmentViewController: NSViewController {
   var tiles = [[TileView]]()
   var pieces = [Piece]()
   
+  var curTool : Tool?
 
   @IBOutlet weak var heightTextField: NSTextField!
   
   
-
+  @IBOutlet weak var toolTableView: NSTableView!
+  
   @IBOutlet weak var containerView: NSView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     tileManager.delegate = self
+    
+    toolTableView.dataSource = self
+    toolTableView.delegate = self
     
     setUp()
   }
@@ -35,7 +40,7 @@ class EditSegmentViewController: NSViewController {
       //show all the pieces
       let pieces = curSegment.pieces.map{$0}
       for piece in pieces{
-        create(x: piece.x, y: piece.y)
+        create(piece:piece)
       }
     }
   }
@@ -51,7 +56,7 @@ class EditSegmentViewController: NSViewController {
   func addRow(){
     let y = tiles.count
     tiles.append([])
-    for x in 0...32{
+    for x in 0..<32{
       let tileView = TileView.init(frame: NSRect(x: 20+x*16, y: 20 + y*16, width: 15, height: 15))
       
       tiles[y].append(tileView)

@@ -20,6 +20,9 @@ class LevelViewController: NSViewController {
     
   }
   func loadLevels(){
+    //TODO put this elsewhere
+    
+    
     levels = [Level]()
     let realmLevels = RealmManager.getLevels()
     for realmLevel in realmLevels{

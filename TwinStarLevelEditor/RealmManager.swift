@@ -5,6 +5,7 @@ import RealmSwift
 
 class RealmManager{
   
+  
   static func getLevels()-> [Level]{
     //return all the levels
     let realm = try! Realm()
