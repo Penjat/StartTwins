@@ -21,6 +21,11 @@ class SectionViewController: NSViewController {
     if let curLevel = TableManager.shared.curLevel{
       print("creating a new section")
       let section = Section()
+      
+      //auto increment the section order
+      let orderID = curLevel.sections.count
+      section.orderID = orderID
+      
       curLevel.sections.append(section)
       updateTable()
       return
