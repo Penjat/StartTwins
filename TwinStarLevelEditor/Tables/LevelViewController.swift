@@ -25,6 +25,9 @@ class LevelViewController: NSViewController {
     
     levels = [Level]()
     let realmLevels = RealmManager.getLevels()
+    
+    //parse levels to break realm connection
+    //allows for editing without nessesaraly saving 
     for realmLevel in realmLevels{
       let level = Level(value:realmLevel)
       level.parseSections()
@@ -57,6 +60,12 @@ class LevelViewController: NSViewController {
   func updateTable(){
     
     levelTableView.reloadData()
+  }
+  
+  func remove(level: Level){
+    if let index = levels.index(of:level){
+      levels.remove(at: index)
+    }
   }
   
 }

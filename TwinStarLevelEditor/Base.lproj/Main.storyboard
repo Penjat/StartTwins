@@ -93,6 +93,9 @@
                                         </menuItem>
                                         <menuItem title="Delete Level" id="fVj-k2-k1J">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="deleteCurrentLevel:" target="Ady-hI-5gd" id="DDf-EK-Rcn"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="abQ-kq-avE"/>
                                         <menuItem title="Delete All" id="OQo-Gf-to7">

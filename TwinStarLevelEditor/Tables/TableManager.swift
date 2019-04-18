@@ -122,6 +122,21 @@ class TableManager {
     
     sectionViewController?.updateTable()
   }
+  func deleteCurrentLevel(){
+    guard let curLevel = curLevel else{
+      return
+    }
+    print("deleting current section")
+    levelViewController?.remove(level: curLevel)
+    
+    self.curSegment = nil
+    self.curSection = nil
+    self.curLevel = nil
+    
+    updateLevels()
+    updateSections()
+    updateSegments()
+  }
   
 }
 
