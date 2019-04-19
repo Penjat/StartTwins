@@ -29,6 +29,7 @@ class PieceFactory{
     levelNum = 0
     sectionNumber = 0
     distNextSection = 0
+    distNextSegment = 0
 
     level = levelManager.getLevel()
     
@@ -125,7 +126,8 @@ class PieceFactory{
     let levelLabel = SKLabelNode(text: "level \(levelNum + 1)")
     levelLabel.fontName = "Atari Font Full Version"
     levelLabel.fontSize = 40
-    levelLabel.position = CGPoint(x: 0, y: scene.getOffScreen())
+    let labelPos = scene.getOffScreen() > distNextSegment ? scene.getOffScreen() : distNextSegment
+    levelLabel.position = CGPoint(x: 0, y: labelPos )
     
     //add fade
     let fadeOut = SKAction.sequence([SKAction.wait(forDuration: 2.0),SKAction.fadeOut(withDuration: 0.5)])
@@ -145,7 +147,7 @@ class PieceFactory{
     addLabel(level: level, scene: scene)
     
     sectionNumber = 0
-    distNextSegment = scene.movingNode.position.y - 300
+    distNextSegment = distNextSegment - 600
     
     
     if let section = getSection(){
