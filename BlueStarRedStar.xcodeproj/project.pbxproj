@@ -100,6 +100,7 @@
 		0B8E05E12263E71F007B8741 /* PieceColor+GetNSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */; };
 		0B8E0606226A433C007B8741 /* Hobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0605226A433C007B8741 /* Hobbin.swift */; };
 		0B8E0608226A47EF007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E0607226A47EF007B8741 /* default.realm */; };
+		0B8E060A226A4A78007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -220,6 +221,7 @@
 		0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetNSColor.swift"; sourceTree = "<group>"; };
 		0B8E0605226A433C007B8741 /* Hobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobbin.swift; sourceTree = "<group>"; };
 		0B8E0607226A47EF007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B8E0609226A4A78007B8741 /* PieceClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceClasses.swift; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -342,9 +344,10 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
-				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
 				0B8E05DD2263E69F007B8741 /* PieceColor.swift */,
 				0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */,
+				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
+				0B8E0609226A4A78007B8741 /* PieceClasses.swift */,
 				0B8E05C82262F568007B8741 /* Assets */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
 				0B172A8E2242E9C00003CE03 /* LevelCreator */,
@@ -891,6 +894,7 @@
 				0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */,
 				0B172A8522427F180003CE03 /* MenuTitleView.swift in Sources */,
 				0B08D2D7223DD43C006942A0 /* PieceFactory.swift in Sources */,
+				0B8E060A226A4A78007B8741 /* PieceClasses.swift in Sources */,
 				0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */,
 				0B172A7B2241D8450003CE03 /* HighScore.swift in Sources */,
 				0B172A75224145620003CE03 /* MenuGameOverView.swift in Sources */,
