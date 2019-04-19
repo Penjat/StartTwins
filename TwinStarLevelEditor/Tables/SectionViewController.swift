@@ -25,6 +25,7 @@ class SectionViewController: NSViewController {
       //auto increment the section order
       let orderID = curLevel.sections.count
       section.orderID = orderID
+      section.speed = 250
       
       curLevel.sections.append(section)
       updateTable()

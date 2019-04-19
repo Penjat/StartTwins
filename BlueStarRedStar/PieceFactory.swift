@@ -14,6 +14,8 @@ class PieceFactory{
   var curSection : Section?
   var segments : [Segment]?
   
+  var isNewLevel = false
+  
   var pieceList = [PieceNode]()
   
   init() {
@@ -64,7 +66,12 @@ class PieceFactory{
     
   }
   func createSegment(scene:GameScene){
-    
+    if isNewLevel , let level = level {
+      addLabel(level: level, scene: scene)
+      distNextSegment = scene.movingNode.position.y - 600
+      isNewLevel = false
+      return
+    }
     let segment = segments?.randomElement()
     
     if let pieces = segment?.pieces{
@@ -127,7 +134,8 @@ class PieceFactory{
     
   }
   func addLabel(level:Level , scene:GameScene){
-    
+    print("distNextSegment = \(distNextSegment)")
+    print("offscreen = \(scene.getOffScreen())")
     let levelLabel = SKLabelNode(text: "level \(levelNum + 1)")
     levelLabel.fontName = "Atari Font Full Version"
     levelLabel.fontSize = 40
@@ -149,10 +157,11 @@ class PieceFactory{
       print("Error, could not find level")
       return
     }
-    addLabel(level: level, scene: scene)
+    isNewLevel = true
+    //addLabel(level: level, scene: scene)
     
     sectionNumber = 0
-    distNextSegment = distNextSegment - 600
+    //distNextSegment = distNextSegment - 600
     
     
     if let section = getSection(){
