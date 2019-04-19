@@ -12,34 +12,45 @@ class LevelManager{
     print("getting realm file location")
     
     
-    let levels: Results<Level> = { realm.objects(Level.self) }()
     
-    if levels.count == 0{
-      print("No levels yet created")
-      //LevelCreator.createLevels(realm: realm)
-    }else{
-      print("There are \(levels.count) levels")
-    }
     
     
   }
   
-  func getLevel()->Level{
+  func getLevel(difficulty:Int? = nil)->Level{
+    print("getting level")
 //    let segments = realm.objects(Level.self).first!.sections.first!.segments
     
-    let levels: Results<Level> = { realm.objects(Level.self) }()
-    let level = levels.first
-    print("level name = \(level!.name)")
+    //check if looking for
+    if let difficulty = difficulty{
+      //TODO refactor into two functions
+      let levels: Results<Level> = { realm.objects(Level.self).filter("difficulty == \(difficulty)") }()
+      
+      
+      if let level = levels.randomElement(){
+        print("level name = \(level.name)")
+        setUpSectionSegment(level:level)
+        return level
+      }
+      print("could not find level with difficulty \(difficulty)")
+    }
     
-    if let section = level?.sections.first{
+    
+    //if can't find a level with that difficulty return any
+    let levels: Results<Level> = { realm.objects(Level.self) }()
+    let level = levels.randomElement()
+    setUpSectionSegment(level:level!)
+    return level!
+    
+  }
+  func setUpSectionSegment(level:Level){
+    if let section = level.sections.first{
       print("section distance is \(section.distance)")
       if let segment = section.segments.first , let piece = segment.pieces.first{
         print("piece is \(piece)")
       }
     }
-    return level!
   }
-  
   
   
 }

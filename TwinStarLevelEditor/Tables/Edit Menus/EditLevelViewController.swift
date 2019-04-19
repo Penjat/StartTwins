@@ -9,17 +9,28 @@ class EditLevelViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     levelNameTextField.stringValue = level.name
+    difficultyLabel.integerValue = level.difficulty
   }
 
 
   
   @IBAction func pressedPlus(_ sender: Any) {
+    guard difficultyLabel.integerValue < 10 else{
+      return
+    }
+    difficultyLabel.integerValue = difficultyLabel.integerValue + 1
+    
   }
   @IBAction func pressedMinus(_ sender: Any) {
+    guard difficultyLabel.integerValue > 0 else{
+      return
+    }
+    difficultyLabel.integerValue = difficultyLabel.integerValue - 1
   }
   
   @IBAction func pressedSave(_ sender: Any) {
     level.name = levelNameTextField.stringValue
+    level.difficulty = difficultyLabel.integerValue
     TableManager.shared.updateLevels()
     //TODO update difficulty
     dismiss(self)
