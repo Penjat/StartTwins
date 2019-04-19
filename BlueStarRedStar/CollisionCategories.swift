@@ -3,7 +3,7 @@
 import SpriteKit
 
 enum PieceType : Int{
-  case Player = 1,Coin = 2,Wall = 3
+  case Player = 1, Coin = 2, Wall = 3, Enemy = 4
  
   func toString()->String{
     
@@ -14,6 +14,8 @@ enum PieceType : Int{
       return "Coin"
     case .Wall:
       return "Wall"
+    case .Enemy:
+      return "Enemy"
     }
   }
 }

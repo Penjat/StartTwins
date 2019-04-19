@@ -94,6 +94,10 @@ class PieceFactory{
     case PieceType.Coin.rawValue:
       let coin = Coin.create(scene: scene, piece: piece)
       pieceList.append(coin)
+    case PieceType.Enemy.rawValue:
+      let hobbin = Hobbin.create(scene: scene, piece: piece)
+      pieceList.append(hobbin)
+      
     default:
       let wall = Wall.create(scene: scene, piece: piece)
       pieceList.append(wall)
