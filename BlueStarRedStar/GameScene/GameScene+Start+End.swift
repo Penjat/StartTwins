@@ -30,9 +30,9 @@ extension GameScene{
     player.startGame(scene: self)
     isPlaying = true
   }
-  func setMoving(speed:CGFloat){
+  func setMoving(speed:Int){
     movingNode.removeAllActions()
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -speed, duration: 1))
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: CGFloat(-speed), duration: 1))
     movingNode.run(movingNodeMove)
   }
   

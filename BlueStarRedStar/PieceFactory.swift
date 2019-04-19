@@ -157,7 +157,7 @@ class PieceFactory{
     
     if let section = getSection(){
       setCur(section: section,scene: scene)
-      scene.setMoving(speed:250)
+      scene.setMoving(speed:section.speed)
     }else{
       print("there was a problem loading the first section")
     }
