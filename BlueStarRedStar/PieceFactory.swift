@@ -31,7 +31,7 @@ class PieceFactory{
     distNextSection = 0
     distNextSegment = 0
 
-    level = levelManager.getLevel()
+    level = levelManager.getLevel(difficulty: levelNum)
     
     startLevel(scene: scene)
     
@@ -161,7 +161,7 @@ class PieceFactory{
     levelNum += 1
     print("going to level \(levelNum)")
     //TODO find levels based on dificulty
-    level = levelManager.getLevel()
+    level = levelManager.getLevel(difficulty: levelNum)
     startLevel(scene: scene)
     
   }
