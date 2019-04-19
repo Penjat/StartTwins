@@ -31,9 +31,15 @@ extension GameScene : PlayerDelegate{
     staticNode.run(actionSeq);
     
   }
+  //TODO move these to own extension
   func getScreenEdge() -> CGFloat{
     //TODO take out +100
     return ((frame.height+100)/2.0)
+  }
+  func getOffScreen() -> CGFloat{
+    //returns just offscreen for the moving node
+    //TODO factor in the node height
+    return ((frame.height)/2.0) - movingNode.position.y
   }
   
   
