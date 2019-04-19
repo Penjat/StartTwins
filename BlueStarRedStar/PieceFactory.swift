@@ -127,6 +127,10 @@ class PieceFactory{
     levelLabel.fontSize = 40
     levelLabel.position = CGPoint(x: 0, y: scene.getOffScreen())
     
+    //add fade
+    let fadeOut = SKAction.sequence([SKAction.wait(forDuration: 2.0),SKAction.fadeOut(withDuration: 0.5)])
+    levelLabel.run(fadeOut)
+    
     scene.movingNode.addChild(levelLabel)
     
   }
