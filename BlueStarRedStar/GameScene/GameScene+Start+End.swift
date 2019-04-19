@@ -22,17 +22,19 @@ extension GameScene{
     pieceFactory.startGame(scene:self)
     
     //move the moving node
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -250.0, duration: 1))
     
-    //remove all in case still moving from another animation
-    movingNode.removeAllActions()
     
-    //start moving
-    movingNode.run(movingNodeMove)
+    
+    
+    
     player.startGame(scene: self)
     isPlaying = true
   }
-  
+  func setMoving(speed:CGFloat){
+    movingNode.removeAllActions()
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: -speed, duration: 1))
+    movingNode.run(movingNodeMove)
+  }
   
   func gameOver(){
     print("gameover")
