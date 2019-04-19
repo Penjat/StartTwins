@@ -120,18 +120,25 @@ class PieceFactory{
     
     
   }
-  
-  func startLevel(scene:GameScene){
-    print("starting level")
-    //TODO show a level label
-    let levelLabel = SKLabelNode(text: "level")
+  func addLabel(level:Level , scene:GameScene){
+    
+    let levelLabel = SKLabelNode(text: "level \(levelNum + 1)")
     levelLabel.fontName = "Atari Font Full Version"
     levelLabel.fontSize = 40
     levelLabel.position = CGPoint(x: 0, y: scene.getOffScreen())
     
     scene.movingNode.addChild(levelLabel)
     
+  }
+  func startLevel(scene:GameScene){
+    print("starting level")
+    
     level = levelManager.getLevel()
+    guard let level = level else{
+      print("Error, could not find level")
+      return
+    }
+    addLabel(level: level, scene: scene)
     
     sectionNumber = 0
     distNextSegment = scene.movingNode.position.y - 300
