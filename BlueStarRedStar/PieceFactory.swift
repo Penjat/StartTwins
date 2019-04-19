@@ -144,7 +144,7 @@ class PieceFactory{
   func startLevel(scene:GameScene){
     print("starting level")
     
-    level = levelManager.getLevel()
+    level = levelManager.getLevel(difficulty: levelNum)
     guard let level = level else{
       print("Error, could not find level")
       return
