@@ -9,6 +9,7 @@ class Hobbin : PieceNode{
   var pieceColor : PieceColor!
   var points = 20
   
+  
   static func create(scene: GameScene, piece: Piece) -> PieceNode{
     
     let pieceColor = PieceColor.getPieceColor(num: piece.color)
@@ -41,6 +42,10 @@ class Hobbin : PieceNode{
   }
   
   func pickedUp(){
+    
+    //clear physics body to prevent extra collisions
+    physicsBody = nil
+    
     removeAllActions()
     //print("adding points")
     let fadeOut = SKAction.fadeOut(withDuration: 0.4)

@@ -42,6 +42,10 @@ class Coin : PieceNode{
   }
   
   func pickedUp(){
+    
+    //clear physics body to prevent extra collisions
+    physicsBody = nil
+    
     removeAllActions()
     //print("adding points")
     let fadeOut = SKAction.fadeOut(withDuration: 0.4)
