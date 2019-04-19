@@ -28,16 +28,11 @@ class PieceFactory{
     clearPieceList()
     levelNum = 0
     sectionNumber = 0
-    distNextSegment = 0
     distNextSection = 0
-    
+
     level = levelManager.getLevel()
     
-    if let section = getSection(){
-      setCur(section: section,scene: scene)
-    }else{
-      print("there was a problem loading the section")
-    }
+    startLevel(scene: scene)
     
   }
   func clearPieceList(){
@@ -125,19 +120,36 @@ class PieceFactory{
     
     
   }
-  func nextLevel(scene:GameScene){
+  func startLevel(scene:GameScene){
     
-    levelNum += 1
-    print("going to level \(levelNum)")
-    //TODO find levels based on dificulty
+    //TODO show a level label
+    let levelLabel = SKLabelNode(text: "level")
+    levelLabel.fontName = "Atari Font Full Version"
+    levelLabel.fontSize = 40
+    levelLabel.position = CGPoint(x: 0, y: scene.getScreenEdge())
+    
+    scene.movingNode.addChild(levelLabel)
+    
     level = levelManager.getLevel()
+    
     sectionNumber = 0
+    distNextSegment = scene.movingNode.position.y - 300
+    
     
     if let section = getSection(){
       setCur(section: section,scene: scene)
     }else{
       print("there was a problem loading the first section")
     }
+  }
+  func nextLevel(scene:GameScene){
+    
+    levelNum += 1
+    print("going to level \(levelNum)")
+    //TODO find levels based on dificulty
+    level = levelManager.getLevel()
+    startLevel(scene: scene)
+    
   }
   func checkShouldChange(scene:GameScene){
     

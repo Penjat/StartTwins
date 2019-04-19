@@ -39,10 +39,8 @@ class LevelManager{
     }
     return level!
   }
-  func deleteAllData(){
-    try! realm.write {
-      realm.deleteAll()
-    }
-  }
+  
+  
+  
 }
 
