@@ -55,7 +55,6 @@
 		0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB5225704CF0089B642 /* EditSegmentViewController.swift */; };
 		0B4A8AB8225704D00089B642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB7225704D00089B642 /* Assets.xcassets */; };
 		0B4A8ABB225704D00089B642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4A8AB9225704D00089B642 /* Main.storyboard */; };
-		0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7AC04D223F266C003E84EF /* CollisionCategories.swift */; };
 		0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E2F1B22571A5D009A091F /* StaticHelper.swift */; };
 		0B5E2F1E22571C36009A091F /* PieceColor+GetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */; };
 		0B63A2092257BC6900ACC399 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D2CA223DB8D5006942A0 /* Level.swift */; };
@@ -101,6 +100,7 @@
 		0B8E0606226A433C007B8741 /* Hobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0605226A433C007B8741 /* Hobbin.swift */; };
 		0B8E0608226A47EF007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E0607226A47EF007B8741 /* default.realm */; };
 		0B8E060A226A4A78007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
+		0B8E060B226A5094007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -915,11 +915,11 @@
 			files = (
 				0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */,
 				0B63A20E2257E67600ACC399 /* LevelCreator.swift in Sources */,
-				0B5E2F1A22571A1A009A091F /* CollisionCategories.swift in Sources */,
 				0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */,
 				0B63A20B2257BC6900ACC399 /* Segment.swift in Sources */,
 				0B63A226225A838000ACC399 /* RealmManager.swift in Sources */,
 				0B63A20D2257BC6900ACC399 /* HighScore.swift in Sources */,
+				0B8E060B226A5094007B8741 /* PieceClasses.swift in Sources */,
 				0B63A2192258303400ACC399 /* TileManager+TileDelegate.swift in Sources */,
 				0B63A23E225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift in Sources */,
 				0B63A235225C5EAE00ACC399 /* LevelViewController+TaleViewDelegate+DataSource.swift in Sources */,

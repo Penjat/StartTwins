@@ -4,6 +4,7 @@ import Foundation
 import RealmSwift
 
 class Piece : Object{
+  //type actually refers to PieceClass
   @objc dynamic var type = 0
   @objc dynamic var width = 0
   @objc dynamic var height = 0

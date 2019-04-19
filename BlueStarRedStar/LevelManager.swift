@@ -35,7 +35,7 @@ class LevelManager{
       print("could not find level with difficulty \(difficulty)")
     }
     
-    
+    print("finding any level")
     //if can't find a level with that difficulty return any
     let levels: Results<Level> = { realm.objects(Level.self) }()
     let level = levels.randomElement()

@@ -87,20 +87,21 @@ class PieceFactory{
   private func createPiece(scene:GameScene,piece:Piece){
   
     //TODO add to a piece list
-    switch (piece.type){
-    case PieceType.Wall.rawValue:
+    switch (PieceClass.get(pieceClass: piece.type)){
+      
+    case .Wall:
        let wall = Wall.create(scene: scene, piece: piece)
       pieceList.append(wall)
-    case PieceType.Coin.rawValue:
+      
+    case .Coin:
       let coin = Coin.create(scene: scene, piece: piece)
       pieceList.append(coin)
-    case PieceType.Enemy.rawValue:
+      
+    case .Hobbin:
       let hobbin = Hobbin.create(scene: scene, piece: piece)
+      
       pieceList.append(hobbin)
       
-    default:
-      let wall = Wall.create(scene: scene, piece: piece)
-      pieceList.append(wall)
     }
   }
   
