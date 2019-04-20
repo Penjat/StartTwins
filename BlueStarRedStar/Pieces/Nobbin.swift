@@ -1,7 +1,7 @@
 
 import SpriteKit
 
-class Hobbin : PieceNode{
+class Nobbin : PieceNode{
   
   //var node: SKSpriteNode!
   var pieceColor : PieceColor!
@@ -53,3 +53,4 @@ class Hobbin : PieceNode{
     //removeFromParent()
   }
 }
+

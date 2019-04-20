@@ -97,6 +97,7 @@
 		0B8E060A226A4A78007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
 		0B8E060B226A5094007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
 		0B8E060D226A5DB8007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E060C226A5DB8007B8741 /* default.realm */; };
+		0B8E060F226AA2FF007B8741 /* Nobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E060E226AA2FF007B8741 /* Nobbin.swift */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -216,6 +217,7 @@
 		0B8E0605226A433C007B8741 /* Hobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobbin.swift; sourceTree = "<group>"; };
 		0B8E0609226A4A78007B8741 /* PieceClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceClasses.swift; sourceTree = "<group>"; };
 		0B8E060C226A5DB8007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B8E060E226AA2FF007B8741 /* Nobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nobbin.swift; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 				0B7AC045223EE811003E84EF /* Wall.swift */,
 				0B7AC049223F1FD5003E84EF /* Coin.swift */,
 				0B8E0605226A433C007B8741 /* Hobbin.swift */,
+				0B8E060E226AA2FF007B8741 /* Nobbin.swift */,
 			);
 			path = Pieces;
 			sourceTree = "<group>";
@@ -864,6 +867,7 @@
 				0B8E05DE2263E69F007B8741 /* PieceColor.swift in Sources */,
 				0B5E2F1E22571C36009A091F /* PieceColor+GetColor.swift in Sources */,
 				0B172A7D2241DA870003CE03 /* HighsScoreManager.swift in Sources */,
+				0B8E060F226AA2FF007B8741 /* Nobbin.swift in Sources */,
 				0B2F8727223C6F41001D50E6 /* GameViewController.swift in Sources */,
 				0B172A89224285650003CE03 /* MenuHighScoresView.swift in Sources */,
 				0B7AC04E223F266C003E84EF /* CollisionCategories.swift in Sources */,
