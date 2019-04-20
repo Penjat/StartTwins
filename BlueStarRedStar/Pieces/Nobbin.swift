@@ -17,7 +17,7 @@ class Nobbin : PieceNode{
     //TODO import a texture
     //let hobbinTexture = SKTexture(imageNamed: nil)
     
-    let node = Hobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    let node = Nobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.color = pieceColor.getColor()
     node.colorBlendFactor = 1.0
     node.pieceColor = pieceColor
@@ -36,7 +36,27 @@ class Nobbin : PieceNode{
     node.physicsBody?.isDynamic = true
     node.name = PieceType.Enemy.toString()
     
+    node.calculateMove()
+    
     return node
+  }
+  
+  func calculateMove(){
+    
+    let leftEdge = -StaticHelper.centerOffset + self.size.width / 2
+    
+    let rightEdge = StaticHelper.centerOffset - self.size.width / 2
+    
+    
+    
+    let moveAction = SKAction.sequence(
+      [
+        SKAction.moveTo(x: leftEdge, duration: 1),
+        SKAction.moveTo(x: 0, duration: 1),
+        SKAction.moveTo(x: rightEdge, duration: 1),
+        SKAction.moveTo(x: 0, duration: 1),
+       ])
+    run(SKAction.repeatForever(moveAction))
   }
   
   func pickedUp(){

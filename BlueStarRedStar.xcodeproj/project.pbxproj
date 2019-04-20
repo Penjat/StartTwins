@@ -96,8 +96,8 @@
 		0B8E0606226A433C007B8741 /* Hobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0605226A433C007B8741 /* Hobbin.swift */; };
 		0B8E060A226A4A78007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
 		0B8E060B226A5094007B8741 /* PieceClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E0609226A4A78007B8741 /* PieceClasses.swift */; };
-		0B8E060D226A5DB8007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E060C226A5DB8007B8741 /* default.realm */; };
 		0B8E060F226AA2FF007B8741 /* Nobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8E060E226AA2FF007B8741 /* Nobbin.swift */; };
+		0B8E0611226AA44B007B8741 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B8E0610226AA44B007B8741 /* default.realm */; };
 		0B98CCD5224AB16500C2D763 /* silkworm.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD4224AB16500C2D763 /* silkworm.TTF */; };
 		0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */; };
 		0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B98CCD8224ABB4900C2D763 /* atari full.ttf */; };
@@ -216,8 +216,8 @@
 		0B8E05E02263E71F007B8741 /* PieceColor+GetNSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PieceColor+GetNSColor.swift"; sourceTree = "<group>"; };
 		0B8E0605226A433C007B8741 /* Hobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobbin.swift; sourceTree = "<group>"; };
 		0B8E0609226A4A78007B8741 /* PieceClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceClasses.swift; sourceTree = "<group>"; };
-		0B8E060C226A5DB8007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B8E060E226AA2FF007B8741 /* Nobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nobbin.swift; sourceTree = "<group>"; };
+		0B8E0610226AA44B007B8741 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B98CCD4224AB16500C2D763 /* silkworm.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = silkworm.TTF; sourceTree = "<group>"; };
 		0B98CCD6224ABA9800C2D763 /* Retronoid Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Retronoid Italic.ttf"; sourceTree = "<group>"; };
 		0B98CCD8224ABB4900C2D763 /* atari full.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "atari full.ttf"; sourceTree = "<group>"; };
@@ -497,7 +497,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0B8E060C226A5DB8007B8741 /* default.realm */,
+				0B8E0610226AA44B007B8741 /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -692,7 +692,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0B8E060D226A5DB8007B8741 /* default.realm in Resources */,
+				0B8E0611226AA44B007B8741 /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
