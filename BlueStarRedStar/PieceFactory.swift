@@ -36,7 +36,7 @@ class PieceFactory{
     level = levelManager.getLevel(difficulty: levelNum)
     
     startLevel(scene: scene)
-    
+    scene.setMoving(speed:curSection!.speed)
   }
   func clearPieceList(){
     for piece in pieceList{
@@ -143,7 +143,9 @@ class PieceFactory{
     levelLabel.position = CGPoint(x: 0, y: labelPos )
     
     //add fade
-    let fadeOut = SKAction.sequence([SKAction.wait(forDuration: 2.0),SKAction.fadeOut(withDuration: 0.5)])
+    let fadeOut = SKAction.sequence([SKAction.wait(forDuration: 2.0),SKAction.fadeOut(withDuration: 0.5),SKAction.run {
+      scene.setMoving(speed: self.curSection!.speed)
+      }])
     levelLabel.run(fadeOut)
     
     scene.movingNode.addChild(levelLabel)
@@ -166,7 +168,7 @@ class PieceFactory{
     
     if let section = getSection(){
       setCur(section: section,scene: scene)
-      scene.setMoving(speed:section.speed)
+      
     }else{
       print("there was a problem loading the first section")
     }
