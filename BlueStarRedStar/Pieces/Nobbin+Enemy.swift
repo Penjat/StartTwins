@@ -23,6 +23,8 @@ extension Nobbin : Enemy{
   func getColor() -> PieceColor{
     return pieceColor
   }
-  
+  func hit(object:SKNode?){
+    reverseMove()
+  }
   
 }

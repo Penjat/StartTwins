@@ -4,7 +4,7 @@ import SpriteKit
 class Nobbin : PieceNode{
   
   
-  //var node: SKSpriteNode!
+  let speed = 3.0
   var pieceColor : PieceColor!
   var points = 20
   
@@ -39,28 +39,31 @@ class Nobbin : PieceNode{
     node.physicsBody?.isDynamic = true
     node.name = PieceType.Enemy.toString()
     
-    node.calculateMove()
+    node.reverseMove()
     
     return node
   }
-  
-  func calculateMove(){
+  func reverseMove(){
+    moveDir = moveDir.reverseDir()
     
-    let leftEdge = -StaticHelper.centerOffset + self.size.width / 2
+    let edge = (StaticHelper.centerOffset - self.size.width / 2) * CGFloat(moveDir.rawValue)
     
-    let rightEdge = StaticHelper.centerOffset - self.size.width / 2
     
+    //TODO calculate the duration properly
     
     
     let moveAction = SKAction.sequence(
       [
-        SKAction.moveTo(x: leftEdge, duration: 1),
-        SKAction.moveTo(x: 0, duration: 1),
-        SKAction.moveTo(x: rightEdge, duration: 1),
-        SKAction.moveTo(x: 0, duration: 1),
-       ])
-    run(SKAction.repeatForever(moveAction))
+        SKAction.moveTo(x: edge, duration: 2),
+        SKAction.run {
+          self.reverseMove()
+        }
+        ])
+    run(moveAction)
+    
   }
+  
+  
   
   
 }

@@ -2,8 +2,8 @@
 
 import Foundation
 
-enum MoveDir {
-  case Right,Left
+enum MoveDir : Int {
+  case Right = 1,Left = -1
   
   func reverseDir() -> MoveDir{
     

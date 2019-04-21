@@ -19,7 +19,12 @@ extension Hobbin : Enemy{
     run(sequence)
     //removeFromParent()
   }
+  
   func getColor() -> PieceColor{
     return pieceColor
+  }
+  
+  func hit(object:SKNode?){
+    //do nothing
   }
 }
