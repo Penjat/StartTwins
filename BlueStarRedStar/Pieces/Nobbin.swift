@@ -39,10 +39,15 @@ class Nobbin : PieceNode{
     node.physicsBody?.isDynamic = true
     node.name = PieceType.Enemy.toString()
     
+    //make red and blue move opposite direction
+    if node.pieceColor == .Blue{
+      node.moveDir = .Right
+    }
     node.reverseMove()
     
     return node
   }
+  
   func reverseMove(){
     removeAllActions()
     moveDir = moveDir.reverseDir()
