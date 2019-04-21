@@ -25,6 +25,9 @@ extension Nobbin : Enemy{
   }
   func hit(object:SKNode?){
     reverseMove()
+    if let enemy = object as? Enemy{
+      enemy.hit(object: nil)
+    }
   }
   
 }

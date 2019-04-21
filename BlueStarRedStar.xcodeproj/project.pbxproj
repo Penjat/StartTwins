@@ -40,7 +40,7 @@
 		0B2ADDE8226BEB900011D6B1 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE7226BEB900011D6B1 /* Enemy.swift */; };
 		0B2ADDEA226BEC300011D6B1 /* Nobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */; };
 		0B2ADDEC226BEC800011D6B1 /* Hobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */; };
-		0B2ADDEE226BF1960011D6B1 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B2ADDED226BF1960011D6B1 /* default.realm */; };
+		0B2ADDF2226BFB0A0011D6B1 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B2ADDF1226BFB0A0011D6B1 /* default.realm */; };
 		0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F871E223C6F41001D50E6 /* AppDelegate.swift */; };
 		0B2F8721223C6F41001D50E6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F8720223C6F41001D50E6 /* GameScene.sks */; };
 		0B2F8725223C6F41001D50E6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F8724223C6F41001D50E6 /* GameScene.swift */; };
@@ -164,7 +164,7 @@
 		0B2ADDE7226BEB900011D6B1 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nobbin+Enemy.swift"; sourceTree = "<group>"; };
 		0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hobbin+Enemy.swift"; sourceTree = "<group>"; };
-		0B2ADDED226BF1960011D6B1 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B2ADDF1226BFB0A0011D6B1 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B2F871B223C6F41001D50E6 /* BlueStarRedStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueStarRedStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2F871E223C6F41001D50E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B2F8720223C6F41001D50E6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -517,7 +517,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0B2ADDED226BF1960011D6B1 /* default.realm */,
+				0B2ADDF1226BFB0A0011D6B1 /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -712,7 +712,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0B2ADDEE226BF1960011D6B1 /* default.realm in Resources */,
+				0B2ADDF2226BFB0A0011D6B1 /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
