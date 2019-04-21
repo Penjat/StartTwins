@@ -4,7 +4,7 @@ import SpriteKit
 class Nobbin : PieceNode{
   
   
-  let moveSpeed = 3.0
+  let moveSpeed : CGFloat = 300.0
   var pieceColor : PieceColor!
   var points = 20
   
@@ -48,14 +48,14 @@ class Nobbin : PieceNode{
     moveDir = moveDir.reverseDir()
     
     let edge = (StaticHelper.centerOffset - self.size.width / 2) * CGFloat(moveDir.rawValue)
-    
-    
-    //TODO calculate the duration properly
-    
-    
+    print("move edge = \(edge)")
+    //calculate the time so that the speed is the same
+    let moveTime = Double(abs(edge - position.x)/moveSpeed)
+    print("move time = \(moveTime)")
+   
     let moveAction = SKAction.sequence(
       [
-        SKAction.moveTo(x: edge, duration: 2),
+        SKAction.moveTo(x: edge, duration: moveTime),
         SKAction.run {
           self.reverseMove()
         }
