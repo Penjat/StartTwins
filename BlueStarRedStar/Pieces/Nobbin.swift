@@ -4,7 +4,7 @@ import SpriteKit
 class Nobbin : PieceNode{
   
   
-  let speed = 3.0
+  let moveSpeed = 3.0
   var pieceColor : PieceColor!
   var points = 20
   
@@ -44,6 +44,7 @@ class Nobbin : PieceNode{
     return node
   }
   func reverseMove(){
+    removeAllActions()
     moveDir = moveDir.reverseDir()
     
     let edge = (StaticHelper.centerOffset - self.size.width / 2) * CGFloat(moveDir.rawValue)
