@@ -36,6 +36,10 @@
 		0B24CCCC22527E05002F3410 /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24CCCB22527E05002F3410 /* KeyView.swift */; };
 		0B24CCCE225291B5002F3410 /* KeyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24CCCD225291B5002F3410 /* KeyDelegate.swift */; };
 		0B24CCD02252937A002F3410 /* NewHighScoreView+KeyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24CCCF2252937A002F3410 /* NewHighScoreView+KeyDelegate.swift */; };
+		0B2ADDE6226BE8330011D6B1 /* MoveDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE5226BE8330011D6B1 /* MoveDir.swift */; };
+		0B2ADDE8226BEB900011D6B1 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE7226BEB900011D6B1 /* Enemy.swift */; };
+		0B2ADDEA226BEC300011D6B1 /* Nobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */; };
+		0B2ADDEC226BEC800011D6B1 /* Hobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */; };
 		0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F871E223C6F41001D50E6 /* AppDelegate.swift */; };
 		0B2F8721223C6F41001D50E6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F8720223C6F41001D50E6 /* GameScene.sks */; };
 		0B2F8725223C6F41001D50E6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F8724223C6F41001D50E6 /* GameScene.swift */; };
@@ -156,6 +160,10 @@
 		0B24CCCB22527E05002F3410 /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
 		0B24CCCD225291B5002F3410 /* KeyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDelegate.swift; sourceTree = "<group>"; };
 		0B24CCCF2252937A002F3410 /* NewHighScoreView+KeyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewHighScoreView+KeyDelegate.swift"; sourceTree = "<group>"; };
+		0B2ADDE5226BE8330011D6B1 /* MoveDir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDir.swift; sourceTree = "<group>"; };
+		0B2ADDE7226BEB900011D6B1 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nobbin+Enemy.swift"; sourceTree = "<group>"; };
+		0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hobbin+Enemy.swift"; sourceTree = "<group>"; };
 		0B2F871B223C6F41001D50E6 /* BlueStarRedStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueStarRedStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2F871E223C6F41001D50E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B2F8720223C6F41001D50E6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -304,6 +312,18 @@
 			path = HighScores;
 			sourceTree = "<group>";
 		};
+		0B2ADDE4226BE80B0011D6B1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0B8E05DD2263E69F007B8741 /* PieceColor.swift */,
+				0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */,
+				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
+				0B8E0609226A4A78007B8741 /* PieceClasses.swift */,
+				0B2ADDE5226BE8330011D6B1 /* MoveDir.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		0B2F8712223C6F40001D50E6 = {
 			isa = PBXGroup;
 			children = (
@@ -331,10 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
-				0B8E05DD2263E69F007B8741 /* PieceColor.swift */,
-				0B5E2F1D22571C36009A091F /* PieceColor+GetColor.swift */,
-				0B7AC04D223F266C003E84EF /* CollisionCategories.swift */,
-				0B8E0609226A4A78007B8741 /* PieceClasses.swift */,
+				0B2ADDE4226BE80B0011D6B1 /* Enums */,
 				0B8E05C82262F568007B8741 /* Assets */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
 				0B172A71224144F70003CE03 /* Menus */,
@@ -480,7 +497,10 @@
 				0B7AC045223EE811003E84EF /* Wall.swift */,
 				0B7AC049223F1FD5003E84EF /* Coin.swift */,
 				0B8E0605226A433C007B8741 /* Hobbin.swift */,
+				0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */,
 				0B8E060E226AA2FF007B8741 /* Nobbin.swift */,
+				0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */,
+				0B2ADDE7226BEB900011D6B1 /* Enemy.swift */,
 			);
 			path = Pieces;
 			sourceTree = "<group>";
@@ -850,9 +870,11 @@
 				0B8E05CD2262FAF9007B8741 /* Piece+Getters.swift in Sources */,
 				0B08D2D1223DC2F2006942A0 /* Segment.swift in Sources */,
 				0B08D2CD223DB9B3006942A0 /* LevelManager.swift in Sources */,
+				0B2ADDE6226BE8330011D6B1 /* MoveDir.swift in Sources */,
 				0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */,
 				0B8E0606226A433C007B8741 /* Hobbin.swift in Sources */,
 				0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */,
+				0B2ADDEC226BEC800011D6B1 /* Hobbin+Enemy.swift in Sources */,
 				0B172A812241E57B0003CE03 /* NewHighScoreView.swift in Sources */,
 				0BB390BF2247F1B6009F08B1 /* TailPiece.swift in Sources */,
 				0B24CCD02252937A002F3410 /* NewHighScoreView+KeyDelegate.swift in Sources */,
@@ -877,6 +899,7 @@
 				0B24CCCE225291B5002F3410 /* KeyDelegate.swift in Sources */,
 				0B18D8DE2243E83800461AEE /* GameSceen+PlayerDelegate.swift in Sources */,
 				0B4A8AAA225589930089B642 /* NewHighScoreView+Animations.swift in Sources */,
+				0B2ADDE8226BEB900011D6B1 /* Enemy.swift in Sources */,
 				0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */,
 				0B172A8522427F180003CE03 /* MenuTitleView.swift in Sources */,
 				0B08D2D7223DD43C006942A0 /* PieceFactory.swift in Sources */,
@@ -884,6 +907,7 @@
 				0B7AC04A223F1FD5003E84EF /* Coin.swift in Sources */,
 				0B172A7B2241D8450003CE03 /* HighScore.swift in Sources */,
 				0B172A75224145620003CE03 /* MenuGameOverView.swift in Sources */,
+				0B2ADDEA226BEC300011D6B1 /* Nobbin+Enemy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

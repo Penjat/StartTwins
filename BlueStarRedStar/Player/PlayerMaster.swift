@@ -137,17 +137,17 @@ class PlayerMaster {
     case (PieceType.Player.toString(), PieceType.Enemy.toString() ):
       
       //if it is a player and an enemy
-      if let hobbin = other.node as? Hobbin , let playerPiece = playerPiece.node as? PlayerPiece{
+      if let enemy = other.node as? Enemy , let playerPiece = playerPiece.node as? PlayerPiece{
         
         //if purple, get points no matter what
-        if hobbin.pieceColor == PieceColor.White{
-          hobbin.pickedUp()
-          add(points: hobbin.points)
+        if enemy.getColor() == PieceColor.White{
+          enemy.pickedUp()
+          add(points: enemy.getPoints())
           
           //else, check if the correct player piece picked it up
-        }else if hobbin.pieceColor == playerPiece.pieceColor{
-          hobbin.pickedUp()
-          add(points: hobbin.points)
+        }else if enemy.getColor() == playerPiece.pieceColor{
+          enemy.pickedUp()
+          add(points: enemy.getPoints())
           
           
         }else{

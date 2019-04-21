@@ -3,9 +3,12 @@ import SpriteKit
 
 class Nobbin : PieceNode{
   
+  
   //var node: SKSpriteNode!
   var pieceColor : PieceColor!
   var points = 20
+  
+  var moveDir = MoveDir.Left
   
   
   static func create(scene: GameScene, piece: Piece) -> PieceNode{
@@ -59,18 +62,6 @@ class Nobbin : PieceNode{
     run(SKAction.repeatForever(moveAction))
   }
   
-  func pickedUp(){
-    
-    //clear physics body to prevent extra collisions
-    physicsBody = nil
-    
-    removeAllActions()
-    //print("adding points")
-    let fadeOut = SKAction.fadeOut(withDuration: 0.4)
-    let growOut = SKAction.scale(by: 2.0, duration: 0.4)
-    let sequence = SKAction.sequence([SKAction.group([fadeOut,growOut]),SKAction.removeFromParent() ])
-    run(sequence)
-    //removeFromParent()
-  }
+  
 }
 
