@@ -29,8 +29,18 @@ extension GameScene : SKPhysicsContactDelegate{
         gameOver()
       }
       
-    }else{
+    }else if contact.bodyB.node?.name == PieceType.Enemy.toString(){
      //contact not involving player
+      if let enemy = contact.bodyB.node as? Enemy{
+        enemy.hit(object: contact.bodyA.node)
+        
+      }
+    }else if contact.bodyA.node?.name == PieceType.Enemy.toString(){
+      //contact not involving player
+      if let enemy = contact.bodyA.node as? Enemy{
+        enemy.hit(object: contact.bodyB.node)
+        
+      }
     }
   }
   

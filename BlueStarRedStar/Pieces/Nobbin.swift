@@ -1,11 +1,14 @@
 
 import SpriteKit
 
-class Hobbin : PieceNode{
+class Nobbin : PieceNode{
   
-  //var node: SKSpriteNode!
+  
+  let moveSpeed : CGFloat = 300.0
   var pieceColor : PieceColor!
   var points = 20
+  
+  var moveDir = MoveDir.Left
   
   
   static func create(scene: GameScene, piece: Piece) -> PieceNode{
@@ -17,7 +20,7 @@ class Hobbin : PieceNode{
     //TODO import a texture
     //let hobbinTexture = SKTexture(imageNamed: nil)
     
-    let node = Hobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    let node = Nobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.color = pieceColor.getColor()
     node.colorBlendFactor = 1.0
     node.pieceColor = pieceColor
@@ -36,8 +39,38 @@ class Hobbin : PieceNode{
     node.physicsBody?.isDynamic = true
     node.name = PieceType.Enemy.toString()
     
+    //make red and blue move opposite direction
+    if node.pieceColor == .Blue{
+      node.moveDir = .Right
+    }
+    node.reverseMove()
+    
     return node
   }
   
+  func reverseMove(){
+    removeAllActions()
+    moveDir = moveDir.reverseDir()
+    
+    let edge = (StaticHelper.centerOffset - self.size.width / 2) * CGFloat(moveDir.rawValue)
+    print("move edge = \(edge)")
+    //calculate the time so that the speed is the same
+    let moveTime = Double(abs(edge - position.x)/moveSpeed)
+    print("move time = \(moveTime)")
+   
+    let moveAction = SKAction.sequence(
+      [
+        SKAction.moveTo(x: edge, duration: moveTime),
+        SKAction.run {
+          self.reverseMove()
+        }
+        ])
+    run(moveAction)
+    
+  }
+  
+  
+  
   
 }
+

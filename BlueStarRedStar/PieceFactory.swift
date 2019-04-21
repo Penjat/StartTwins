@@ -106,9 +106,12 @@ class PieceFactory{
       
     case .Hobbin:
       let hobbin = Hobbin.create(scene: scene, piece: piece)
-      
       pieceList.append(hobbin)
       
+    case .Nobbin:
+      let nobbin = Nobbin.create(scene: scene, piece: piece)
+      
+      pieceList.append(nobbin)
     }
   }
   
