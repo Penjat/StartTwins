@@ -4,6 +4,8 @@ class Diamond : PieceNode{
   
   var pieceColor : PieceColor!
   var points = 10
+  static let changeRate :CGFloat = 4.2
+  //TODO test on different speeds and distances
   
   static func create(scene: GameScene, piece: Piece) -> PieceNode{
     
@@ -20,8 +22,9 @@ class Diamond : PieceNode{
     
     //make it change to purple
     let changeColor = SKAction.colorize(with: UIColor.purple, colorBlendFactor: 1.0, duration: 1.0)
-    //TODO calculate the time to wait, based on speed and distance from bottom
-    let wait = SKAction.wait(forDuration: 1.0)
+    
+    let waitTime = Double((StaticHelper.heightCount + CGFloat(piece.y))/StaticHelper.moveSpeed * changeRate)
+    let wait = SKAction.wait(forDuration: waitTime)
     
     node.run(SKAction.sequence([wait,changeColor]))
     
