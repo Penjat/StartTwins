@@ -20,7 +20,10 @@ class ToolManager{
       Tool(name: "Hobbin",width: 3, height: 3, color: PieceColor.Red.rawValue, type: PieceClass.Hobbin.rawValue),
       
       Tool(name: "Nobbin",width: 4, height: 2, color: PieceColor.Blue.rawValue, type: PieceClass.Nobbin.rawValue),
-      Tool(name: "Nobbin",width: 4, height: 2, color: PieceColor.Red.rawValue, type: PieceClass.Nobbin.rawValue)
+      Tool(name: "Nobbin",width: 4, height: 2, color: PieceColor.Red.rawValue, type: PieceClass.Nobbin.rawValue),
+      
+      Tool(name: "Diamond",width: 2, height: 3, color: PieceColor.Red.rawValue, type: PieceClass.Diamond.rawValue),
+      Tool(name: "Diamond",width: 2, height: 3, color: PieceColor.Blue.rawValue, type: PieceClass.Diamond.rawValue)
       
       ]
     

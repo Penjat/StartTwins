@@ -29,8 +29,11 @@
 		0B172A89224285650003CE03 /* MenuHighScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A88224285650003CE03 /* MenuHighScoresView.swift */; };
 		0B172A8B22428A5C0003CE03 /* HighScore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B172A8A22428A5C0003CE03 /* HighScore.xib */; };
 		0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A8C22428A7A0003CE03 /* HighScoreView.swift */; };
-		0B1815EB227DF9F900DC718D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B1815EA227DF9F800DC718D /* default.realm */; };
 		0B1815ED227E2D7600DC718D /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815EC227E2D7600DC718D /* Diamond.swift */; };
+		0B1815EF227E30BE00DC718D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B1815EE227E30BE00DC718D /* default.realm */; };
+		0B1815F1227E343C00DC718D /* PointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815F0227E343C00DC718D /* PointProtocol.swift */; };
+		0B1815F3227E346D00DC718D /* Coin+Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815F2227E346D00DC718D /* Coin+Points.swift */; };
+		0B1815F5227E34AA00DC718D /* Diamond+Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815F4227E34AA00DC718D /* Diamond+Points.swift */; };
 		0B18D8DC2243E78C00461AEE /* PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */; };
 		0B18D8DE2243E83800461AEE /* GameSceen+PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18D8DD2243E83700461AEE /* GameSceen+PlayerDelegate.swift */; };
 		0B1E51E02251BCFF00817FAE /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E51DF2251BCFF00817FAE /* MenuProtocol.swift */; };
@@ -39,7 +42,7 @@
 		0B24CCCE225291B5002F3410 /* KeyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24CCCD225291B5002F3410 /* KeyDelegate.swift */; };
 		0B24CCD02252937A002F3410 /* NewHighScoreView+KeyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B24CCCF2252937A002F3410 /* NewHighScoreView+KeyDelegate.swift */; };
 		0B2ADDE6226BE8330011D6B1 /* MoveDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE5226BE8330011D6B1 /* MoveDir.swift */; };
-		0B2ADDE8226BEB900011D6B1 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE7226BEB900011D6B1 /* Enemy.swift */; };
+		0B2ADDE8226BEB900011D6B1 /* EnemyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE7226BEB900011D6B1 /* EnemyProtocol.swift */; };
 		0B2ADDEA226BEC300011D6B1 /* Nobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */; };
 		0B2ADDEC226BEC800011D6B1 /* Hobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */; };
 		0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F871E223C6F41001D50E6 /* AppDelegate.swift */; };
@@ -154,8 +157,11 @@
 		0B172A88224285650003CE03 /* MenuHighScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHighScoresView.swift; sourceTree = "<group>"; };
 		0B172A8A22428A5C0003CE03 /* HighScore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighScore.xib; sourceTree = "<group>"; };
 		0B172A8C22428A7A0003CE03 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
-		0B1815EA227DF9F800DC718D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B1815EC227E2D7600DC718D /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
+		0B1815EE227E30BE00DC718D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B1815F0227E343C00DC718D /* PointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointProtocol.swift; sourceTree = "<group>"; };
+		0B1815F2227E346D00DC718D /* Coin+Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin+Points.swift"; sourceTree = "<group>"; };
+		0B1815F4227E34AA00DC718D /* Diamond+Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diamond+Points.swift"; sourceTree = "<group>"; };
 		0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDelegate.swift; sourceTree = "<group>"; };
 		0B18D8DD2243E83700461AEE /* GameSceen+PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameSceen+PlayerDelegate.swift"; sourceTree = "<group>"; };
 		0B1E51DF2251BCFF00817FAE /* MenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
@@ -164,7 +170,7 @@
 		0B24CCCD225291B5002F3410 /* KeyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDelegate.swift; sourceTree = "<group>"; };
 		0B24CCCF2252937A002F3410 /* NewHighScoreView+KeyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewHighScoreView+KeyDelegate.swift"; sourceTree = "<group>"; };
 		0B2ADDE5226BE8330011D6B1 /* MoveDir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveDir.swift; sourceTree = "<group>"; };
-		0B2ADDE7226BEB900011D6B1 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		0B2ADDE7226BEB900011D6B1 /* EnemyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyProtocol.swift; sourceTree = "<group>"; };
 		0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nobbin+Enemy.swift"; sourceTree = "<group>"; };
 		0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hobbin+Enemy.swift"; sourceTree = "<group>"; };
 		0B2F871B223C6F41001D50E6 /* BlueStarRedStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueStarRedStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -498,12 +504,15 @@
 				0B7AC043223EDD88003E84EF /* PieceNode.swift */,
 				0B7AC045223EE811003E84EF /* Wall.swift */,
 				0B7AC049223F1FD5003E84EF /* Coin.swift */,
+				0B1815F2227E346D00DC718D /* Coin+Points.swift */,
+				0B1815EC227E2D7600DC718D /* Diamond.swift */,
+				0B1815F4227E34AA00DC718D /* Diamond+Points.swift */,
 				0B8E0605226A433C007B8741 /* Hobbin.swift */,
 				0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */,
 				0B8E060E226AA2FF007B8741 /* Nobbin.swift */,
 				0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */,
-				0B1815EC227E2D7600DC718D /* Diamond.swift */,
-				0B2ADDE7226BEB900011D6B1 /* Enemy.swift */,
+				0B2ADDE7226BEB900011D6B1 /* EnemyProtocol.swift */,
+				0B1815F0227E343C00DC718D /* PointProtocol.swift */,
 			);
 			path = Pieces;
 			sourceTree = "<group>";
@@ -520,7 +529,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0B1815EA227DF9F800DC718D /* default.realm */,
+				0B1815EE227E30BE00DC718D /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -715,7 +724,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0B1815EB227DF9F900DC718D /* default.realm in Resources */,
+				0B1815EF227E30BE00DC718D /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
@@ -867,6 +876,7 @@
 			files = (
 				0B08D2D3223DC352006942A0 /* Piece.swift in Sources */,
 				0B172A79224189450003CE03 /* GameScene+MenuDelegate.swift in Sources */,
+				0B1815F3227E346D00DC718D /* Coin+Points.swift in Sources */,
 				0B08D2CF223DC261006942A0 /* Section.swift in Sources */,
 				0B7AC044223EDD88003E84EF /* PieceNode.swift in Sources */,
 				0B7AC04C223F25A4003E84EF /* GameScene+Collisions.swift in Sources */,
@@ -875,7 +885,9 @@
 				0B08D2CD223DB9B3006942A0 /* LevelManager.swift in Sources */,
 				0B1815ED227E2D7600DC718D /* Diamond.swift in Sources */,
 				0B2ADDE6226BE8330011D6B1 /* MoveDir.swift in Sources */,
+				0B1815F1227E343C00DC718D /* PointProtocol.swift in Sources */,
 				0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */,
+				0B1815F5227E34AA00DC718D /* Diamond+Points.swift in Sources */,
 				0B8E0606226A433C007B8741 /* Hobbin.swift in Sources */,
 				0B7AC048223EF7FC003E84EF /* StaticHelper.swift in Sources */,
 				0B2ADDEC226BEC800011D6B1 /* Hobbin+Enemy.swift in Sources */,
@@ -903,7 +915,7 @@
 				0B24CCCE225291B5002F3410 /* KeyDelegate.swift in Sources */,
 				0B18D8DE2243E83800461AEE /* GameSceen+PlayerDelegate.swift in Sources */,
 				0B4A8AAA225589930089B642 /* NewHighScoreView+Animations.swift in Sources */,
-				0B2ADDE8226BEB900011D6B1 /* Enemy.swift in Sources */,
+				0B2ADDE8226BEB900011D6B1 /* EnemyProtocol.swift in Sources */,
 				0B2F871F223C6F41001D50E6 /* AppDelegate.swift in Sources */,
 				0B172A8522427F180003CE03 /* MenuTitleView.swift in Sources */,
 				0B08D2D7223DD43C006942A0 /* PieceFactory.swift in Sources */,

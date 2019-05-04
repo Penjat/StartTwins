@@ -104,25 +104,24 @@ class PlayerMaster {
         
         playerPiece.hitEffect(delegate)
       }
-      
-      
+   
       takeDamage()
       break
 
     case (PieceType.Player.toString(), PieceType.Coin.toString() ):
       
       //if it is a player and a coin
-      if let coin = other.node as? Coin , let playerPiece = playerPiece.node as? PlayerPiece{
+      if let coin = other.node as? Points , let playerPiece = playerPiece.node as? PlayerPiece{
         
         //if purple, get points no matter what
-        if coin.pieceColor == PieceColor.White{
+        if coin.getColor() == PieceColor.White{
           coin.pickedUp()
-          add(points: coin.points)
+          add(points: coin.getPoints())
           
           //else, check if the correct player piece picked it up
-        }else if coin.pieceColor == playerPiece.pieceColor{
+        }else if coin.getColor() == playerPiece.pieceColor{
           coin.pickedUp()
-          add(points: coin.points)
+          add(points: coin.getPoints())
           
           
         }else{

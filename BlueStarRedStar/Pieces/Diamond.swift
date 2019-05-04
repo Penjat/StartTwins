@@ -14,7 +14,18 @@ class Diamond : PieceNode{
     //TODO change image
     let coinTexture : SKTexture? = nil//SKTexture(imageNamed: "coing")
     
+    
+    
     let node = Diamond.init(texture: coinTexture, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    
+    //make it change to purple
+    let changeColor = SKAction.colorize(with: UIColor.purple, colorBlendFactor: 1.0, duration: 1.0)
+    //TODO calculate the time to wait, based on speed and distance from bottom
+    let wait = SKAction.wait(forDuration: 1.0)
+    
+    node.run(SKAction.sequence([wait,changeColor]))
+    
+    
     node.color = pieceColor.getColor()
     node.colorBlendFactor = 1.0
     node.pieceColor = pieceColor
