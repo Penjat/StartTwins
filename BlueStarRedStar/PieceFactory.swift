@@ -5,6 +5,7 @@ import SpriteKit
 
 class PieceFactory{
   let levelManager = LevelManager()
+  let NUM_OF_DIFF = 10
   
   var distNextSegment : CGFloat = 0.0
   var distNextSection : CGFloat = 0.0
@@ -157,7 +158,15 @@ class PieceFactory{
   func startLevel(scene:GameScene){
     print("starting level")
     
-    level = levelManager.getLevel(difficulty: levelNum)
+    
+    //update the speed modifier
+    //levels repeat after 10 but the speed increases
+    let speedModifier : Int = (levelNum / NUM_OF_DIFF)
+    StaticHelper.updateSpeedModifier(levelMod: speedModifier)
+    
+    let difficulty = levelNum % NUM_OF_DIFF
+    level = levelManager.getLevel(difficulty: difficulty)
+    
     guard let level = level else{
       print("Error, could not find level")
       return
@@ -181,7 +190,8 @@ class PieceFactory{
     levelNum += 1
     print("going to level \(levelNum)")
     //TODO find levels based on dificulty
-    level = levelManager.getLevel(difficulty: levelNum)
+    let difficulty = 2//levelNum % NUM_OF_DIFF
+    //level = levelManager.getLevel(difficulty: difficulty)
     startLevel(scene: scene)
     
   }

@@ -5,12 +5,22 @@ import RealmSwift
 
 class LevelManager{
   
-  let realm = try! Realm(fileURL: Bundle.main.url(forResource: "default", withExtension: "realm")!)
+  
+  
+  let config = Realm.Configuration(
+    fileURL: Bundle.main.url(forResource: "default", withExtension: "realm"), readOnly: true)
+  
+  
+  var realm : Realm!
+  
+  
+  
+//  let realm = try! Realm(fileURL: Bundle.main.url(forResource: "default", withExtension: "realm")!)
   
   
   func setUp(){
     print("getting realm file location")
-    
+    realm = try! Realm(configuration: config)
     
     
     
@@ -22,7 +32,7 @@ class LevelManager{
 //    let segments = realm.objects(Level.self).first!.sections.first!.segments
     
     //check if looking for
-    if let difficulty = difficulty{
+    if let difficulty = difficulty {
       //TODO refactor into two functions
       let levels: Results<Level> = { realm.objects(Level.self).filter("difficulty == \(difficulty)") }()
       

@@ -32,7 +32,7 @@ extension GameScene{
   }
   func setMoving(speed:Int){
     movingNode.removeAllActions()
-    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: CGFloat(-speed), duration: 1))
+    let movingNodeMove = SKAction.repeatForever(SKAction.moveBy(x: 0, y: CGFloat(-speed)*StaticHelper.speedModifier, duration: 1))
     movingNode.run(movingNodeMove)
   }
   
