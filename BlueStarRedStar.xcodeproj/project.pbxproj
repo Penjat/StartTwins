@@ -30,6 +30,7 @@
 		0B172A8B22428A5C0003CE03 /* HighScore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B172A8A22428A5C0003CE03 /* HighScore.xib */; };
 		0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B172A8C22428A7A0003CE03 /* HighScoreView.swift */; };
 		0B1815EB227DF9F900DC718D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B1815EA227DF9F800DC718D /* default.realm */; };
+		0B1815ED227E2D7600DC718D /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815EC227E2D7600DC718D /* Diamond.swift */; };
 		0B18D8DC2243E78C00461AEE /* PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */; };
 		0B18D8DE2243E83800461AEE /* GameSceen+PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18D8DD2243E83700461AEE /* GameSceen+PlayerDelegate.swift */; };
 		0B1E51E02251BCFF00817FAE /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E51DF2251BCFF00817FAE /* MenuProtocol.swift */; };
@@ -154,6 +155,7 @@
 		0B172A8A22428A5C0003CE03 /* HighScore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighScore.xib; sourceTree = "<group>"; };
 		0B172A8C22428A7A0003CE03 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
 		0B1815EA227DF9F800DC718D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B1815EC227E2D7600DC718D /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 		0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDelegate.swift; sourceTree = "<group>"; };
 		0B18D8DD2243E83700461AEE /* GameSceen+PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameSceen+PlayerDelegate.swift"; sourceTree = "<group>"; };
 		0B1E51DF2251BCFF00817FAE /* MenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
@@ -500,6 +502,7 @@
 				0B2ADDEB226BEC800011D6B1 /* Hobbin+Enemy.swift */,
 				0B8E060E226AA2FF007B8741 /* Nobbin.swift */,
 				0B2ADDE9226BEC300011D6B1 /* Nobbin+Enemy.swift */,
+				0B1815EC227E2D7600DC718D /* Diamond.swift */,
 				0B2ADDE7226BEB900011D6B1 /* Enemy.swift */,
 			);
 			path = Pieces;
@@ -870,6 +873,7 @@
 				0B8E05CD2262FAF9007B8741 /* Piece+Getters.swift in Sources */,
 				0B08D2D1223DC2F2006942A0 /* Segment.swift in Sources */,
 				0B08D2CD223DB9B3006942A0 /* LevelManager.swift in Sources */,
+				0B1815ED227E2D7600DC718D /* Diamond.swift in Sources */,
 				0B2ADDE6226BE8330011D6B1 /* MoveDir.swift in Sources */,
 				0B172A8D22428A7B0003CE03 /* HighScoreView.swift in Sources */,
 				0B8E0606226A433C007B8741 /* Hobbin.swift in Sources */,
