@@ -15,9 +15,9 @@ class Hobbin : PieceNode{
     //let node = Coin(color: pieceColor.getColor(), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     
     //TODO import a texture
-    //let hobbinTexture = SKTexture(imageNamed: nil)
+    let hobbinTexture = SKTexture(imageNamed: "Hobbin")
     
-    let node = Hobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    let node = Hobbin.init(texture: hobbinTexture, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.color = pieceColor.getColor()
     node.colorBlendFactor = 1.0
     node.pieceColor = pieceColor

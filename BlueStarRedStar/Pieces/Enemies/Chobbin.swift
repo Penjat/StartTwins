@@ -12,10 +12,10 @@ class Chobbin : PieceNode{
     
     //let node = Coin(color: pieceColor.getColor(), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     
-    //TODO import a texture
-    //let hobbinTexture = SKTexture(imageNamed: nil)
+    //TODO change for chobbin
+    let hobbinTexture = SKTexture(imageNamed: "Hobbin")
     
-    let node = Chobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    let node = Chobbin.init(texture: hobbinTexture, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.color = pieceColor.getColor()
     node.colorBlendFactor = 1.0
     node.pieceColor = pieceColor
