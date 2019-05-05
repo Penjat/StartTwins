@@ -113,6 +113,10 @@ class PieceFactory{
       let nobbin = Nobbin.create(scene: scene, piece: piece)
       pieceList.append(nobbin)
       
+    case .Chobbin:
+      let chobbin = Chobbin.create(scene: scene, piece: piece)
+      pieceList.append(chobbin)
+      
     case .Diamond:
       let diamond = Diamond.create(scene: scene, piece: piece)
       pieceList.append(diamond)

@@ -3,7 +3,7 @@
 import Foundation
 
 enum PieceClass : Int{
-  case Coin = 2, Wall = 3, Hobbin = 4, Nobbin = 5 , Diamond = 6
+  case Coin = 2, Wall = 3, Hobbin = 4, Nobbin = 5 , Diamond = 6,Chobbin = 7
   
   static func get(pieceClass:Int) -> PieceClass{
     
@@ -20,6 +20,8 @@ enum PieceClass : Int{
       return .Nobbin
     case PieceClass.Diamond.rawValue:
       return .Diamond
+    case PieceClass.Chobbin.rawValue:
+      return .Chobbin
       
       
     default :
