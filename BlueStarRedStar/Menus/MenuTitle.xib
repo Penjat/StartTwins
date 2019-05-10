@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,8 +13,8 @@
         <array key="Retronoid Italic.ttf">
             <string>Retronoid-Italic</string>
         </array>
-        <array key="pure_and_simple_everytime.ttf">
-            <string>pureandsimpleeverytime</string>
+        <array key="atari full.ttf">
+            <string>Atari-Font-Full-Version</string>
         </array>
     </customFonts>
     <objects>
@@ -33,9 +33,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zt1-Pd-Cxt">
-                    <rect key="frame" x="165" y="357" width="47" height="39"/>
+                    <rect key="frame" x="155" y="366" width="68" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="pureandsimpleeverytime" family="pure and simple everytime" pointSize="24"/>
+                    <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
                     <state key="normal" title="Play">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -44,9 +44,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgz-bD-tar">
-                    <rect key="frame" x="134" y="409" width="113" height="39"/>
+                    <rect key="frame" x="103" y="418" width="179" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="pureandsimpleeverytime" family="pure and simple everytime" pointSize="24"/>
+                    <fontDescription key="fontDescription" name="Atari-Font-Full-Version" family="Atari Font Full Version" pointSize="17"/>
                     <state key="normal" title="High Scores">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

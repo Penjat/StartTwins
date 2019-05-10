@@ -18,6 +18,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuGameOverView" customModule="BlueStarRedStar" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="gGJ-l7-a7G"/>
+                <outlet property="restartButton" destination="nMb-Fo-Pg6" id="Fr5-fg-nTD"/>
+                <outlet property="titleButton" destination="4fB-fA-Czr" id="AvA-SU-lBQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
