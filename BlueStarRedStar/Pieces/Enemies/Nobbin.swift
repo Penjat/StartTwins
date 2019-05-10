@@ -17,10 +17,9 @@ class Nobbin : PieceNode{
     
     //let node = Coin(color: pieceColor.getColor(), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     
-    //TODO import a texture
-    //let hobbinTexture = SKTexture(imageNamed: nil)
+    let nobbinTexture = SKTexture(imageNamed: "Nobbin")
     
-    let node = Nobbin.init(texture: nil, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
+    let node = Nobbin.init(texture: nobbinTexture, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.color = pieceColor.getColor()
     node.colorBlendFactor = 1.0
     node.pieceColor = pieceColor
