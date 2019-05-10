@@ -35,7 +35,7 @@
 		0B1815F5227E34AA00DC718D /* Diamond+Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815F4227E34AA00DC718D /* Diamond+Points.swift */; };
 		0B1815FB227F5AEF00DC718D /* Chobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815FA227F5AEF00DC718D /* Chobbin.swift */; };
 		0B1815FD227F5CBF00DC718D /* Chobbin+Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1815FC227F5CBF00DC718D /* Chobbin+Enemy.swift */; };
-		0B1815FF227F5F7600DC718D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B1815FE227F5F7600DC718D /* default.realm */; };
+		0B181601227F855F00DC718D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0B181600227F855E00DC718D /* default.realm */; };
 		0B18D8DC2243E78C00461AEE /* PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */; };
 		0B18D8DE2243E83800461AEE /* GameSceen+PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18D8DD2243E83700461AEE /* GameSceen+PlayerDelegate.swift */; };
 		0B1E51E02251BCFF00817FAE /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E51DF2251BCFF00817FAE /* MenuProtocol.swift */; };
@@ -165,7 +165,7 @@
 		0B1815F4227E34AA00DC718D /* Diamond+Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diamond+Points.swift"; sourceTree = "<group>"; };
 		0B1815FA227F5AEF00DC718D /* Chobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chobbin.swift; sourceTree = "<group>"; };
 		0B1815FC227F5CBF00DC718D /* Chobbin+Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chobbin+Enemy.swift"; sourceTree = "<group>"; };
-		0B1815FE227F5F7600DC718D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0B181600227F855E00DC718D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0B18D8DB2243E78C00461AEE /* PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDelegate.swift; sourceTree = "<group>"; };
 		0B18D8DD2243E83700461AEE /* GameSceen+PlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameSceen+PlayerDelegate.swift"; sourceTree = "<group>"; };
 		0B1E51DF2251BCFF00817FAE /* MenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
@@ -551,7 +551,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0B1815FE227F5F7600DC718D /* default.realm */,
+				0B181600227F855E00DC718D /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -746,7 +746,7 @@
 				0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0B1815FF227F5F7600DC718D /* default.realm in Resources */,
+				0B181601227F855F00DC718D /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
