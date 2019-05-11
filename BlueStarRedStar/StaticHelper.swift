@@ -48,8 +48,13 @@ class StaticHelper{
     
     node.parent?.addChild(pointLabel)
     
+    
+    
     let fadeOutPoints = SKAction.fadeOut(withDuration: 1.0)
     let growPoints = SKAction.scale(by: 3.0, duration: 1.0)
-    pointLabel.run(SKAction.group([fadeOutPoints,growPoints]))
+    
+    
+    let sequence = SKAction.group([fadeOutPoints,growPoints])
+  pointLabel.run(sequence)
   }
 }
