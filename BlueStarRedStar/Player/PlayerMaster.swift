@@ -30,7 +30,7 @@ class PlayerMaster {
     scoreLabel.isHidden = true
     
     let x = -50.0 + scene.frame.width/2
-    let y = 60.0 - scene.frame.height/2
+    let y = -60.0 + scene.frame.height/2
     scoreLabel.position = CGPoint(x:x , y:y)
     scoreLabel.fontSize = 40.0
     scoreLabel.horizontalAlignmentMode = .right
@@ -220,7 +220,7 @@ class PlayerMaster {
     let life = SKLabelNode(text: "♥︎")
     let offset = CGFloat(40 * lives.count)
     let x = (50.0 - scene.frame.width/2) + offset
-    let y = 40.0 - scene.frame.height/2
+    let y = -40.0 + scene.frame.height/2
     life.position = CGPoint(x:x , y:y)
     lives.append(life)
     scene.staticNode.addChild(life)
