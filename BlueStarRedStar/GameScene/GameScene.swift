@@ -25,9 +25,9 @@ class GameScene: SKScene {
     pieceFactory = PieceFactory()
     HighScoreManager.createPlaceHolderScores()
     
-    
     StaticHelper.setRatio(scene: self)
     StaticHelper.setOffset(scene: self)
+    
     
     physicsWorld.contactDelegate = self
     self.addChild(staticNode)
@@ -37,10 +37,8 @@ class GameScene: SKScene {
 
     toTitle(withIntro: false)
     
-    
-    
     let path = Bundle.main.path(forResource: "Space", ofType: "sks")
-    var spaceEffect = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
+    let spaceEffect = NSKeyedUnarchiver.unarchiveObject(withFile: path!) as! SKEmitterNode
     
     spaceEffect.position = CGPoint(x:0,y:frame.height/2.0)
     spaceEffect.name = "spaceParticle"

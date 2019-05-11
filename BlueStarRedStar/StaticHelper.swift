@@ -13,6 +13,7 @@ class StaticHelper{
   static var centerOffset : CGFloat!
   static var speedModifier : CGFloat = 1.0
   static var moveSpeed : CGFloat = 0.0
+  static var playerPos : CGFloat = 0.0
   
   
   //the amount that the speed increases after player cycles through the 10 levels

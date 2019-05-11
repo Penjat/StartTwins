@@ -9,7 +9,7 @@ class PlayerMaster {
   var lastHit = Date()//the time the player was last hit
   
   var isFlashing = false
-  
+  let verticalPos : CGFloat
   var playerBlue : PlayerPiece!
   var playerRed : PlayerPiece!
   var scoreLabel : SKLabelNode!
@@ -24,7 +24,7 @@ class PlayerMaster {
     delegate = scene
     
     scoreLabel = SKLabelNode(text: "0")
-    
+    verticalPos = -scene.frame.height / 10
     
     scoreLabel.fontName = "Atari Font Full Version"
     scoreLabel.isHidden = true
@@ -84,8 +84,8 @@ class PlayerMaster {
   }
   
   func moveTo(pos:CGPoint){
-    playerBlue.position = CGPoint(x:pos.x,y:0.0)
-    playerRed.position = CGPoint(x:-pos.x,y:0.0)
+    playerBlue.position = CGPoint(x:pos.x,y:verticalPos)
+    playerRed.position = CGPoint(x:-pos.x,y:verticalPos)
   }
   
   func hitSomething(playerPiece:SKPhysicsBody,other:SKPhysicsBody){
@@ -217,6 +217,7 @@ class PlayerMaster {
   }
   
   func addLife(scene:GameScene){
+    
     let life = SKLabelNode(text: "♥︎")
     let offset = CGFloat(40 * lives.count)
     let x = (50.0 - scene.frame.width/2) + offset
