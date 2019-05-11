@@ -10,7 +10,7 @@ class RealmManager{
     //return all the levels
     let realm = try! Realm()
     
-    let levels: [Level] = { realm.objects(Level.self) }().map{$0}
+    let levels: [Level] = { realm.objects(Level.self) }().sorted(by: {$0.difficulty < $1.difficulty})
     
     return levels
   }

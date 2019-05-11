@@ -391,11 +391,11 @@
 			isa = PBXGroup;
 			children = (
 				0B2F871E223C6F41001D50E6 /* AppDelegate.swift */,
+				0B2F8726223C6F41001D50E6 /* GameViewController.swift */,
 				0B2ADDE4226BE80B0011D6B1 /* Enums */,
 				0B8E05C82262F568007B8741 /* Assets */,
 				0B2F8746223C732F001D50E6 /* GameScene */,
 				0B172A71224144F70003CE03 /* Menus */,
-				0B2F8726223C6F41001D50E6 /* GameViewController.swift */,
 				0B08D2CC223DB9B3006942A0 /* LevelManager.swift */,
 				0B08D2D6223DD43C006942A0 /* PieceFactory.swift */,
 				0BB390CD2249791B009F08B1 /* Effects */,
