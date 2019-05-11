@@ -20,12 +20,18 @@ extension Coin : Points{
     
     let pointLabel = SKLabelNode(text: "10")
     pointLabel.fontName = "Atari Font Full Version"
-    pointLabel.fontSize = 40.0
+    pointLabel.fontSize = 20.0
     let x = self.position.x
     let y = self.position.y
     pointLabel.position = CGPoint(x:x , y:y)
     
     self.parent?.addChild(pointLabel)
+    
+    let fadeOutPoints = SKAction.fadeOut(withDuration: 1.0)
+    let growPoints = SKAction.scale(by: 3.0, duration: 1.0)
+    pointLabel.run(SKAction.group([fadeOutPoints,growPoints]))
+    
+    
   }
   
 }
