@@ -9,7 +9,7 @@ extension SegmentViewController : NSTableViewDataSource , NSTableViewDelegate{
   
   func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
     
-    let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "segmentCell"), owner: nil) as? NSTableCellView
+    let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "segmentCell"), owner: nil) as? LevelCell
     
     
     cell?.textField?.stringValue = "\(row)"

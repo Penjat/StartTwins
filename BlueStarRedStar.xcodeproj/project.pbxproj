@@ -124,6 +124,7 @@
 		0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D22249BAA9009F08B1 /* Tail.sks */; };
 		0BF0F5272287296F00E6B21B /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F5262287296F00E6B21B /* default.realm */; };
 		0BF0F52922872F2500E6B21B /* EnemyExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F52822872F2500E6B21B /* EnemyExplode.sks */; };
+		0BF0F52F2287632200E6B21B /* LevelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F52E2287632200E6B21B /* LevelCell.swift */; };
 		201E3F84A9BC15B946134067 /* Pods_TwinStarLevelEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59C62B5929A4F1C25F34CFF /* Pods_TwinStarLevelEditor.framework */; };
 		97DF5292F175791B7BBC75FB /* Pods_BlueStarRedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19447945DFD9BA2253AD61BF /* Pods_BlueStarRedStar.framework */; };
 /* End PBXBuildFile section */
@@ -255,6 +256,7 @@
 		0BB390D22249BAA9009F08B1 /* Tail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tail.sks; sourceTree = "<group>"; };
 		0BF0F5262287296F00E6B21B /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0BF0F52822872F2500E6B21B /* EnemyExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplode.sks; sourceTree = "<group>"; };
+		0BF0F52E2287632200E6B21B /* LevelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCell.swift; sourceTree = "<group>"; };
 		13A8CDDEA484CCC0DF8D0EAE /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
 		19447945DFD9BA2253AD61BF /* Pods_BlueStarRedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueStarRedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E832262D18BE91BA2C5FB7 /* Pods-BlueStarRedStarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStarTests/Pods-BlueStarRedStarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -507,6 +509,7 @@
 				0B63A239225C603600ACC399 /* SectionViewController+TableDataSource+Delegate.swift */,
 				0B63A23B225C621400ACC399 /* SegmentViewController.swift */,
 				0B63A23D225C627E00ACC399 /* SegmentViewController+TableViewDelegate+DataSource.swift */,
+				0BF0F52E2287632200E6B21B /* LevelCell.swift */,
 				0B63A243225D5EDA00ACC399 /* Edit Menus */,
 			);
 			path = Tables;
@@ -967,6 +970,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF0F52F2287632200E6B21B /* LevelCell.swift in Sources */,
 				0B4A8AB6225704CF0089B642 /* EditSegmentViewController.swift in Sources */,
 				0B5E2F1C22571A5D009A091F /* StaticHelper.swift in Sources */,
 				0B63A20B2257BC6900ACC399 /* Segment.swift in Sources */,

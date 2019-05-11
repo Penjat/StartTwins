@@ -14,7 +14,7 @@ extension LevelViewController : NSTableViewDataSource , NSTableViewDelegate {
     
     //TODO make sure in range
     cell?.textField?.stringValue = levels[row].name
-    
+    cell?.textField?.backgroundColor = levelColors[levels[row].difficulty%10]
     return cell
   }
   
