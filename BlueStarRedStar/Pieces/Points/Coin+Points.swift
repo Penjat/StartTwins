@@ -17,6 +17,15 @@ extension Coin : Points{
     let sequence = SKAction.sequence([SKAction.group([fadeOut,growOut]),SKAction.removeFromParent() ])
     run(sequence)
     //removeFromParent()
+    
+    let pointLabel = SKLabelNode(text: "10")
+    pointLabel.fontName = "Atari Font Full Version"
+    pointLabel.fontSize = 40.0
+    let x = self.position.x
+    let y = self.position.y
+    pointLabel.position = CGPoint(x:x , y:y)
+    
+    self.parent?.addChild(pointLabel)
   }
   
 }
