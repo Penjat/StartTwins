@@ -18,7 +18,7 @@ extension Coin : Points{
     run(sequence)
     //removeFromParent()
     
-    let pointLabel = SKLabelNode(text: "10")
+    let pointLabel = SKLabelNode(text: "\(points)")
     pointLabel.fontName = "Atari Font Full Version"
     pointLabel.fontSize = 20.0
     let x = self.position.x
