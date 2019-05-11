@@ -31,6 +31,8 @@ extension Chobbin : Enemy{
     explosion.particleColor = PieceColor.Purple.getColor()
     let staticNode = self.parent
     staticNode?.addChild(explosion)
+    
+    StaticHelper.createPoints(node: self, points: points)
   }
   func getColor() -> PieceColor{
     return pieceColor
