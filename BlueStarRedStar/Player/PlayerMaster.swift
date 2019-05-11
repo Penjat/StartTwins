@@ -40,7 +40,7 @@ class PlayerMaster {
     
     playerBlue = PlayerPiece.init(texture: bluePlayerTexture, color: playerBlueColor, size: CGSize(width: 60.0, height: 60.0))
 
-    playerBlue.position = CGPoint(x:40.0,y:0.0)
+    playerBlue.position = CGPoint(x:40.0,y:verticalPos)
     playerBlue.colorBlendFactor = 1.0
     playerBlue.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width:20,height:20))
     playerBlue.physicsBody?.collisionBitMask = 2
@@ -56,7 +56,7 @@ class PlayerMaster {
     
     playerRed = PlayerPiece.init(texture: redPlayerTexture, color: playerRedColor, size: CGSize(width: 60.0, height: 60.0))
     
-    playerRed.position = CGPoint(x:-40.0,y:0.0)
+    playerRed.position = CGPoint(x:-40.0,y:verticalPos)
     playerRed.colorBlendFactor = 1.0
     playerRed.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width:20,height:20))
     playerRed.physicsBody?.collisionBitMask = 2
