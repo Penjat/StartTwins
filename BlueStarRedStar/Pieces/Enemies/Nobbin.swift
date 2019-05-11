@@ -17,7 +17,7 @@ class Nobbin : PieceNode{
     
     //let node = Coin(color: pieceColor.getColor(), size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     
-    let nobbinTexture = SKTexture(imageNamed: "Nobbin")
+    let nobbinTexture = SKTexture(imageNamed: "Nobbin2")
     
     let node = Nobbin.init(texture: nobbinTexture, color: UIColor.white, size: CGSize(width: piece.getWidth(), height: piece.getHeight()))
     node.color = pieceColor.getColor()
