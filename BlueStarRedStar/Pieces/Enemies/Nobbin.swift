@@ -54,7 +54,7 @@ class Nobbin : PieceNode{
     let edge = (StaticHelper.centerOffset - self.size.width / 2) * CGFloat(moveDir.rawValue)
     print("move edge = \(edge)")
     //calculate the time so that the speed is the same
-    let moveTime = Double(abs(edge - position.x)/moveSpeed)
+    let moveTime = Double(abs(edge - position.x)/(moveSpeed*StaticHelper.speedModifier))
     print("move time = \(moveTime)")
    
     let moveAction = SKAction.sequence(
