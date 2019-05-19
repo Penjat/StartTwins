@@ -138,26 +138,18 @@ class PlayerMaster {
       //if it is a player and an enemy
       if let enemy = other.node as? Enemy , let playerPiece = playerPiece.node as? PlayerPiece{
         
-        //if purple, get points no matter what
-        if enemy.getColor() == PieceColor.White{
+        if enemy.getColor() == playerPiece.pieceColor{
           enemy.pickedUp()
           add(points: enemy.getPoints())
-          
-          //else, check if the correct player piece picked it up
-        }else if enemy.getColor() == playerPiece.pieceColor{
-          enemy.pickedUp()
-          add(points: enemy.getPoints())
-          
           
         }else{
-          
+          //take dmg if colors don't match
+          //or for white pieces
           takeDamage()
         }
       }
-      
       break
-
-
+      
     default:
       print("matches no category")
       break

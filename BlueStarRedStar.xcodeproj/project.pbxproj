@@ -122,7 +122,7 @@
 		0BB390CF224979EF009F08B1 /* PlayerHurt.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390CE224979EF009F08B1 /* PlayerHurt.sks */; };
 		0BB390D1224980C4009F08B1 /* points.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D0224980C4009F08B1 /* points.sks */; };
 		0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BB390D22249BAA9009F08B1 /* Tail.sks */; };
-		0BF0F5272287296F00E6B21B /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F5262287296F00E6B21B /* default.realm */; };
+		0BEBC3E622920EC500419F49 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 0BEBC3E522920EC500419F49 /* default.realm */; };
 		0BF0F52922872F2500E6B21B /* EnemyExplode.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F52822872F2500E6B21B /* EnemyExplode.sks */; };
 		0BF0F52F2287632200E6B21B /* LevelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F52E2287632200E6B21B /* LevelCell.swift */; };
 		201E3F84A9BC15B946134067 /* Pods_TwinStarLevelEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59C62B5929A4F1C25F34CFF /* Pods_TwinStarLevelEditor.framework */; };
@@ -254,7 +254,7 @@
 		0BB390CE224979EF009F08B1 /* PlayerHurt.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerHurt.sks; sourceTree = "<group>"; };
 		0BB390D0224980C4009F08B1 /* points.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = points.sks; sourceTree = "<group>"; };
 		0BB390D22249BAA9009F08B1 /* Tail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tail.sks; sourceTree = "<group>"; };
-		0BF0F5262287296F00E6B21B /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		0BEBC3E522920EC500419F49 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		0BF0F52822872F2500E6B21B /* EnemyExplode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplode.sks; sourceTree = "<group>"; };
 		0BF0F52E2287632200E6B21B /* LevelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCell.swift; sourceTree = "<group>"; };
 		13A8CDDEA484CCC0DF8D0EAE /* Pods-BlueStarRedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueStarRedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueStarRedStar/Pods-BlueStarRedStar.release.xcconfig"; sourceTree = "<group>"; };
@@ -556,7 +556,7 @@
 		0B8E05C82262F568007B8741 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0BF0F5262287296F00E6B21B /* default.realm */,
+				0BEBC3E522920EC500419F49 /* default.realm */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -740,6 +740,7 @@
 				0B98CCD7224ABA9800C2D763 /* Retronoid Italic.ttf in Resources */,
 				0B98CCD9224ABB4900C2D763 /* atari full.ttf in Resources */,
 				0BB390D32249BAA9009F08B1 /* Tail.sks in Resources */,
+				0BEBC3E622920EC500419F49 /* default.realm in Resources */,
 				0BB390C822487122009F08B1 /* pure_and_simple_everytime.ttf in Resources */,
 				0B172A8322427D4D0003CE03 /* MenuTitle.xib in Resources */,
 				0B172A8B22428A5C0003CE03 /* HighScore.xib in Resources */,
@@ -753,7 +754,6 @@
 				0BF0F52922872F2500E6B21B /* EnemyExplode.sks in Resources */,
 				0B172A7F2241E4DF0003CE03 /* MenuNewHighScore.xib in Resources */,
 				0BB390CB22496C61009F08B1 /* PlayerExplode.sks in Resources */,
-				0BF0F5272287296F00E6B21B /* default.realm in Resources */,
 				0B2F872C223C6F42001D50E6 /* Assets.xcassets in Resources */,
 				0BB390D1224980C4009F08B1 /* points.sks in Resources */,
 				0B172A73224145180003CE03 /* MenuGameOver.xib in Resources */,
